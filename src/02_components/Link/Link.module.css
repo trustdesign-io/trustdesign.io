@@ -1,0 +1,141 @@
+/* -------------------------------------------- */
+/*                                              */
+/* Link                                         */
+/* -> Styles                                    */
+/*                                              */
+/* -------------------------------------------- */
+
+.link,
+.link:active,
+.link:visited {
+  --color-text-dark: var(--color-ink);
+  --color-text-light: var(--color-ice);
+
+  align-items: center;
+  color: var(--color-text-dark);
+  display: inline-flex;
+  font-family: inherit;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: var(--size-3);
+  transition: all var(--transition-1);
+
+  &:has(svg) {
+    gap: var(--size-4);
+  }
+
+  svg,
+  svg path {
+    fill: var(-color-text-dark);
+    stroke: var(-color-text-dark);
+    transition: all var(--transition-0);
+  }
+
+  &:hover {
+    color: var(--color-neptune);
+    text-decoration-color: var(--color-neptune);
+
+    svg,
+    svg path {
+      fill: var(--color-neptune);
+      stroke: var(--color-neptune);
+    }
+  }
+}
+
+:global(.scheme--dark) .link {
+  color: var(--color-text-light);
+
+  svg,
+  svg path {
+    fill: var(--color-text-light);
+    stroke: var(--color-text-light);
+  }
+}
+
+.link:focus-visible {
+  outline: 2px solid var(--color-neptune);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.link--stretch {
+  &::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* -------------------------------------------- */
+/* Appearance                                   */
+/* -------------------------------------------- */
+
+.link--body-1 {
+  font-size: clamp(
+    var(--font-size-handheld-body-1),
+    0.8864rem + 0.5682vw,
+    var(--font-size-body-1)
+  );
+  line-height: var(--line-height-body-1);
+}
+
+.link--body-2 {
+  font-size: clamp(
+    var(--font-size-handheld-body-2),
+    0.8182rem + 0.2841vw,
+    var(--font-size-body-2)
+  );
+  line-height: var(--line-height-body-2);
+}
+
+.link--body-3 {
+  font-size: clamp(
+    var(--font-size-handheld-body-3),
+    0.6932rem + 0.2841vw,
+    var(--font-size-body-3)
+  );
+  line-height: var(--line-height-body-3);
+}
+
+.link-group {
+  display: flex;
+  gap: var(--size-5);
+}
+
+.link-group--left {
+  justify-content: flex-start;
+}
+
+.link-group--center {
+  justify-content: center;
+}
+
+.link-group--right {
+  justify-content: flex-end;
+}
+
+.link--icon-only .link__text {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.link__hit-area {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

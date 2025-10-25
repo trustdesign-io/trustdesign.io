@@ -1,0 +1,105 @@
+/* -------------------------------------------- */
+/*                                              */
+/* -> Styles                                    */
+/*                                              */
+/* -------------------------------------------- */
+
+.flyout {
+  position: relative;
+  z-index: 2;
+
+  .flyout-overlay {
+    display: none;
+    background: var(--color-ink);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    opacity: 0;
+    transition: opacity var(--transition-1);
+    z-index: 1;
+  }
+
+  &.flyout--active {
+    .flyout-overlay {
+      display: block;
+      opacity: 1;
+    }
+  }
+}
+
+.flyout-content {
+  border-left: 1px solid var(--color-abyss);
+  padding: var(--size-12) var(--size-9);
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  max-width: 280px;
+  transition: all var(--transition-1);
+  z-index: 2;
+}
+
+.flyout-title {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 1px;
+  position: absolute;
+  left: -9999px;
+}
+
+/* -- Left -- */
+
+.flyout--left .flyout-content {
+  left: auto;
+  left: -100%;
+  top: 0;
+}
+
+.flyout--left.flyout--active .flyout-content {
+  left: 0;
+}
+
+.flyout--left .flyout-trigger {
+  position: absolute;
+  top: var(--size-4);
+  right: var(--size-5);
+}
+
+/* -- Elements -- */
+
+.flyout__close {
+  position: absolute;
+  /* top: var(--size-4);
+  right: var(--size-5); */
+  top: var(--size-8);
+  right: var(--size-7);
+}
+
+@media (min-width: 768px) {
+  .flyout {
+    position: static;
+    width: auto;
+
+    .flyout-overlay {
+      display: none;
+    }
+  }
+
+  .flyout-content {
+    border: none;
+    position: static;
+    height: auto;
+    width: auto;
+    max-width: none;
+    padding: 0;
+  }
+
+  .flyout--left .flyout-trigger,
+  .flyout__close {
+    display: none;
+  }
+}

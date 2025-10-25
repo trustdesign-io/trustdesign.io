@@ -1,0 +1,8 @@
+/* --------------------------------------------
+   QuantityInput
+   -> Styles
+--------------------------------------------*/
+
+.quantity-input-wrapper {
+  display: inline-flex;
+}

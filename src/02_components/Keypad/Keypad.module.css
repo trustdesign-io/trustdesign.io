@@ -1,0 +1,126 @@
+/* -------------------------------------------- */
+/*                                              */
+/* Keypad                                       */
+/* -> Styles                                    */
+/*                                              */
+/* -------------------------------------------- */
+
+/* -------------------------------------------- */
+/* General                                      */
+/* -------------------------------------------- */
+
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--size-6);
+  padding: var(--size-6);
+}
+
+.keypad__overlay {
+  position: absolute;
+  inset: 0;
+  /* background-color: rgba(255, 255, 255, 0.7); */
+  z-index: 10; /* Ensure it sits on top of the keypad */
+  pointer-events: auto; /* Capture pointer events */
+}
+
+.keypad__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--dark-gray);
+  aspect-ratio: 1 / 1;
+  font-family: var(--font-family-body);
+  font-weight: bold;
+  color: var(--color-text-dark);
+  cursor: pointer;
+  border-radius: var(--radius-md);
+}
+
+/* -------------------------------------------- */
+/* Appearance                                   */
+/* -------------------------------------------- */
+
+.keypad--heading-1 .keypad__item {
+  font-size: clamp(
+    var(--font-size-handheld-heading-1),
+    2.3182rem + 3.4091vw,
+    var(--font-size-heading-1)
+  );
+}
+
+.keypad--heading-2 .keypad__item {
+  font-size: clamp(
+    var(--font-size-handheld-heading-2),
+    1.5682rem + 3.4091vw,
+    var(--font-size-heading-2)
+  );
+}
+
+.keypad--heading-3 .keypad__item {
+  font-size: clamp(
+    var(--font-size-handheld-heading-3),
+    1rem + 3.125vw,
+    var(--font-size-heading-3)
+  );
+}
+
+.keypad--heading-4 .keypad__item {
+  font-size: clamp(
+    var(--font-size-handheld-heading-4),
+    0.9773rem + 1.9886vw,
+    var(--font-size-heading-4)
+  );
+}
+
+.keypad--heading-5 .keypad__item {
+  font-size: clamp(
+    var(--font-size-handheld-heading-5),
+    0.8977rem + 1.1364vw,
+    var(--font-size-heading-5)
+  );
+}
+
+.keypad--heading-6 .keypad__item {
+  font-size: clamp(
+    var(--font-size-handheld-heading-6),
+    0.7727rem + 1.1364vw,
+    var(--font-size-heading-6)
+  );
+}
+
+.keypad--body-1 .keypad__item {
+  font-family: var(--font-family-body);
+  font-size: clamp(
+    var(--font-size-handheld-body-1),
+    0.8864rem + 0.5682vw,
+    var(--font-size-body-1)
+  );
+}
+
+.keypad--body-2 .keypad__item {
+  font-family: var(--font-family-body);
+  font-size: clamp(
+    var(--font-size-handheld-body-2),
+    0.8182rem + 0.2841vw,
+    var(--font-size-body-2)
+  );
+}
+
+.keypad--body-3 .keypad__item {
+  font-family: var(--font-family-body);
+  font-size: clamp(
+    var(--font-size-handheld-body-3),
+    0.6932rem + 0.2841vw,
+    var(--font-size-body-3)
+  );
+}
+
+/* -------------------------------------------- */
+/* Active State                                 */
+/* -------------------------------------------- */
+
+.keypad__item.active {
+  background-color: var(--brand-39);
+  color: var(--brand-4);
+}

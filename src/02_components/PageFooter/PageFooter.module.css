@@ -1,0 +1,11 @@
+/* -------------------------------------------- */
+/*                                              */
+/* PageFooter                                   */
+/* -> Styles                                    */
+/*                                              */
+/* -------------------------------------------- */
+
+.page-footer {
+  padding: var(--size-6);
+  border-top: 1px solid var(--color-abyss);
+}

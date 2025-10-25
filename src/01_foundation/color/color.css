@@ -1,0 +1,25 @@
+/* stylelint-disable */
+/* -------------------------------------------- */
+/* Color                                        */
+/* -------------------------------------------- */
+
+/* ---------------------- */
+/*  -- Trust Design  -- */
+/* ---------------------- */
+
+:root {
+  /* -- Raw (brand) -- */
+  --color-abyss: rgb(4 10 16 / 100%); /* #040A10 */
+  --color-ink: rgb(10 21 32 / 100%); /* #0A1520 */
+  --color-ink-66: rgb(10 21 32 / 66%);
+  --color-ink-33: rgb(10 21 32 / 33%);
+  --color-paper: rgb(247 251 255 / 100%); /* #F7FBFF */
+  --color-ice: rgb(250 255 255 / 100%); /* #FAFFFF */
+  --color-ocean: rgb(27 60 83 / 100%); /* #1B3C53 */
+  --color-harbor: rgb(35 76 106 / 100%); /* #234C6A */
+  --color-steel: rgb(69 104 130 / 100%); /* #456882 */
+  --color-neptune: rgb(148 195 230 / 100%); /* #94C3E6 */
+  --color-sky: rgb(171 220 255 / 100%); /* #ABDCFF */
+  --color-lightening: rgb(0 180 255 / 100%); /* #00B4FF */
+  --color-orchid: rgb(223 0 168 / 100%); /* #DF00A8 */
+}
