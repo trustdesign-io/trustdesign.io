@@ -97,11 +97,11 @@ export type { PageHeaderProps } from "./02_components/PageHeader";
 export { PageFooter } from "./02_components/PageFooter";
 export type { PageFooterProps } from "./02_components/PageFooter";
 
+export { SiteFooter } from "./02_components/SiteFooter";
+export type { SiteFooterProps } from "./02_components/SiteFooter";
+
 export { Logo } from "./02_components/Logo";
 export type { LogoProps } from "./02_components/Logo";
-
-export { Shards } from "./02_components/Shards";
-export type { ShardsProps } from "./02_components/Shards";
 
 export { PairedList } from "./02_components/PairedList";
 export type { PairedListProps } from "./02_components/PairedList";
@@ -114,6 +114,3 @@ export type { KeypadProps } from "./02_components/Keypad";
 
 export { Conversation } from "./02_components/Conversation";
 export type { ConversationProps } from "./02_components/Conversation";
-
-export { QuantityInput } from "./02_components/QuantityInput";
-export type { QuantityInputProps } from "./02_components/QuantityInput";

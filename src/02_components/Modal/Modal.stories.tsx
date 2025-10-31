@@ -46,7 +46,7 @@ type Story = StoryObj<ModalProps>;
 // Individual Size Stories
 // --------------------------------------------
 
-const Template: React.FC<ModalProps> = args => {
+const Template: React.FC<ModalProps> = (args) => {
   const [isOpen, setIsOpen] = useState(args.isOpen);
 
   // Synchronize with Storybook control changes
@@ -65,7 +65,7 @@ export const ExtraSmall: Story = {
     children: (
       <div>
         <Layout bottomGutter="xl">
-          <Text tag="h2" appearance="heading-4">
+          <Text tag="h2" appearance="h4">
             Extra Small Modal
           </Text>
           <Text>
@@ -80,7 +80,7 @@ export const ExtraSmall: Story = {
       </div>
     ),
   },
-  render: args => <Template {...args} />,
+  render: (args) => <Template {...args} />,
 };
 
 export const Small: Story = {
@@ -90,7 +90,7 @@ export const Small: Story = {
     children: (
       <div>
         <Layout bottomGutter="xl">
-          <Text tag="h2" appearance="heading-4">
+          <Text tag="h2" appearance="h4">
             Small Modal
           </Text>
           <Text>
@@ -104,7 +104,7 @@ export const Small: Story = {
       </div>
     ),
   },
-  render: args => <Template {...args} />,
+  render: (args) => <Template {...args} />,
 };
 
 export const Medium: Story = {
@@ -114,7 +114,7 @@ export const Medium: Story = {
     children: (
       <div>
         <Layout bottomGutter="xl">
-          <Text tag="h2" appearance="heading-4">
+          <Text tag="h2" appearance="h4">
             Medium Modal
           </Text>
           <Text>
@@ -128,7 +128,7 @@ export const Medium: Story = {
       </div>
     ),
   },
-  render: args => <Template {...args} />,
+  render: (args) => <Template {...args} />,
 };
 
 export const Large: Story = {
@@ -138,7 +138,7 @@ export const Large: Story = {
     children: (
       <div>
         <Layout bottomGutter="xl">
-          <Text tag="h2" appearance="heading-4">
+          <Text tag="h2" appearance="h4">
             Large Modal
           </Text>
           <Text>
@@ -152,7 +152,7 @@ export const Large: Story = {
       </div>
     ),
   },
-  render: args => <Template {...args} />,
+  render: (args) => <Template {...args} />,
 };
 
 export const ExtraLarge: Story = {
@@ -162,7 +162,7 @@ export const ExtraLarge: Story = {
     children: (
       <div>
         <Layout bottomGutter="xl">
-          <Text tag="h2" appearance="heading-4">
+          <Text tag="h2" appearance="h4">
             Extra Large Modal
           </Text>
           <Text>
@@ -177,5 +177,5 @@ export const ExtraLarge: Story = {
       </div>
     ),
   },
-  render: args => <Template {...args} />,
+  render: (args) => <Template {...args} />,
 };

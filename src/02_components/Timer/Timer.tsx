@@ -22,12 +22,12 @@ export interface TimerProps {
   reverse?: boolean;
   running: boolean;
   appearance?:
-    | "heading-1"
-    | "heading-2"
-    | "heading-3"
-    | "heading-4"
-    | "heading-5"
-    | "heading-6"
+    | "h1"
+    | "h2"
+    | "h3"
+    | "h4"
+    | "h5"
+    | "h6"
     | "body-1"
     | "body-2"
     | "body-3";
@@ -61,7 +61,7 @@ function Timer({
 
     if (running) {
       intervalId = setInterval(() => {
-        setTime(prevTime => {
+        setTime((prevTime) => {
           const nextTime = reverse ? prevTime + 1 : prevTime - 1;
 
           // If timer reaches zero (for countdown) or exceeds duration (for count-up)

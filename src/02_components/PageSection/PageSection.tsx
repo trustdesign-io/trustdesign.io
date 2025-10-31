@@ -38,7 +38,7 @@ export interface PageSectionProps {
 // --------------------------------------------
 
 function PageSection({
-  backgroundColor = "transparent",
+  backgroundColor,
   backgroundImage,
   backgroundImagePosition,
   children,
@@ -47,6 +47,11 @@ function PageSection({
   tag = "div",
 }: PageSectionProps) {
   const Tag = tag;
+
+  const style = {
+    ...(backgroundColor && { backgroundColor }),
+    ...(backgroundImage && { backgroundImage: `url(${backgroundImage})` }),
+  };
 
   return (
     <Tag
@@ -58,10 +63,7 @@ function PageSection({
         backgroundImagePosition &&
           styles[`page-section-backgroundPosition--${backgroundImagePosition}`]
       )}
-      style={{
-        backgroundColor: backgroundColor,
-        backgroundImage: `url(${backgroundImage})`,
-      }}
+      style={style}
     >
       {children}
     </Tag>

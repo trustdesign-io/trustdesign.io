@@ -10,7 +10,7 @@
 
   .flyout-overlay {
     display: none;
-    background: var(--color-ink);
+    background: var(--color-ink-66);
     position: fixed;
     top: 0;
     left: 0;
@@ -31,13 +31,24 @@
 
 .flyout-content {
   border-left: 1px solid var(--color-abyss);
-  padding: var(--size-12) var(--size-9);
+  padding: var(--size-22) var(--size-9) var(--size-12) var(--size-9);
   position: fixed;
   height: 100vh;
   width: 100vw;
   max-width: 280px;
   transition: all var(--transition-1);
   z-index: 2;
+  background:
+    radial-gradient(at 19.8% 78.3%, #0a1520 0px, transparent 50%),
+    radial-gradient(at 81.8% 41.5%, #0a1520 0px, transparent 50%),
+    radial-gradient(at 73% 69.2%, #456882 0px, transparent 50%),
+    radial-gradient(at 51.5% 51.5%, #df00a8 0px, transparent 50%),
+    radial-gradient(at 34.6% 33.3%, #456882 0px, transparent 50%) #000000;
+  mix-blend-mode: normal;
+
+  ul {
+    width: fit-content;
+  }
 }
 
 .flyout-title {
@@ -51,38 +62,34 @@
   left: -9999px;
 }
 
-/* -- Left -- */
-
-.flyout--left .flyout-content {
-  left: auto;
-  left: -100%;
+.flyout-content {
+  right: -100%;
   top: 0;
 }
 
-.flyout--left.flyout--active .flyout-content {
-  left: 0;
+.flyout--active .flyout-content {
+  right: 0;
 }
 
-.flyout--left .flyout-trigger {
-  position: absolute;
-  top: var(--size-4);
-  right: var(--size-5);
+.flyout-trigger {
+  position: fixed;
+  top: 25px;
+  right: 30px;
 }
 
 /* -- Elements -- */
 
 .flyout__close {
   position: absolute;
-  /* top: var(--size-4);
-  right: var(--size-5); */
-  top: var(--size-8);
-  right: var(--size-7);
+  top: 25px;
+  right: 30px;
 }
 
-@media (min-width: 768px) {
+@media (--min-breakpoint-sm) {
   .flyout {
     position: static;
     width: auto;
+    background: none;
 
     .flyout-overlay {
       display: none;
@@ -96,6 +103,7 @@
     width: auto;
     max-width: none;
     padding: 0;
+    background: none;
   }
 
   .flyout--left .flyout-trigger,

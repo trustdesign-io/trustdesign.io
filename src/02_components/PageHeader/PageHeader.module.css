@@ -7,19 +7,33 @@
 
 .page-header {
   background: var(--color-ink);
-  padding: var(--size-6) 0;
-  border-bottom: 1px solid var(--color-abyss);
+  border-bottom: 1px solid var(--color-orchid-33);
+  border-bottom: 1px solid var(--color-steel-33);
+  position: relative;
+  z-index: 4;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 
   .page-header_inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 var(--size-8);
+    padding: var(--size-5) var(--size-8);
     position: relative;
     height: 100%;
     z-index: 1;
     width: 100%;
     max-width: var(--maximum-page-width);
     margin: 0 auto;
+  }
+
+  @media (--min-breakpoint-md) {
+    position: static;
+
+    .page-header_inner {
+      padding: var(--size-6) var(--size-12);
+    }
   }
 }

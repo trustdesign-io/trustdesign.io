@@ -1,6 +1,6 @@
 // --------------------------------------------
 //
-// PageHeader
+// SiteFooter
 // -> Component
 //
 // --------------------------------------------
@@ -10,29 +10,25 @@
 // --------------------------------------------
 
 import clsx from "clsx";
-import styles from "./PageHeader.module.css";
+import styles from "./SiteFooter.module.css";
 
 // --------------------------------------------
 // Types
 // --------------------------------------------
 
-export interface PageHeaderProps {
+export interface SiteFooterProps {
+  // Define your component props here
   children: React.ReactNode;
-  backgroundColor?: string;
 }
 
 // --------------------------------------------
 // Component
 // --------------------------------------------
 
-function PageHeader({ children, backgroundColor }: PageHeaderProps) {
+function SiteFooter({ children }: SiteFooterProps) {
   return (
-    <div
-      data-component="PageHeader"
-      className={clsx(styles["page-header"])}
-      style={{ backgroundColor }}
-    >
-      <div className={clsx(styles["page-header_inner"])}>{children}</div>
+    <div data-component="SiteFooter" className={clsx(styles["site-footer"])}>
+      {children}
     </div>
   );
 }
@@ -41,4 +37,4 @@ function PageHeader({ children, backgroundColor }: PageHeaderProps) {
 // Exports
 // --------------------------------------------
 
-export default PageHeader;
+export default SiteFooter;

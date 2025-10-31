@@ -5,11 +5,6 @@
 /*                                              */
 /* -------------------------------------------- */
 
-.primary-navigation {
-  --color-text-dark: var(--color-ink);
-  --color-text-light: var(--color-ice);
-}
-
 .primary-navigation ul,
 .primary-sub-navigation ul {
   list-style: none;
@@ -18,7 +13,7 @@
 }
 
 .primary-navigation > ul {
-  width: fit-content;
+  /* width: fit-content; */
   margin: 0 auto;
 }
 
@@ -78,10 +73,6 @@
 
 :global(.scheme--dark) {
   .primary-navigation ul,
-  .primary-sub-navigation ul {
-    background: var(--color-ink);
-  }
-
   .primary-navigation-item,
   .primary-sub-navigation-item {
     color: var(--color-text-light);

@@ -41,51 +41,51 @@
 /* Appearance                                   */
 /* -------------------------------------------- */
 
-.keypad--heading-1 .keypad__item {
+.keypad--h1 .keypad__item {
   font-size: clamp(
-    var(--font-size-handheld-heading-1),
+    var(--font-size-handheld-h1),
     2.3182rem + 3.4091vw,
-    var(--font-size-heading-1)
+    var(--font-size-h1)
   );
 }
 
-.keypad--heading-2 .keypad__item {
+.keypad--h2 .keypad__item {
   font-size: clamp(
-    var(--font-size-handheld-heading-2),
+    var(--font-size-handheld-h2),
     1.5682rem + 3.4091vw,
-    var(--font-size-heading-2)
+    var(--font-size-h2)
   );
 }
 
-.keypad--heading-3 .keypad__item {
+.keypad--h3 .keypad__item {
   font-size: clamp(
-    var(--font-size-handheld-heading-3),
+    var(--font-size-handheld-h3),
     1rem + 3.125vw,
-    var(--font-size-heading-3)
+    var(--font-size-h3)
   );
 }
 
-.keypad--heading-4 .keypad__item {
+.keypad--h4 .keypad__item {
   font-size: clamp(
-    var(--font-size-handheld-heading-4),
+    var(--font-size-handheld-h4),
     0.9773rem + 1.9886vw,
-    var(--font-size-heading-4)
+    var(--font-size-h4)
   );
 }
 
-.keypad--heading-5 .keypad__item {
+.keypad--h5 .keypad__item {
   font-size: clamp(
-    var(--font-size-handheld-heading-5),
+    var(--font-size-handheld-h5),
     0.8977rem + 1.1364vw,
-    var(--font-size-heading-5)
+    var(--font-size-h5)
   );
 }
 
-.keypad--heading-6 .keypad__item {
+.keypad--h6 .keypad__item {
   font-size: clamp(
-    var(--font-size-handheld-heading-6),
+    var(--font-size-handheld-h6),
     0.7727rem + 1.1364vw,
-    var(--font-size-heading-6)
+    var(--font-size-h6)
   );
 }
 

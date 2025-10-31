@@ -1,6 +1,6 @@
 // --------------------------------------------
 //
-// Shards
+// PageFooter
 // -> Tests
 //
 // --------------------------------------------
@@ -10,15 +10,15 @@
 // --------------------------------------------
 
 import { render, screen } from "@testing-library/react";
-import Shards from "./Shards";
+import SiteFooter from "./SiteFooter";
 
 // --------------------------------------------
 // Tests
 // --------------------------------------------
 
-describe("Shards", () => {
-  it("renders the Shards component", () => {
-    render(<Shards>Shards</Shards>);
+describe("PageFooter", () => {
+  it("renders the SiteFooter component", () => {
+    render(<SiteFooter>SiteFooter</SiteFooter>);
     screen.debug();
   });
 });

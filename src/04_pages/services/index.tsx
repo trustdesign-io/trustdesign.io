@@ -15,7 +15,7 @@ const Services: React.FC = () => {
       <PageSection screen="full">
         <Layout container>
           <div className="visually-hidden">
-            <Text tag="h2" appearance="heading-3">
+            <Text tag="h2" appearance="h3">
               Services
             </Text>
           </div>

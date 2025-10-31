@@ -21,6 +21,7 @@ export interface LinkProps {
   children: React.ReactNode;
   external?: boolean;
   url?: string; //Optional to allow for consumer routing techniques
+  href?: string;
   target?: string;
   appearance?: "body-1" | "body-2" | "body-3";
   stretch?: boolean;
@@ -39,6 +40,7 @@ function Link({
   children,
   external = false,
   url,
+  href,
   target,
   appearance,
   stretch = false,
@@ -49,7 +51,7 @@ function Link({
   iconOnly = false,
 }: LinkProps) {
   const ref = external ? { rel: "noreferrer" } : {};
-  const Tag = url ? "a" : "span";
+  const Tag = url || href ? "a" : "span";
 
   return (
     <Tag
@@ -59,6 +61,7 @@ function Link({
         title: title,
         ...(target && { target: target }),
       })}
+      {...(href && { href: href })}
       data-component="Link"
       className={clsx(
         styles.link,

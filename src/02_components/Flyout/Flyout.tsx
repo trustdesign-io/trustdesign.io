@@ -20,7 +20,7 @@ const Flyout: React.FC<FlyoutProps> = ({
   position,
   children,
   loadOpen = false,
-  backgroundColor = "transparent",
+  backgroundColor,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [loadedOpen, setLoadedOpen] = useState(loadOpen);

@@ -1,6 +1,6 @@
 // --------------------------------------------
 //
-// PageHeader
+// PageFooter
 // -> Stories
 //
 // --------------------------------------------
@@ -10,7 +10,7 @@
 // --------------------------------------------
 
 import { Meta, StoryObj } from "@storybook/react";
-import PageHeader, { PageHeaderProps } from "./PageHeader";
+import SiteFooter, { SiteFooterProps } from "./SiteFooter";
 import { Text } from "../02_components/Text"; // Assuming you want to use Text component for children
 
 // --------------------------------------------
@@ -19,13 +19,13 @@ import { Text } from "../02_components/Text"; // Assuming you want to use Text c
 
 // ----- Setup ----- //
 
-const meta: Meta<PageHeaderProps> = {
-  title: "Components/PageHeader",
-  component: PageHeader,
+const meta: Meta<SiteFooterProps> = {
+  title: "Components/SiteFooter",
+  component: SiteFooter,
   argTypes: {
     children: {
       control: "text",
-      description: "The content inside the PageHeader component",
+      description: "The content inside the SiteFooter component",
     },
   },
 };
@@ -34,18 +34,17 @@ export default meta;
 
 // ----- Individual Stories ----- //
 
-type Story = StoryObj<PageHeaderProps>;
+type Story = StoryObj<PageFooterProps>;
 
 export const Default: Story = {
   args: {
     children: (
       <>
-        <Text tag="h1" appearance="h1">
-          Page Title
+        <Text appearance="body-2" alignment="center">
+          © 2024 Your Company. All rights reserved.
         </Text>
-        <Text appearance="body-1">
-          This is a description or subtitle for the page header. You can pass
-          any content you like as children.
+        <Text appearance="body-3" alignment="center">
+          Privacy Policy | Terms of Service
         </Text>
       </>
     ),
@@ -56,15 +55,11 @@ export const WithCustomContent: Story = {
   args: {
     children: (
       <>
-        <Text tag="h1" appearance="h2">
-          Custom Header
+        <Text appearance="body-2" alignment="center">
+          Custom Footer Content
         </Text>
-        <Text appearance="body-1">
-          This example demonstrates the flexibility of the PageHeader component
-          by allowing any React nodes as children.
-        </Text>
-        <Text appearance="body-2">
-          Here's some additional information or content.
+        <Text appearance="body-3" alignment="center">
+          Links, legal information, or anything else can go here.
         </Text>
       </>
     ),

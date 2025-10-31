@@ -45,6 +45,7 @@ export interface LayoutProps {
   topGutter?: "sm" | "md" | "lg" | "xl";
   bottomGutter?: "sm" | "md" | "lg" | "xl";
   showGrid?: boolean;
+  className?: string;
   children: ReactNode;
 }
 
@@ -71,9 +72,11 @@ function Layout({
   topGutter,
   bottomGutter,
   showGrid = false,
+  className,
   children,
 }: LayoutProps) {
   const classes = clsx(styles["layout"], {
+    [styles[`${className}`]]: className,
     [styles["layout--container"]]: container,
     [styles["layout--wrapper"]]: wrapper,
     [styles["layout--block"]]: block,

@@ -30,13 +30,13 @@ const meta: Meta<TextProps> = {
     appearance: {
       control: { type: "select" },
       options: [
-        "heading-1",
-        "heading-2",
-        "heading-3",
-        "heading-4",
-        "heading-5",
-        "heading-6",
-        "heading-7",
+        "h1",
+        "h2",
+        "h3",
+        "h4",
+        "h5",
+        "h6",
+        "h7",
         "body-1",
         "body-2",
         "body-3",
@@ -67,7 +67,7 @@ export default meta;
 
 const Template = (args: TextProps) => (
   <>
-    <Text {...args} appearance="heading-1" tag="h1">
+    <Text {...args} appearance="h1" tag="h1">
       This is a heading one
     </Text>
     <Text {...args} appearance="body-1">
@@ -78,7 +78,7 @@ const Template = (args: TextProps) => (
       the lazy dog The quick brown fox jumps over the lazy dog.,
     </Text>
 
-    <Text {...args} appearance="heading-2" tag="h2">
+    <Text {...args} appearance="h2" tag="h2">
       This is a heading two
     </Text>
     <Text {...args} appearance="body-1">
@@ -89,7 +89,7 @@ const Template = (args: TextProps) => (
       the lazy dog The quick brown fox jumps over the lazy dog.,
     </Text>
 
-    <Text {...args} appearance="heading-3" tag="h3">
+    <Text {...args} appearance="h3" tag="h3">
       This is a heading three
     </Text>
     <Text {...args} appearance="body-1">
@@ -100,7 +100,7 @@ const Template = (args: TextProps) => (
       the lazy dog The quick brown fox jumps over the lazy dog.,
     </Text>
 
-    <Text {...args} appearance="heading-4" tag="h4">
+    <Text {...args} appearance="h4" tag="h4">
       This is a heading four
     </Text>
     <Text {...args} appearance="body-2">
@@ -111,7 +111,7 @@ const Template = (args: TextProps) => (
       the lazy dog The quick brown fox jumps over the lazy dog.,
     </Text>
 
-    <Text {...args} appearance="heading-5" tag="h5">
+    <Text {...args} appearance="h5" tag="h5">
       This is a heading five
     </Text>
     <Text {...args} appearance="body-2">
@@ -122,7 +122,7 @@ const Template = (args: TextProps) => (
       the lazy dog The quick brown fox jumps over the lazy dog.,
     </Text>
 
-    <Text {...args} appearance="heading-6" tag="h6">
+    <Text {...args} appearance="h6" tag="h6">
       This is a heading six
     </Text>
     <Text {...args} appearance="body-3">
@@ -133,7 +133,7 @@ const Template = (args: TextProps) => (
       the lazy dog The quick brown fox jumps over the lazy dog.,
     </Text>
 
-    <Text {...args} appearance="heading-7" tag="h6">
+    <Text {...args} appearance="h7" tag="h6">
       This is a heading six
     </Text>
     <Text {...args} appearance="body-3">
@@ -148,10 +148,10 @@ const Template = (args: TextProps) => (
 
 const Template2 = (args: TextProps) => (
   <Text tag="h2">
-    <Text tag="span" appearance="heading-6" font="heading">
+    <Text tag="span" appearance="h6" font="heading">
       What is a
     </Text>
-    <Text tag="span" appearance="heading-2">
+    <Text tag="span" appearance="h2">
       Design Technologist?
     </Text>
   </Text>
@@ -164,7 +164,7 @@ type Story = StoryObj<TextProps>;
 export const Default: Story = {
   args: {
     children: "The quick brown fox jumps over the lazy dog",
-    appearance: "heading-1",
+    appearance: "h1",
     alignment: "left",
     layout: true,
   },

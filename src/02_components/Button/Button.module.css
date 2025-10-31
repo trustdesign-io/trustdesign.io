@@ -6,26 +6,29 @@
 /* -------------------------------------------- */
 
 .button {
-  --primary-button-background-color: var(--brand-17);
-  --primary-button-background-color-hover: var(--brand-15);
-  --primary-button-border-color: var(--brand-17);
-  --primary-button-border-color-hover: var(--brand-15);
-  --primary-button-color: var(--brand-4);
-  --primary-button-color-hover: var(--brand-6);
+  --primary-button-background-color: var(--color-frost);
+  --primary-button-background-color-hover: var(--color-neptune);
+  --primary-button-border-color: var(--color-frost);
+  --primary-button-border-color-hover: var(--color-neptune);
+  --primary-button-color: var(--color-ink);
+  --primary-button-color-hover: var(--color-ink);
+
   --secondary-button-background-color: transparent;
   --secondary-button-background-color--hover: transparent;
-  --secondary-button-border-color: var(--brand-17);
-  --secondary-button-border-color-hover: var(--brand-15);
-  --secondary-button-color: var(--brand-17);
-  --secondary-button-color-hover: var(--brand-15);
-  --tertiary-button-color: var(--brand-17);
-  --tertiary-button-color-hover: var(--brand-15);
+  --secondary-button-border-color: var(--color-frost);
+  --secondary-button-border-color-hover: var(--color-neptune);
+  --secondary-button-color: var(--color-frost);
+  --secondary-button-color-hover: var(--color-neptune);
+
+  --tertiary-button-color: var(--color-frost);
+  --tertiary-button-color-hover: var(--color-frost);
+
   --button-underline-offset: var(--size-3);
 
   all: initial;
   align-items: center;
   appearance: none;
-  border-radius: var(--radius-sm);
+  border-radius: var(--radius-jumbo);
   border: 2px solid transparent;
   display: inline-flex;
   font-family: var(--font-family-body);
@@ -34,6 +37,7 @@
   gap: 0.5rem;
   justify-content: center;
   line-height: 1.5;
+  padding: 0 var(--size-4);
   text-align: center;
   text-wrap: nowrap;
   transition: all var(--transition-0);
@@ -180,33 +184,6 @@
   }
 }
 
-:global(.scheme--dark) {
-  .button--tertiary {
-    color: var(--brand-4);
-
-    svg,
-    svg path {
-      fill: var(--brand-4);
-      stroke: var(--brand-4);
-    }
-
-    &:is(:hover, :focus-visible) {
-      border-color: transparent;
-      color: var(--brand-6);
-
-      .button__text {
-        text-decoration-color: var(--brand-6);
-      }
-
-      svg,
-      svg path {
-        fill: var(--brand-6);
-        stroke: var(--brand-6);
-      }
-    }
-  }
-}
-
 /* ----- Appearance ----- */
 
 .button--body-1 {
@@ -289,7 +266,7 @@
 
 .button-group {
   display: flex;
-  gap: var(--size-4);
+  gap: var(--size-5);
 }
 
 .button-group--left {

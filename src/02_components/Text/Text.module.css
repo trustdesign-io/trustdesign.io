@@ -6,23 +6,14 @@
 /* -------------------------------------------- */
 
 /* -------------------------------------------- */
-/* Local custom properties                     */
-/* -------------------------------------------- */
-
-/* -------------------------------------------- */
-/* General                                   */
+/* General                                       */
 /* -------------------------------------------- */
 
 .text {
-  --color-text-dark: var(--color-ink);
-  --color-text-light: var(--color-ice);
-
   font-family: var(--font-family-body);
   color: var(--color-text-dark);
   margin: 0;
   text-decoration: none;
-  max-width: 75ch;
-  text-wrap: pretty;
 }
 
 span.text {
@@ -47,135 +38,216 @@ span.text {
 }
 
 /* -------------------------------------------- */
-/* Appearance                                   */
+/* Appearance (baseline-aligned)                */
 /* -------------------------------------------- */
 
-.text--heading-1 {
-  font-size: clamp(
-    var(--font-size-handheld-heading-1),
-    2.3182rem + 3.4091vw,
-    var(--font-size-heading-1)
-  );
+/* H1 */
+.text--h1 {
+  font-size: var(--font-size-handheld-h1);
   font-family: var(--font-family-heading);
   font-weight: bold;
-  line-height: var(--line-height-heading-1);
-  margin-bottom: var(--margin-bottom-heading-1);
+  line-height: var(--line-height-h1);
+
+  margin-top: 0;
+  margin-bottom: var(--margin-bottom-handheld-h1);
+
+  @media (--min-breakpoint-sm) {
+    font-size: var(--font-size-h1);
+    margin-top: var(--margin-top-h1, 0);
+    margin-bottom: var(--margin-bottom-h1);
+  }
 }
 
-.text--heading-2 {
-  font-size: clamp(
-    var(--font-size-handheld-heading-2),
-    1.5682rem + 3.4091vw,
-    var(--font-size-heading-2)
-  );
+/* H2 */
+.text--h2 {
+  font-size: var(--font-size-handheld-h2);
   font-family: var(--font-family-heading);
   font-weight: bold;
-  line-height: var(--line-height-heading-2);
-  margin-bottom: var(--margin-bottom-heading-2);
+  line-height: var(--line-height-h2);
+
+  margin-top: var(--margin-top-handheld-h2, var(--rhythm-handheld));
+  margin-bottom: var(--margin-bottom-handheld-h2, var(--rhythm-handheld));
+
+  @media (--min-breakpoint-sm) {
+    font-size: var(--font-size-h2);
+    margin-top: var(--margin-top-h2);
+    margin-bottom: var(--margin-bottom-h2);
+  }
 }
 
-.text--heading-3 {
-  font-size: clamp(
-    var(--font-size-handheld-heading-3),
-    1rem + 3.125vw,
-    var(--font-size-heading-3)
-  );
+/* H3 */
+.text--h3 {
+  font-size: var(--font-size-handheld-h3);
   font-family: var(--font-family-heading);
   font-weight: bold;
-  line-height: var(--line-height-heading-3);
-  margin-bottom: var(--margin-bottom-heading-3);
+  line-height: var(--line-height-h3);
+
+  margin-top: var(--margin-top-handheld-h3, var(--rhythm-handheld));
+  margin-bottom: var(--margin-bottom-handheld-h3, var(--rhythm-handheld-0_5));
+
+  @media (--min-breakpoint-sm) {
+    font-size: var(--font-size-h3);
+    margin-top: var(--margin-top-h3);
+    margin-bottom: var(--margin-bottom-h3);
+  }
 }
 
-.text--heading-4 {
-  font-size: clamp(
-    var(--font-size-handheld-heading-4),
-    0.9773rem + 1.9886vw,
-    var(--font-size-heading-4)
-  );
+/* H4 */
+.text--h4 {
+  font-size: var(--font-size-handheld-h4);
   font-family: var(--font-family-heading);
   font-weight: bold;
-  line-height: var(--line-height-heading-4);
-  margin-bottom: var(--margin-bottom-heading-4);
+  line-height: var(--line-height-h4);
+
+  margin-top: var(--margin-top-handheld-h4, var(--rhythm-handheld));
+  margin-bottom: var(--margin-bottom-handheld-h4, var(--rhythm-handheld-0_5));
+
+  @media (--min-breakpoint-sm) {
+    font-size: var(--font-size-h4);
+    margin-top: var(--margin-top-h4);
+    margin-bottom: var(--margin-bottom-h4);
+  }
 }
 
-.text--heading-5 {
-  font-size: clamp(
-    var(--font-size-handheld-heading-5),
-    0.8977rem + 1.1364vw,
-    var(--font-size-heading-5)
-  );
+/* H5 */
+.text--h5 {
+  font-size: var(--font-size-handheld-h5);
   font-family: var(--font-family-heading);
   font-weight: bold;
-  line-height: var(--line-height-heading-5);
-  margin-bottom: var(--margin-bottom-heading-5);
+  line-height: var(--line-height-h5);
+
+  margin-top: var(--margin-top-handheld-h5, var(--rhythm-handheld));
+  margin-bottom: var(--margin-bottom-handheld-h5, var(--rhythm-handheld-0_5));
+
+  @media (--min-breakpoint-sm) {
+    font-size: var(--font-size-h5);
+    margin-top: var(--margin-top-h5);
+    margin-bottom: var(--margin-bottom-h5);
+  }
 }
 
-.text--heading-6 {
-  font-size: clamp(
-    var(--font-size-handheld-heading-6),
-    0.7727rem + 1.1364vw,
-    var(--font-size-heading-6)
-  );
+/* H6 */
+.text--h6 {
+  font-size: var(--font-size-handheld-h6);
   font-family: var(--font-family-heading);
   font-weight: bold;
-  line-height: var(--line-height-heading-6);
-  margin-bottom: var(--margin-bottom-heading-6);
+  line-height: var(--line-height-h6);
+
+  margin-top: var(--margin-top-handheld-h6, var(--rhythm-handheld));
+  margin-bottom: var(--margin-bottom-handheld-h6, var(--rhythm-handheld-0_5));
+
+  @media (--min-breakpoint-sm) {
+    font-size: var(--font-size-h6);
+    margin-top: var(--margin-top-h6);
+    margin-bottom: var(--margin-bottom-h6);
+  }
 }
 
-.text--heading-7 {
-  font-size: clamp(
-    var(--font-size-handheld-heading-7),
-    0.7727rem + 1.1364vw,
-    var(--font-size-heading-7)
-  );
+/* H7 */
+.text--h7 {
+  font-size: var(--font-size-handheld-h7);
   font-family: var(--font-family-heading);
   font-weight: bold;
-  line-height: var(--line-height-heading-7);
-  margin-bottom: var(--margin-bottom-heading-7);
+  line-height: var(--line-height-h7);
+
+  margin-top: var(--margin-top-handheld-h7, var(--rhythm-handheld));
+  margin-bottom: var(--margin-bottom-handheld-h7, var(--rhythm-handheld-0_5));
+
+  @media (--min-breakpoint-sm) {
+    font-size: var(--font-size-h7);
+    margin-top: var(--margin-top-h7);
+    margin-bottom: var(--margin-bottom-h7);
+  }
 }
+
+/* -------------------------------------------- */
+/* Body text                                   */
+/* -------------------------------------------- */
 
 .text--body-1 {
   font-family: var(--font-family-body);
-  font-size: clamp(
-    var(--font-size-handheld-body-1),
-    0.8864rem + 0.5682vw,
-    var(--font-size-body-1)
-  );
+  font-size: var(--font-size-handheld-body-1);
   line-height: var(--line-height-body-1);
-  margin-bottom: var(--margin-bottom-body-1);
+  margin-bottom: var(--margin-bottom-handheld-body-1);
 
   &:last-of-type:last-child {
     margin-bottom: 0;
+  }
+
+  @media (--min-breakpoint-sm) {
+    font-size: var(--font-size-body-1);
+    margin-bottom: var(--margin-bottom-body-1);
   }
 }
 
 .text--body-2 {
   font-family: var(--font-family-body);
-  font-size: clamp(
-    var(--font-size-handheld-body-2),
-    0.8182rem + 0.2841vw,
-    var(--font-size-body-2)
-  );
+  font-size: var(--font-size-handheld-body-2);
   line-height: var(--line-height-body-2);
-  margin-bottom: var(--margin-bottom-body-2);
+  margin-bottom: var(--margin-bottom-handheld-body-2);
 
   &:last-of-type:last-child {
     margin-bottom: 0;
+  }
+
+  @media (--min-breakpoint-sm) {
+    font-size: var(--font-size-body-2);
+    margin-bottom: var(--margin-bottom-body-2);
   }
 }
 
 .text--body-3 {
   font-family: var(--font-family-body);
-  font-size: clamp(
-    var(--font-size-handheld-body-3),
-    0.6932rem + 0.2841vw,
-    var(--font-size-body-3)
-  );
+  font-size: var(--font-size-handheld-body-3);
   line-height: var(--line-height-body-3);
-  margin-bottom: var(--margin-bottom-body-3);
+  margin-bottom: var(--margin-bottom-handheld-body-3);
 
   &:last-of-type:last-child {
     margin-bottom: 0;
+  }
+
+  @media (--min-breakpoint-sm) {
+    font-size: var(--font-size-body-3);
+    margin-bottom: var(--margin-bottom-body-3);
+  }
+}
+
+/* -------------------------------------------- */
+/* First-child guard (avoid extra top spacing)  */
+/* -------------------------------------------- */
+
+.text--h1:first-child,
+.text--h2:first-child,
+.text--h3:first-child,
+.text--h4:first-child,
+.text--h5:first-child,
+.text--h6:first-child,
+.text--h7:first-child {
+  margin-top: 0;
+}
+
+/* -------------------------------------------- */
+/* Adjacent heading tweak                      */
+/* (tighten space when heading follows heading) */
+/* -------------------------------------------- */
+
+.text--h1 + .text--h2,
+.text--h2 + .text--h3,
+.text--h3 + .text--h4,
+.text--h4 + .text--h5,
+.text--h5 + .text--h6,
+.text--h6 + .text--h7 {
+  margin-top: var(--rhythm-handheld-0_5);
+}
+
+@media (--min-breakpoint-sm) {
+  .text--h1 + .text--h2,
+  .text--h2 + .text--h3,
+  .text--h3 + .text--h4,
+  .text--h4 + .text--h5,
+  .text--h5 + .text--h6,
+  .text--h6 + .text--h7 {
+    margin-top: var(--rhythm-0_5);
   }
 }
 
@@ -192,7 +264,7 @@ span.text {
 }
 
 /* -------------------------------------------- */
-/* Weight override                                */
+/* Weight override                              */
 /* -------------------------------------------- */
 
 .text--weight-normal {
@@ -210,11 +282,9 @@ span.text {
 .text--center {
   text-align: center;
 }
-
 .text--left {
   text-align: left;
 }
-
 .text--right {
   text-align: right;
 }

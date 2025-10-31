@@ -37,12 +37,12 @@ const meta: Meta<TimerProps> = {
     appearance: {
       control: { type: "select" },
       options: [
-        "heading-1",
-        "heading-2",
-        "heading-3",
-        "heading-4",
-        "heading-5",
-        "heading-6",
+        "h1",
+        "h2",
+        "h3",
+        "h4",
+        "h5",
+        "h6",
         "body-1",
         "body-2",
         "body-3",

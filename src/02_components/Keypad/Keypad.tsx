@@ -19,11 +19,11 @@ export interface KeypadProps {
   interval?: number; // Interval in milliseconds for sequence updates
   isRunning?: boolean; // Determines if the sequence should start automatically
   appearance?:
-    | "heading-1"
-    | "heading-2"
-    | "heading-3"
-    | "heading-4"
-    | "heading-5"
+    | "h1"
+    | "h2"
+    | "h3"
+    | "h4"
+    | "h5"
     | "body-1"
     | "body-2"
     | "body-3";
@@ -45,7 +45,7 @@ const Keypad: React.FC<KeypadProps> & { Item: React.FC<KeypadItemProps> } = ({
   sequence,
   interval = 1000,
   isRunning = false,
-  appearance = "heading-3",
+  appearance = "h3",
 }) => {
   const [activeKey, setActiveKey] = useState<number | null>(null);
   const [isSequenceActive, setIsSequenceActive] = useState(false); // Track if sequence is running
@@ -63,7 +63,7 @@ const Keypad: React.FC<KeypadProps> & { Item: React.FC<KeypadItemProps> } = ({
             setTimeout(() => {
               currentIndex += 1;
               runSequence();
-            }, interval),
+            }, interval)
           );
         } else {
           setActiveKey(null); // Reset after sequence completes
@@ -85,7 +85,7 @@ const Keypad: React.FC<KeypadProps> & { Item: React.FC<KeypadItemProps> } = ({
 
   const handleCombinedClick = (
     childOnClick: (index: number) => void,
-    index: number,
+    index: number
   ) => {
     if (activeKey === null) {
       setActiveKey(index);
@@ -107,7 +107,7 @@ const Keypad: React.FC<KeypadProps> & { Item: React.FC<KeypadItemProps> } = ({
     >
       {isSequenceActive && <div className={styles.keypad__overlay} />}{" "}
       {/* Show overlay only when sequence is active */}
-      {React.Children.map(children, child => {
+      {React.Children.map(children, (child) => {
         if (React.isValidElement<KeypadItemProps>(child)) {
           const { onClick, index } = child.props;
           return React.cloneElement(child, {

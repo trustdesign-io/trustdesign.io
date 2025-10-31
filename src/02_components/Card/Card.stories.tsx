@@ -32,7 +32,7 @@ export function Default() {
     <div style={{ maxWidth: "350px" }}>
       <Card image="https://placehold.co/1280x720/0077cc/white?text=IMAGE&font=oswald">
         <Card.Body>
-          <Text tag="h3" appearance="heading-7">
+          <Text tag="h3" appearance="h7">
             Title
           </Text>
           <Text appearance="body-2">
@@ -54,7 +54,7 @@ export function Clickable() {
     <div style={{ maxWidth: "350px" }}>
       <Card>
         <Card.Body>
-          <Text tag="h3" appearance="heading-7">
+          <Text tag="h3" appearance="h7">
             Title
           </Text>
           <Text appearance="body-2">
@@ -76,7 +76,7 @@ export function ColoredHeader() {
     <div style={{ maxWidth: "350px" }}>
       <Card>
         <Card.Header headerBackgroundColor="blue">
-          <Text tag="h3" appearance="heading-7">
+          <Text tag="h3" appearance="h7">
             Title
           </Text>
         </Card.Header>
