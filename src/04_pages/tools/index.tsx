@@ -51,34 +51,6 @@ const Tools: React.FC = () => {
                   entirely in your browser.
                 </Text>
 
-                <Layout topGutter="xl" bottomGutter="xl">
-                  <Text tag="h2" appearance="h6">
-                    Installation
-                  </Text>
-                  <Text appearance="body-1">
-                    Once you have downloaded the zip file, install with the
-                    followinfg steps:
-                  </Text>
-                  <Layout topGutter="xl" bottomGutter="xl">
-                    <List tag="ol" appearance="body-1">
-                      <li>Uppack the zip file</li>
-                      <li>
-                        Go to <em>chrome://extensions/</em> in your Chrome web
-                        browser
-                      </li>
-                      <li>
-                        Toggle <em>Developer mode</em> on
-                      </li>
-                      <li>
-                        Press <em>Load unpacked extension</em> to select the
-                        upacked zip file
-                      </li>
-                      <li>
-                        You can now find the extension in the toolbar of Chrome
-                      </li>
-                    </List>
-                  </Layout>
-                </Layout>
                 {/* <Text appearance="body-2">
                   Coming soon: the <strong>Trust Design Audit</strong>, an
                   addition to the Toolkit that evaluates websites for
@@ -87,16 +59,36 @@ const Tools: React.FC = () => {
               </Layout>
             </Layout.Column>
             <Layout.Column>
-              <Layout topGutter="xl">
-                <Text tag="h2" appearance="h6">
-                  Download
-                </Text>
-                <Text appearance="body-2">
-                  <Link href="/downloads/trust-design-toolkit-v1.1.4.zip">
-                    Trust Design Toolkit v1.1.4 (zip)
-                  </Link>
-                </Text>
-              </Layout>
+              <Text tag="h2" appearance="h6">
+                Download
+              </Text>
+              <Text appearance="body-2">
+                <Link href="/downloads/trust-design-toolkit-v1.1.4.zip">
+                  Trust Design Toolkit v1.1.4 (zip)
+                </Link>
+              </Text>
+              <Text tag="h3" appearance="h7">
+                Installation
+              </Text>
+              <Text appearance="body-2">
+                Once you have downloaded the zip file, install with the
+                followinfg steps:
+              </Text>
+
+              <List tag="ol" appearance="body-2">
+                <li>Uppack the zip file</li>
+                <li>
+                  Go to <em>chrome://extensions/</em> in your Chrome web browser
+                </li>
+                <li>
+                  Toggle <em>Developer mode</em> on
+                </li>
+                <li>
+                  Press <em>Load unpacked extension</em> to select the upacked
+                  zip file
+                </li>
+                <li>You can now find the extension in the toolbar of Chrome</li>
+              </List>
             </Layout.Column>
           </Layout>
         </Layout>
