@@ -334,15 +334,15 @@
 }
 
 .layout--gap-md {
-  gap: var(--size-6);
-}
-
-.layout--gap-lg {
   gap: var(--size-8);
 }
 
+.layout--gap-lg {
+  gap: var(--size-12);
+}
+
 .layout--gap-xl {
-  gap: var(--size-10);
+  gap: var(--size-20);
 }
 
 /* top-gutter -------------------------------*/

@@ -28,7 +28,7 @@ export interface PageSectionProps {
     | "center"
     | "cover";
   children: React.ReactNode;
-  screen?: "half" | "full" | "fixedfull";
+  screen?: "half" | "full" | "content";
   padding?: "sm" | "md" | "lg";
   tag?: "div" | "section";
 }
@@ -58,7 +58,7 @@ function PageSection({
       data-component="PageSection"
       className={clsx(
         styles["page-section"],
-        screen && styles[`page-section--${screen}screen`],
+        screen && styles[`page-section--${screen}`],
         padding && styles[`page-section--padding-${padding}`],
         backgroundImagePosition &&
           styles[`page-section-backgroundPosition--${backgroundImagePosition}`]

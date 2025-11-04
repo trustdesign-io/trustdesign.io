@@ -12,51 +12,51 @@ const Tools: React.FC = () => {
   return (
     <Layout wrapper>
       <Header />
-      <PageSection screen="half">
+      <PageSection screen="content">
         <Layout container>
-          <Layout grid="70_30" stack="md" gap="xl">
+          <Layout bottomGutter="xl">
+            <Text tag="h1" appearance="h4">
+              Tools
+            </Text>
+          </Layout>
+          <Layout grid="70_30" stack="md" gap="lg">
             <Layout.Column>
-              <Layout bottomGutter="xl">
-                <Text tag="h1" appearance="h4">
-                  Tools
-                </Text>
-              </Layout>
-              <Layout bottomGutter="xl">
-                <Text appearance="h6">
-                  We don’t just study trust — we build with it.
-                </Text>
-                <Text appearance="body-1">
-                  Our tools are made to help designers, developers, and
-                  researchers explore how trust shows up in the smallest details
-                  of digital experience.
-                </Text>
-                <Text appearance="body-1">
-                  The current <em>Trust Design Toolkit</em> is a free Chrome
-                  extension that brings two powerful tools together:
-                </Text>
-                <Layout topGutter="xl" bottomGutter="xl">
-                  <List appearance="body-1">
-                    <li>
-                      <strong>Design System Inspector</strong> — visualizes
-                      component patterns on any webpage.
-                    </li>
-                    <li>
-                      <strong>Copy Designer</strong> — lets you edit and export
-                      live website copy as a deck.
-                    </li>
-                  </List>
-                </Layout>
-                <Text appearance="body-1">
-                  Both are built to be fast, minimal, and privacy-safe — running
-                  entirely in your browser.
-                </Text>
+              <Text appearance="h7">
+                We don’t just study trust — we build with it.
+              </Text>
+              <Text appearance="body-2">
+                Our tools are made to help designers, developers, and
+                researchers explore how trust shows up in the smallest details
+                of digital experience.
+              </Text>
+              <Text appearance="body-2">
+                The current <em>Trust Design Toolkit</em> is a free Chrome
+                extension that brings two powerful tools together:
+              </Text>
 
-                {/* <Text appearance="body-2">
-                  Coming soon: the <strong>Trust Design Audit</strong>, an
-                  addition to the Toolkit that evaluates websites for
-                  trustworthiness and transparency.
-                </Text> */}
-              </Layout>
+              <Text tag="h2" appearance="h7">
+                Design System Inspector (Free)
+              </Text>
+
+              <Text appearance="body-2">
+                Visualizes component patterns on any webpage.
+              </Text>
+
+              <Text tag="h2" appearance="h7">
+                Copy Designer (Free)
+              </Text>
+
+              <Text appearance="body-2">
+                Lets you edit and export live website copy as a deck.
+              </Text>
+
+              <Text tag="h3" appearance="h7">
+                Trust Design Audit (Donation)
+              </Text>
+
+              <Text appearance="body-2">
+                Lorum ipsum dolor sit etiwt wt emet..
+              </Text>
             </Layout.Column>
             <Layout.Column>
               <Text tag="h2" appearance="h6">
@@ -72,11 +72,11 @@ const Tools: React.FC = () => {
               </Text>
               <Text appearance="body-2">
                 Once you have downloaded the zip file, install with the
-                followinfg steps:
+                following steps:
               </Text>
 
               <List tag="ol" appearance="body-2">
-                <li>Uppack the zip file</li>
+                <li>Unpack the zip file</li>
                 <li>
                   Go to <em>chrome://extensions/</em> in your Chrome web browser
                 </li>
