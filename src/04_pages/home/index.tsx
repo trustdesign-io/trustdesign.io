@@ -19,6 +19,28 @@ const Home: React.FC = () => {
           <Layout grid="70_30" stack="md">
             <Layout.Column>
               <Text appearance="h1">
+                Trust Design Audit: what it does and why it matters
+              </Text>
+              <Text appearance="body-1">
+                Trust is the invisible architecture of digital products. People
+                decide to read, buy, sign up, or walk away based on whether an
+                interface feels competent, honest, and respectful.
+              </Text>
+              <Layout topGutter="lg">
+                <ButtonGroup>
+                  <Button
+                    url="/trust-design-audit-what-it-does-and-why-it-matters"
+                    appearance="body-1"
+                  >
+                    Read this article
+                  </Button>
+                  <Button url="/articles" appearance="body-1" tier="secondary">
+                    More articles
+                  </Button>
+                </ButtonGroup>
+              </Layout>
+
+              {/* <Text appearance="h1">
                 Designing Trust for emerging technology
               </Text>
               <Text appearance="body-1">
@@ -39,7 +61,7 @@ const Home: React.FC = () => {
                     Read this article
                   </Button>
                 </ButtonGroup>
-              </Layout>
+              </Layout> */}
             </Layout.Column>
             <Layout.Column>&nbsp;</Layout.Column>
           </Layout>

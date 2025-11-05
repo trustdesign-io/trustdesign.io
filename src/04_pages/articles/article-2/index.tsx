@@ -116,7 +116,7 @@ const Article_2: React.FC = () => {
                   </Text>
 
                   <Text tag="h2" appearance="h5">
-                    What it is—and isn’t
+                    What it is - and isn’t
                   </Text>
                   <Text appearance="body-2">
                     TDA is a fast heuristic audit. It helps you spot obvious
@@ -184,7 +184,8 @@ const Article_2: React.FC = () => {
                     Download the{" "}
                     <Link url="/tools" target="_self">
                       Trust Design Toolkit
-                    </Link>
+                    </Link>{" "}
+                    .
                   </Text>
 
                   <Layout topGutter="xl">
