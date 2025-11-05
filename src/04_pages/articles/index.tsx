@@ -23,6 +23,12 @@ const Articles: React.FC = () => {
             <Layout.Column>
               <List marker={false} margin="md" appearance="body-1">
                 <li>
+                  <Link to="/trust-design-audit-what-it-does-and-why-it-matters">
+                    Trust Design Audit: what it does and why it matters
+                  </Link>
+                  <Text appearance="body-3">Published in December 2025.</Text>
+                </li>
+                <li>
                   <Link to="/designing-trust-for-emerging-technology">
                     Designing Trust for emerging technology
                   </Link>

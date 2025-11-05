@@ -61,7 +61,12 @@ function Link({
         title: title,
         ...(target && { target: target }),
       })}
-      {...(href && { href: href })}
+      {...(href && {
+        ...ref,
+        href: href,
+        title: title,
+        ...(target && { target: target }),
+      })}
       data-component="Link"
       className={clsx(
         styles.link,

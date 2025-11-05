@@ -15,12 +15,14 @@ const Article_1: React.FC = () => {
   return (
     <Layout wrapper>
       <Header />
-      <PageSection screen="full">
+      <PageSection screen="content">
         <Layout container>
           <article>
             <Layout grid="70_30" stack="md">
               <Layout.Column>
-                <Text tag="h1">Designing Trust for emerging technology</Text>
+                <Text tag="h1" appearance="h2">
+                  Designing Trust for emerging technology
+                </Text>
 
                 <Layout bottomGutter="xl">
                   <Text appearance="body-2">
@@ -28,10 +30,10 @@ const Article_1: React.FC = () => {
                   </Text>
                 </Layout>
                 <Layout topGutter="xl" bottomGutter="xl">
-                  <Text tag="h2" appearance="h4">
+                  <Text tag="h2" appearance="h5">
                     The Fragility of Trust
                   </Text>
-                  <Text appearance="body-1">
+                  <Text appearance="body-2">
                     Trust is one of our oldest survival instincts - the quiet
                     glue that made civilization possible. It’s the reason
                     language, trade, and cooperation could emerge at all. And
@@ -53,11 +55,11 @@ const Article_1: React.FC = () => {
                     belonging.
                   </Text>
 
-                  <Text tag="h2" appearance="h4">
+                  <Text tag="h2" appearance="h5">
                     If Trust Can Be Eroded by Design, It Can Be Restored by
                     Design
                   </Text>
-                  <Text appearance="body-1">
+                  <Text appearance="body-2">
                     If design has the power to deceive, it also has the power to
                     restore. Every interaction between a person and a system is
                     built on design choices - what to reveal, what to conceal,
@@ -74,10 +76,10 @@ const Article_1: React.FC = () => {
                     From assuming trust to designing for it.
                   </Text>
 
-                  <Text tag="h2" appearance="h4">
+                  <Text tag="h2" appearance="h5">
                     Making the Invisible Visible
                   </Text>
-                  <Text appearance="body-1">
+                  <Text appearance="body-2">
                     That is the work at hand. The Trust Design Toolkit is our
                     first experiment in making the invisible architecture of
                     trust visible. It allows us to inspect how design systems,
@@ -94,11 +96,11 @@ const Article_1: React.FC = () => {
                     way to build systems that earn belief rather than borrow it.
                   </Text>
 
-                  <Text tag="h2" appearance="h4">
+                  <Text tag="h2" appearance="h5">
                     Toward Technology That Deserves Our Trust
                   </Text>
 
-                  <Text appearance="body-1">
+                  <Text appearance="body-2">
                     Human progress has always depended on trust - between
                     people, communities, and now, increasingly, between humans
                     and machines. As our tools become more autonomous and

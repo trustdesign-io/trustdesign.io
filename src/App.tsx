@@ -15,6 +15,8 @@ import Services from "./04_pages/services/index";
 import Tools from "./04_pages/tools/index";
 
 import Article_1 from "./04_pages/articles/article-1";
+import Article_2 from "./04_pages/articles/article-2";
+
 import { SchemeProvider } from "./02_components/SchemeProvider";
 
 const App: React.FC = () => {
@@ -33,6 +35,10 @@ const App: React.FC = () => {
           <Route
             path="/designing-trust-for-emerging-technology"
             element={<Article_1 />}
+          />
+          <Route
+            path="/trust-design-audit-what-it-does-and-why-it-matters"
+            element={<Article_2 />}
           />
         </Routes>
       </Router>
