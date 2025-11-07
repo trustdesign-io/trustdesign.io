@@ -13,7 +13,7 @@
   position: relative;
   border: 1px solid var(--color-steel-66);
   border-radius: var(--radius-sm);
-  background: var(--brand-4);
+  background: var(--color-ink);
 }
 
 .card__header {
