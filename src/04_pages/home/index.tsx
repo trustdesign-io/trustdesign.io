@@ -18,7 +18,7 @@ const Home: React.FC = () => {
           </div>
           <Layout grid="70_30" stack="md">
             <Layout.Column>
-              <Text appearance="h1">
+              <Text tag="h2" appearance="h2">
                 Trust Design Audit: what it does and why it matters
               </Text>
               <Text appearance="body-1">

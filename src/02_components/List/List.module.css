@@ -70,6 +70,7 @@
   font-size: var(--font-size-handheld-body-1);
   line-height: var(--line-height-body-1);
   margin-bottom: var(--margin-bottom-handheld-body-1);
+  font-weight: 500;
 
   &:last-of-type:last-child {
     margin-bottom: 0;
@@ -86,6 +87,7 @@
   font-size: var(--font-size-handheld-body-2);
   line-height: var(--line-height-body-2);
   margin-bottom: var(--margin-bottom-handheld-body-2);
+  font-weight: 500;
 
   &:last-of-type:last-child {
     margin-bottom: 0;
@@ -102,6 +104,7 @@
   font-size: var(--font-size-handheld-body-3);
   line-height: var(--line-height-body-3);
   margin-bottom: var(--margin-bottom-handheld-body-3);
+  font-weight: 500;
 
   &:last-of-type:last-child {
     margin-bottom: 0;

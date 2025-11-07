@@ -11,20 +11,19 @@
   justify-content: space-between;
   overflow: hidden;
   position: relative;
-  border: 1px solid var(--brand-31);
+  border: 1px solid var(--color-steel-66);
   border-radius: var(--radius-sm);
   background: var(--brand-4);
-  height: 100%;
 }
 
 .card__header {
   position: relative;
   overflow: hidden;
   background: transparent;
-  border-bottom: 1px solid var(--brand-33);
+  border-bottom: 1px solid var(--color-steel-66);
 
   &.card__header--padded {
-    padding: var(--size-6);
+    padding: var(--size-4) var(--size-6);
   }
 
   .card-header__content {
@@ -34,7 +33,7 @@
 }
 
 .card__body {
-  padding: var(--size-6) var(--size-6) 0 var(--size-6);
+  padding: var(--size-6);
 }
 
 .card__footer {

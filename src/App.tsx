@@ -13,6 +13,8 @@ import CaseStudies from "./04_pages/case-studies/index";
 import Articles from "./04_pages/articles/index";
 import Services from "./04_pages/services/index";
 import Tools from "./04_pages/tools/index";
+import ThankYou from "./04_pages/tools/thank-you.tsx";
+import Privacy from "./04_pages/privacy/index";
 
 import Article_1 from "./04_pages/articles/article-1";
 import Article_2 from "./04_pages/articles/article-2";
@@ -30,6 +32,8 @@ const App: React.FC = () => {
           <Route path="/case-studies" element={<CaseStudies />} />
           <Route path="/articles" element={<Articles />} />
           <Route path="/tools" element={<Tools />} />
+          <Route path="/tools/thank-you" element={<ThankYou />} />
+          <Route path="/privacy" element={<Privacy />} />
 
           {/* -- Article routes -- */}
           <Route

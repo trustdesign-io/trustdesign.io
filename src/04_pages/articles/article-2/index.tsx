@@ -105,9 +105,14 @@ const Article_2: React.FC = () => {
                     detectors (selectors, text heuristics, structure). For
                     example, consent modules that present accept and decline
                     with comparable visual weight score higher than accept-only
-                    banners. <strong>Normalization:</strong> raw matches are
-                    scaled to 0–100 per category, with penalties applied for
-                    misleading or coercive patterns.{" "}
+                    banners.
+                  </Text>
+                  <Text appearance="body-2">
+                    <strong>Normalization:</strong> raw matches are scaled to
+                    0–100 per category, with penalties applied for misleading or
+                    coercive patterns.
+                  </Text>
+                  <Text appearance="body-2">
                     <strong>Aggregation:</strong> the overall Trust Score is a
                     weighted mean of category scores (extra weight on
                     Transparency, Consent, and Honesty in Influence). The output

@@ -89,6 +89,7 @@
   font-family: var(--font-family-body);
   font-size: var(--font-size-handheld-body-1);
   line-height: var(--line-height-body-1);
+  font-weight: 500;
 
   @media (--min-breakpoint-sm) {
     font-size: var(--font-size-body-1);
@@ -99,6 +100,7 @@
   font-family: var(--font-family-body);
   font-size: var(--font-size-handheld-body-2);
   line-height: var(--line-height-body-2);
+  font-weight: 500;
 
   @media (--min-breakpoint-sm) {
     font-size: var(--font-size-body-2);
@@ -109,6 +111,7 @@
   font-family: var(--font-family-body);
   font-size: var(--font-size-handheld-body-3);
   line-height: var(--line-height-body-3);
+  font-weight: 500;
 
   @media (--min-breakpoint-sm) {
     font-size: var(--font-size-body-3);

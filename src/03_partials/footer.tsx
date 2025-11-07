@@ -48,9 +48,10 @@ const Footer: React.FC = () => {
         </Layout>
       </PageFooter>
       <SiteFooter>
-        <Layout container>
-          <p>&copy; Trust Design Limited 2025</p>
-        </Layout>
+        <Text>
+          <Link to="/privacy">Privacy</Link>
+        </Text>
+        <Text>&copy; Trust Design Limited 2025</Text>
       </SiteFooter>
     </>
   );

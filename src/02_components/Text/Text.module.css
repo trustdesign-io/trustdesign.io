@@ -45,7 +45,7 @@ span.text {
 .text--h1 {
   font-size: var(--font-size-handheld-h1);
   font-family: var(--font-family-heading);
-  font-weight: bold;
+  font-weight: 700;
   line-height: var(--line-height-h1);
 
   margin-top: 0;
@@ -62,7 +62,7 @@ span.text {
 .text--h2 {
   font-size: var(--font-size-handheld-h2);
   font-family: var(--font-family-heading);
-  font-weight: bold;
+  font-weight: 700;
   line-height: var(--line-height-h2);
 
   margin-top: var(--margin-top-handheld-h2, var(--rhythm-handheld));
@@ -79,7 +79,7 @@ span.text {
 .text--h3 {
   font-size: var(--font-size-handheld-h3);
   font-family: var(--font-family-heading);
-  font-weight: bold;
+  font-weight: 700;
   line-height: var(--line-height-h3);
 
   margin-top: var(--margin-top-handheld-h3, var(--rhythm-handheld));
@@ -96,7 +96,7 @@ span.text {
 .text--h4 {
   font-size: var(--font-size-handheld-h4);
   font-family: var(--font-family-heading);
-  font-weight: bold;
+  font-weight: 700;
   line-height: var(--line-height-h4);
 
   margin-top: var(--margin-top-handheld-h4, var(--rhythm-handheld));
@@ -113,7 +113,7 @@ span.text {
 .text--h5 {
   font-size: var(--font-size-handheld-h5);
   font-family: var(--font-family-heading);
-  font-weight: bold;
+  font-weight: 700;
   line-height: var(--line-height-h5);
 
   margin-top: var(--margin-top-handheld-h5, var(--rhythm-handheld));
@@ -130,7 +130,7 @@ span.text {
 .text--h6 {
   font-size: var(--font-size-handheld-h6);
   font-family: var(--font-family-heading);
-  font-weight: bold;
+  font-weight: 700;
   line-height: var(--line-height-h6);
 
   margin-top: var(--margin-top-handheld-h6, var(--rhythm-handheld));
@@ -147,7 +147,7 @@ span.text {
 .text--h7 {
   font-size: var(--font-size-handheld-h7);
   font-family: var(--font-family-heading);
-  font-weight: bold;
+  font-weight: 700;
   line-height: var(--line-height-h7);
 
   margin-top: var(--margin-top-handheld-h7, var(--rhythm-handheld));
@@ -169,6 +169,7 @@ span.text {
   font-size: var(--font-size-handheld-body-1);
   line-height: var(--line-height-body-1);
   margin-bottom: var(--margin-bottom-handheld-body-1);
+  font-weight: 500;
 
   &:last-of-type:last-child {
     margin-bottom: 0;
@@ -185,6 +186,7 @@ span.text {
   font-size: var(--font-size-handheld-body-2);
   line-height: var(--line-height-body-2);
   margin-bottom: var(--margin-bottom-handheld-body-2);
+  font-weight: 500;
 
   &:last-of-type:last-child {
     margin-bottom: 0;
@@ -201,6 +203,7 @@ span.text {
   font-size: var(--font-size-handheld-body-3);
   line-height: var(--line-height-body-3);
   margin-bottom: var(--margin-bottom-handheld-body-3);
+  font-weight: 500;
 
   &:last-of-type:last-child {
     margin-bottom: 0;

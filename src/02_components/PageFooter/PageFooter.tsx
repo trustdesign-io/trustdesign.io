@@ -28,7 +28,7 @@ export interface PageFooterProps {
 function PageFooter({ children }: PageFooterProps) {
   return (
     <div data-component="PageFooter" className={clsx(styles["page-footer"])}>
-      {children}
+      <div className={clsx(styles["page-footer-inner"])}>{children}</div>
     </div>
   );
 }

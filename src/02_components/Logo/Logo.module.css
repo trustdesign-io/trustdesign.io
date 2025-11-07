@@ -18,7 +18,7 @@
   span,
   h1 {
     font-size: 30px;
-    font-weight: 400;
+    font-weight: 450;
 
     &:nth-child(1) {
       color: var(--color-steel);

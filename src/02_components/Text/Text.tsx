@@ -187,7 +187,8 @@ function Text({
   };
 
   // Apply preventOrphanWords only for non-h1 appearances
-  const content = preventOrphanWords(children);
+  const content =
+    derivedAppearance !== "h1" ? preventOrphanWords(children) : children;
 
   return createElement(
     tag,
