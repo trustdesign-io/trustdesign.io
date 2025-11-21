@@ -28,14 +28,14 @@ const Footer: React.FC = () => {
               <span className="visually-hidden">Bluesky</span>
               <Icon name="bluesky-logo" />
             </Link>
-            <Link
+            {/* <Link
               to="https://medium.com/@trustdesignio"
               title="Find us on Medium"
               target="_blank"
             >
               <span className="visually-hidden">Medium</span>
               <Icon name="medium-logo" />
-            </Link>
+            </Link> */}
             <Link
               to="https://www.linkedin.com/in/trustdesignio"
               title="Find us on LinkedIn"
@@ -51,7 +51,7 @@ const Footer: React.FC = () => {
         <Text>
           <Link to="/privacy">Privacy</Link>
         </Text>
-        <Text>&copy; Trust Design Limited 2025</Text>
+        <Text>Trust Design Est. 2025</Text>
       </SiteFooter>
     </>
   );

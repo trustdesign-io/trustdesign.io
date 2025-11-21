@@ -1,4 +1,5 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 
 import { PageSection, Layout, Text, Button, ButtonGroup } from "../../";
 
@@ -7,7 +8,149 @@ import Footer from "../../03_partials/footer";
 
 /* -- Content -- */
 
+type ArticlePromo = {
+  id: number;
+  slug: string;
+  title: string;
+  blurb: string;
+  monthYear: string;
+};
+
+const isReleased = (monthYear: string): boolean => {
+  const [month, year] = monthYear.split(" ");
+  const release = new Date(`${month} 1, ${year}`);
+  const now = new Date();
+  return now >= release;
+};
+
+const articlePromos: ArticlePromo[] = [
+  {
+    id: 14,
+    slug: "/article-14",
+    title: "The Future of Trust Design",
+    blurb:
+      "Trust Design is moving from niche topic to standard practice. This article looks ahead at how regulation, AI, and shifting public expectations will make trustworthiness a basic requirement for any serious product, not a branding claim or marketing message.",
+    monthYear: "December 2026",
+  },
+  {
+    id: 13,
+    slug: "/article-13",
+    title: "The Trust Design Toolkit Explained",
+    blurb:
+      "The Trust Design Toolkit turns fuzzy worries about trust into structured audits, screenshots, and findings that teams can act on. We explain what each tool does, how they work together, and how to use them to improve a real product rather than just a slide deck.",
+    monthYear: "November 2026",
+  },
+  {
+    id: 12,
+    slug: "/article-12",
+    title: "Trust by Default: Product Design Principles",
+    blurb:
+      "Defaults quietly decide what happens to people who never change a setting. This piece introduces Trust by Default as a practical set of design principles for privacy, data use, consent, and safety, and shows how to use them when your product is under real commercial pressure.",
+    monthYear: "October 2026",
+  },
+  {
+    id: 11,
+    slug: "/article-11",
+    title: "Designing for Safety and Consent",
+    blurb:
+      "Consent and safety often show up as legal or edge-case concerns, but they are central to how people experience your product. This article looks at patterns for reversible choices, clear warnings, and recovery paths that reduce harm without turning every flow into a legal document.",
+    monthYear: "September 2026",
+  },
+  {
+    id: 10,
+    slug: "/article-10",
+    title: "From UX to Policy",
+    blurb:
+      "Interfaces now implement policy in practice. We explore how emerging rules on dark patterns, consent, and transparency intersect with design systems, and how Trust Design can help teams ship flows that are both compliant and understandable to the people who have to use them.",
+    monthYear: "August 2026",
+  },
+  {
+    id: 9,
+    slug: "/article-9",
+    title: "Forensic UX Case Study: Scam UI Dissection",
+    blurb:
+      "Scam UIs compress the worst ideas in interface design into a few screens. By dissecting a common ‘account locked’ fraud flow, this article shows which visual and behavioural patterns are reused in scams and how legitimate products can avoid accidentally looking or feeling the same.",
+    monthYear: "July 2026",
+  },
+  {
+    id: 8,
+    slug: "/article-8",
+    title: "The Ethics of Persuasion",
+    blurb:
+      "Every product nudges behaviour. The question is whether that influence aligns with the person using it. We unpack where persuasive design becomes manipulative, offer practical tests teams can run on their own flows, and discuss how to handle commercial targets without crossing the line.",
+    monthYear: "June 2026",
+  },
+  {
+    id: 7,
+    slug: "/article-7",
+    title: "Auditing for Trustworthiness",
+    blurb:
+      "Trust is usually talked about in general terms, which makes it hard to act on. This article explains how to run a trustworthiness audit across transparency, consent, language, and safety, and how to turn the results into a concrete backlog of improvements instead of vague principles.",
+    monthYear: "May 2026",
+  },
+  {
+    id: 6,
+    slug: "/article-6",
+    title: "Trust Signals in AI Interfaces",
+    blurb:
+      "AI systems are probabilistic and can be confidently wrong. We look at which trust signals matter most in AI interfaces—such as expectation setting, evidence, uncertainty, and refusal—and how to design them so that people can decide when to rely on an output and when to double-check.",
+    monthYear: "April 2026",
+  },
+  {
+    id: 5,
+    slug: "/article-5",
+    title: "Designing Transparency",
+    blurb:
+      "Transparency is not about dumping more text into a privacy policy. It is about helping people understand what is happening to them at the moment they act. This article breaks down where transparency matters most in a product and offers patterns for explaining decisions in plain language.",
+    monthYear: "March 2026",
+  },
+  {
+    id: 4,
+    slug: "/article-4",
+    title: "A Brief History of Manipulative Design",
+    blurb:
+      "Manipulative design did not start with a single bad actor. It emerged from optimisation culture, growth targets, and experiments that slowly pushed interfaces toward pressure and obscurity. We trace that history and outline what needs to change if we want a different pattern language.",
+    monthYear: "February 2026",
+  },
+  {
+    id: 3,
+    slug: "/article-3",
+    title: "What Is Trust Design?",
+    blurb:
+      "Trust Design is our working name for a discipline that treats trust as something you can deliberately shape in products. This piece defines the term, places it in relation to UX, ethics, and security, and argues for why teams need a more precise language for these decisions.",
+    monthYear: "January 2026",
+  },
+  {
+    id: 2,
+    slug: "/trust-design-audit-what-it-does-and-why-it-matters",
+    title: "Trust Design Audit: what it does and why it matters",
+    blurb:
+      "The Trust Design Audit is a structured way to examine how a product communicates, asks for consent, and handles risk. We describe the audit model, what it measures, and how teams can use the findings to have clearer conversations with design, product, and leadership.",
+    monthYear: "December 2025",
+  },
+  {
+    id: 1,
+    slug: "/designing-trust-for-emerging-technology",
+    title: "Designing Trust for emerging technology",
+    blurb:
+      "As new technologies move from prototypes to infrastructure, the question is no longer just whether they work, but whether people can safely rely on them. This introductory article looks at how trust considerations change as products become part of everyday, non-expert life.",
+    monthYear: "November 2025",
+  },
+];
+
 const Home: React.FC = () => {
+  const location = useLocation();
+  const params = new URLSearchParams(location.search);
+  const articleOverride = params.get("article");
+
+  const releasedArticles = articlePromos.filter((article) =>
+    isReleased(article.monthYear)
+  );
+
+  const latestArticle = releasedArticles[0];
+  const overriddenArticle =
+    articleOverride &&
+    articlePromos.find((a) => String(a.id) === articleOverride);
   return (
     <Layout wrapper className="homepage">
       <Header />
@@ -18,50 +161,51 @@ const Home: React.FC = () => {
           </div>
           <Layout grid="70_30" stack="md">
             <Layout.Column>
-              <Text tag="h2" appearance="h2">
-                Trust Design Audit: what it does and why it matters
-              </Text>
-              <Text appearance="body-1">
-                Trust is the invisible architecture of digital products. People
-                decide to read, buy, sign up, or walk away based on whether an
-                interface feels competent, honest, and respectful.
-              </Text>
-              <Layout topGutter="lg">
-                <ButtonGroup>
-                  <Button
-                    url="/trust-design-audit-what-it-does-and-why-it-matters"
-                    appearance="body-1"
-                  >
-                    Read this article
-                  </Button>
-                  <Button url="/articles" appearance="body-1" tier="secondary">
-                    More articles
-                  </Button>
-                </ButtonGroup>
-              </Layout>
+              {overriddenArticle && (
+                <>
+                  <Text tag="h2" appearance="h2">
+                    {overriddenArticle.title}
+                  </Text>
+                  <Text appearance="body-1">{overriddenArticle.blurb}</Text>
+                  <Layout topGutter="lg">
+                    <ButtonGroup>
+                      <Button url={overriddenArticle.slug} appearance="body-1">
+                        Read this article
+                      </Button>
+                      <Button
+                        url="/articles"
+                        appearance="body-1"
+                        tier="secondary"
+                      >
+                        More articles
+                      </Button>
+                    </ButtonGroup>
+                  </Layout>
+                </>
+              )}
 
-              {/* <Text appearance="h1">
-                Designing Trust for emerging technology
-              </Text>
-              <Text appearance="body-1">
-                Trust is one of our oldest survival instincts - the quiet glue
-                that made civilization possible.
-              </Text>
-              <Text appearance="body-1">
-                The same paradigm from which cooperation emerged now governs our
-                relationship with technology, and we must design technology that
-                deserves the trust it depends on.
-              </Text>
-              <Layout topGutter="lg">
-                <ButtonGroup>
-                  <Button
-                    url="/designing-trust-for-emerging-technology"
-                    appearance="body-1"
-                  >
-                    Read this article
-                  </Button>
-                </ButtonGroup>
-              </Layout> */}
+              {!overriddenArticle && latestArticle && (
+                <>
+                  <Text tag="h2" appearance="h2">
+                    {latestArticle.title}
+                  </Text>
+                  <Text appearance="body-1">{latestArticle.blurb}</Text>
+                  <Layout topGutter="lg">
+                    <ButtonGroup>
+                      <Button url={latestArticle.slug} appearance="body-1">
+                        Read this article
+                      </Button>
+                      <Button
+                        url="/articles"
+                        appearance="body-1"
+                        tier="secondary"
+                      >
+                        More articles
+                      </Button>
+                    </ButtonGroup>
+                  </Layout>
+                </>
+              )}
             </Layout.Column>
             <Layout.Column>&nbsp;</Layout.Column>
           </Layout>
@@ -88,6 +232,7 @@ const Home: React.FC = () => {
           </Layout>
         </Layout>
       </PageSection>
+
       <Footer />
     </Layout>
   );

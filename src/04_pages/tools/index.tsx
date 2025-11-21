@@ -4,7 +4,6 @@ import {
   PageSection,
   Layout,
   Text,
-  List,
   Link,
   ButtonGroup,
   Button,
@@ -62,8 +61,8 @@ const Tools: React.FC = () => {
                       <Text appearance="body-3">
                         Instantly maps design system components on any webpage.
                         Highlights visual patterns, custom elements, and usage
-                        consistency - helping you see how your system behaves in
-                        the wild.
+                        consistency - helping you and your stakeholders see the
+                        live value of your system.
                       </Text>
                     </Card.Body>
                   </Card>
@@ -78,9 +77,8 @@ const Tools: React.FC = () => {
                     <Card.Body>
                       <Text appearance="body-3">
                         Lets you edit live website copy directly in the browser
-                        and export changes as a formatted copy deck. Ideal for
-                        writers and UX teams refining tone, clarity, and
-                        alignment.
+                        and export changes as a copy deck. Ideal for writers and
+                        UX teams refining tone, clarity, and alignment.
                       </Text>
                     </Card.Body>
                   </Card>
@@ -96,55 +94,40 @@ const Tools: React.FC = () => {
                       <Text appearance="body-3">
                         Analyses any webpage across ten evidence-based trust
                         factors - from transparency and consent to honesty in
-                        influence - and generates an overall Trust Score with
-                        category insights. Learn more in our article{" "}
+                        influence - and generates an overall Trust Score.
+                      </Text>
+                      <Text appearance="body-3">
+                        Learn more in our article{" "}
                         <Link
                           href="/articles/trust-design-audit-what-it-does-and-why-it-matters"
                           target="_self"
                         >
-                          Trust Design Audit: what it does and why it matters
-                        </Link>{" "}
-                        .
+                          Trust Design Audit: what it does and why it matters.
+                        </Link>
                       </Text>
                     </Card.Body>
                   </Card>
                 </Layout>
               </Layout.Column>
               <Layout.Column>
-                <Text tag="h2" appearance="h6">
-                  Download
+                <Text tag="h2" appearance="h5">
+                  Trust Design Toolkit
                 </Text>
-                <Text appearance="body-2">
-                  <Link href="/downloads/trust-design-toolkit.zip">
-                    Trust Design Toolkit (zip)
-                  </Link>
-                </Text>
-                <Text tag="h3" appearance="h7">
+                <Text tag="h3" appearance="h6">
                   Installation
                 </Text>
                 <Text appearance="body-2">
-                  Once you have downloaded the zip file, install with the
-                  following steps:
+                  The TDT is available on the Chrome Web Store
                 </Text>
-
-                <List tag="ol" appearance="body-2">
-                  <li>Unpack the zip file</li>
-                  <li>
-                    Go to <em>chrome://extensions/</em> in your Chrome web
-                    browser
-                  </li>
-                  <li>
-                    Toggle <em>Developer mode</em> on
-                  </li>
-                  <li>
-                    Press <em>Load unpacked extension</em> to select the upacked
-                    zip file
-                  </li>
-                  <li>
-                    You can now find the extension in the toolbar of Chrome
-                  </li>
-                </List>
-                <Text tag="h2" appearance="h6">
+                <ButtonGroup>
+                  <Button
+                    url="https://chromewebstore.google.com/detail/trust-design-toolkit/gahjiebdckphinbnbnegehfephlpdafb"
+                    target="_blank"
+                  >
+                    Install for Chrome
+                  </Button>
+                </ButtonGroup>
+                <Text tag="h3" appearance="h6">
                   Premium license
                 </Text>
                 <Text appearance="body-2">
