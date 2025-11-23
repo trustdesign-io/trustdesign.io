@@ -1,5 +1,5 @@
 import React from "react";
-import { PageSection, Layout, Text, Link } from "../../../";
+import { PageSection, Layout, Text } from "../../../";
 import Header from "../../../03_partials/header";
 import Footer from "../../../03_partials/footer";
 

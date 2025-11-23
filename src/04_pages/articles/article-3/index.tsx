@@ -147,7 +147,7 @@ const Article_3: React.FC = () => {
                   </Text>
                   <Text appearance="body-2">
                     The{" "}
-                    <Link to="/trust-design-audit-what-it-does-and-why-it-matters">
+                    <Link url="/trust-design-audit-what-it-does-and-why-it-matters">
                       Trust Design Toolkit
                     </Link>{" "}
                     is one way of making this discipline concrete. The Design

@@ -1,6 +1,5 @@
-
 import React from "react";
-import { PageSection, Layout, Text, Link } from "../../../";
+import { PageSection, Layout, Text } from "../../../";
 import Header from "../../../03_partials/header";
 import Footer from "../../../03_partials/footer";
 
@@ -13,7 +12,6 @@ const Article_4: React.FC = () => {
           <article>
             <Layout grid="70_30" stack="md">
               <Layout.Column>
-
                 <Text tag="h1" appearance="h2">
                   A Brief History of Manipulative Design
                 </Text>
@@ -25,13 +23,22 @@ const Article_4: React.FC = () => {
                 </Layout>
 
                 <Layout topGutter="xl" bottomGutter="xl">
-                  <Text tag="h2" appearance="h5">Section Title</Text>
-                  <Text appearance="body-2">Full article text section. (Content abbreviated in this python output but would be replaced by final copy.)</Text>
+                  <Text tag="h2" appearance="h5">
+                    Section Title
+                  </Text>
+                  <Text appearance="body-2">
+                    Full article text section. (Content abbreviated in this
+                    python output but would be replaced by final copy.)
+                  </Text>
 
-                  <Text tag="h2" appearance="h5">Another Section</Text>
-                  <Text appearance="body-2">Full article text section. (Content abbreviated in this python output but would be replaced by final copy.)</Text>
+                  <Text tag="h2" appearance="h5">
+                    Another Section
+                  </Text>
+                  <Text appearance="body-2">
+                    Full article text section. (Content abbreviated in this
+                    python output but would be replaced by final copy.)
+                  </Text>
                 </Layout>
-
               </Layout.Column>
               <Layout.Column>&nbsp;</Layout.Column>
             </Layout>
