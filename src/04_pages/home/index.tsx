@@ -26,7 +26,7 @@ const isReleased = (monthYear: string): boolean => {
 const articlePromos: ArticlePromo[] = [
   {
     id: 14,
-    slug: "/article-14",
+    slug: "/the-future-of-trust-design",
     title: "The Future of Trust Design",
     blurb:
       "Trust Design is moving from niche topic to standard practice. This article looks ahead at how regulation, AI, and shifting public expectations will make trustworthiness a basic requirement for any serious product, not a branding claim or marketing message.",
@@ -34,7 +34,7 @@ const articlePromos: ArticlePromo[] = [
   },
   {
     id: 13,
-    slug: "/article-13",
+    slug: "/the-trust-design-toolkit-explained",
     title: "The Trust Design Toolkit Explained",
     blurb:
       "The Trust Design Toolkit turns fuzzy worries about trust into structured audits, screenshots, and findings that teams can act on. We explain what each tool does, how they work together, and how to use them to improve a real product rather than just a slide deck.",
@@ -42,7 +42,7 @@ const articlePromos: ArticlePromo[] = [
   },
   {
     id: 12,
-    slug: "/article-12",
+    slug: "/trust-by-default-product-design-principles",
     title: "Trust by Default: Product Design Principles",
     blurb:
       "Defaults quietly decide what happens to people who never change a setting. This piece introduces Trust by Default as a practical set of design principles for privacy, data use, consent, and safety, and shows how to use them when your product is under real commercial pressure.",
@@ -50,7 +50,7 @@ const articlePromos: ArticlePromo[] = [
   },
   {
     id: 11,
-    slug: "/article-11",
+    slug: "/designing-for-safety-and-consent",
     title: "Designing for Safety and Consent",
     blurb:
       "Consent and safety often show up as legal or edge-case concerns, but they are central to how people experience your product. This article looks at patterns for reversible choices, clear warnings, and recovery paths that reduce harm without turning every flow into a legal document.",
@@ -58,7 +58,7 @@ const articlePromos: ArticlePromo[] = [
   },
   {
     id: 10,
-    slug: "/article-10",
+    slug: "/from-ux-to-policy",
     title: "From UX to Policy",
     blurb:
       "Interfaces now implement policy in practice. We explore how emerging rules on dark patterns, consent, and transparency intersect with design systems, and how Trust Design can help teams ship flows that are both compliant and understandable to the people who have to use them.",
@@ -66,7 +66,7 @@ const articlePromos: ArticlePromo[] = [
   },
   {
     id: 9,
-    slug: "/article-9",
+    slug: "/forensic-ux-case-study-scam-ui-dissection",
     title: "Forensic UX Case Study: Scam UI Dissection",
     blurb:
       "Scam UIs compress the worst ideas in interface design into a few screens. By dissecting a common ‘account locked’ fraud flow, this article shows which visual and behavioural patterns are reused in scams and how legitimate products can avoid accidentally looking or feeling the same.",
@@ -74,7 +74,7 @@ const articlePromos: ArticlePromo[] = [
   },
   {
     id: 8,
-    slug: "/article-8",
+    slug: "/the-ethics-of-persuasion",
     title: "The Ethics of Persuasion",
     blurb:
       "Every product nudges behaviour. The question is whether that influence aligns with the person using it. We unpack where persuasive design becomes manipulative, offer practical tests teams can run on their own flows, and discuss how to handle commercial targets without crossing the line.",
@@ -82,15 +82,15 @@ const articlePromos: ArticlePromo[] = [
   },
   {
     id: 7,
-    slug: "/article-7",
-    title: "Auditing for Trustworthiness",
+    slug: "/scam-interfaces-and-forensic-ux",
+    title: "Scam Interfaces and Forensic UX",
     blurb:
-      "Trust is usually talked about in general terms, which makes it hard to act on. This article explains how to run a trustworthiness audit across transparency, consent, language, and safety, and how to turn the results into a concrete backlog of improvements instead of vague principles.",
+      "Scam interfaces concentrate the most coercive patterns in interface design into a few high-pressure screens. This article looks at scam flows through a forensic UX lens and shows how legitimate products can avoid resembling them, so they feel nothing like fraud even in moments of friction.",
     monthYear: "May 2026",
   },
   {
     id: 6,
-    slug: "/article-6",
+    slug: "/trust-signals-in-ai-interfaces",
     title: "Trust Signals in AI Interfaces",
     blurb:
       "AI systems are probabilistic and can be confidently wrong. We look at which trust signals matter most in AI interfaces—such as expectation setting, evidence, uncertainty, and refusal—and how to design them so that people can decide when to rely on an output and when to double-check.",
@@ -98,7 +98,7 @@ const articlePromos: ArticlePromo[] = [
   },
   {
     id: 5,
-    slug: "/article-5",
+    slug: "/designing-transparency",
     title: "Designing Transparency",
     blurb:
       "Transparency is not about dumping more text into a privacy policy. It is about helping people understand what is happening to them at the moment they act. This article breaks down where transparency matters most in a product and offers patterns for explaining decisions in plain language.",
@@ -106,7 +106,7 @@ const articlePromos: ArticlePromo[] = [
   },
   {
     id: 4,
-    slug: "/article-4",
+    slug: "/a-brief-history-of-manipulative-design",
     title: "A Brief History of Manipulative Design",
     blurb:
       "Manipulative design did not start with a single bad actor. It emerged from optimisation culture, growth targets, and experiments that slowly pushed interfaces toward pressure and obscurity. We trace that history and outline what needs to change if we want a different pattern language.",
@@ -114,7 +114,7 @@ const articlePromos: ArticlePromo[] = [
   },
   {
     id: 3,
-    slug: "/article-3",
+    slug: "/what-is-trust-design",
     title: "What Is Trust Design?",
     blurb:
       "Trust Design is our working name for a discipline that treats trust as something you can deliberately shape in products. This piece defines the term, places it in relation to UX, ethics, and security, and argues for why teams need a more precise language for these decisions.",
