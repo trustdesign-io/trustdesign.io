@@ -1,5 +1,5 @@
 import React from "react";
-import { PageSection, Layout, Text } from "../../../";
+import { PageSection, Layout, Text, List, Link } from "../../../";
 import Header from "../../../03_partials/header";
 import Footer from "../../../03_partials/footer";
 
@@ -27,163 +27,188 @@ const Article_7: React.FC = () => {
                     Why Scam Interfaces Matter
                   </Text>
                   <Text appearance="body-2">
-                    Scam UIs and fraudulent digital experiences may seem distant
-                    from mainstream product design, but they use the same
-                    psychological levers seen across the industry. The
-                    difference is intent: scammers use these patterns to
-                    deceive, while legitimate products sometimes use similar
-                    tactics unintentionally—or in pursuit of short-term gains.
-                    Studying scam interfaces is one of the fastest ways to
-                    understand how trust can be manipulated, broken, or
-                    weaponised. Forensic UX looks directly at these harmful
-                    patterns so product teams can recognise and prevent them
-                    before they appear in their own experiences.
+                    Scam interfaces are extreme expressions of the same
+                    behavioural levers present in mainstream digital products.
+                    They expose the fragility of trust by exploiting urgency,
+                    confusion, and emotional pressure. Studying scam interfaces
+                    is not about imitating them but understanding how design can
+                    be weaponised so that legitimate teams can avoid
+                    unintentional coercion and strengthen trustworthiness.
                   </Text>
 
                   <Text tag="h2" appearance="h5">
-                    Anatomy of a Scam UI
+                    The Mechanics of Deception
                   </Text>
                   <Text appearance="body-2">
-                    Although scams vary widely, their interfaces share
-                    structural similarities:
+                    Despite their variety, scam UIs share predictable structural
+                    elements:
                     <br />
                     <br />
-                    <strong>Urgency cues:</strong> countdown timers, flashing
-                    warnings, or “immediate action required” banners.
+                    <strong>Urgency and panic.</strong> Timers, red banners, and
+                    high‑pressure alerts trigger automatic responses.
                     <br />
-                    <strong>False authority:</strong> logos, colours, and UI
-                    elements mimicking banks, government portals, or OS-level
-                    dialogs.
+                    <strong>False authority.</strong> Visual mimicry of banks,
+                    delivery brands, or government agencies leverages borrowed
+                    trust.
                     <br />
-                    <strong>Constrained choices:</strong> large primary buttons
-                    that push users toward a single harmful action, with tiny or
-                    hidden escape routes.
+                    <strong>Constrained pathways.</strong> One large action
+                    (“Fix Now”) paired with hidden or disabled exits.
                     <br />
-                    <strong>Emotional pressure:</strong> messages implying
-                    blame, fear, or personal responsibility to push users into
-                    reacting quickly.
+                    <strong>Emotional manipulation.</strong> Messages implying
+                    blame or danger to provoke rushed behaviour.
                     <br />
                     <br />
-                    These patterns exploit cognitive shortcuts designed for
-                    speed, not accuracy. When people feel rushed, threatened, or
-                    confused, they are more susceptible to deception.
+                    These patterns work because they exploit universal cognitive
+                    shortcuts—particularly under stress.
                   </Text>
 
                   <Text tag="h2" appearance="h5">
-                    Patterns of Coercion
+                    Coercive Patterns in Detail
                   </Text>
                   <Text appearance="body-2">
-                    Scam UIs rely heavily on behavioural coercion. A few common
-                    examples:
+                    Common coercive mechanisms include:
+                    <br />
+                    <br />• <strong>Fake system scans</strong> using animated
+                    progress bars.
+                    <br />• <strong>Forced fullscreen overlays</strong>{" "}
+                    mimicking OS‑level warnings.
+                    <br />• <strong>Pre‑selected harmful options</strong> such
+                    as phoney support calls.
+                    <br />• <strong>Brand mimicry</strong> that triggers
+                    misplaced trust.
                     <br />
                     <br />
-                    <strong>Fake system scans:</strong> animated progress bars
-                    implying a virus scan or account breach.
-                    <br />
-                    <strong>Forced fullscreen takeovers:</strong> pop-ups that
-                    obscure navigation to mimic OS-level alerts.
-                    <br />
-                    <strong>Pre-selected options:</strong> checkboxes or buttons
-                    that default to harmful actions.
-                    <br />
-                    <strong>Impersonation of trust signals:</strong> lock icons,
-                    badges, or fake HTTPS indicators designed to mimic
-                    legitimacy.
-                    <br />
-                    <br />
-                    When analysed in context, these patterns reveal how UI
-                    design can manipulate without needing technical
-                    sophistication. All it takes is exploiting recognisable
-                    interface metaphors and user expectations.
+                    These tactics demonstrate how interface conventions can be
+                    repurposed for manipulation.
                   </Text>
 
                   <Text tag="h2" appearance="h5">
-                    What Legitimate Products Can Learn
+                    What Legitimate Products Must Learn
                   </Text>
                   <Text appearance="body-2">
-                    The goal of forensic UX is not to copy these tactics, but to
-                    inoculate teams against them. When a product team examines
-                    scam flows, they develop a sharper sensitivity to design
-                    decisions that feel coercive—even unintentionally. It
-                    prompts critical questions:
+                    Forensic UX helps teams identify when legitimate flows
+                    accidentally resemble scam patterns. Helpful prompts
+                    include:
                     <br />
                     <br />
-                    Are we using urgency where clarity would do?
+                    • Are we using urgency where clarity would suffice?
                     <br />
-                    Does this flow resemble patterns users associate with fraud?
+                    • Does any element mimic patterns users associate with
+                    fraud?
                     <br />
-                    If someone screenshot this screen, would it look
-                    manipulative out of context?
+                    • Would we defend this design if shown out of context on
+                    social media?
                     <br />
                     <br />
-                    These reflections help ensure that legitimate products don’t
-                    drift toward tactics that undermine long-term trust.
+                    These questions prevent well‑meaning products from drifting
+                    into coercion.
                   </Text>
 
                   <Text tag="h2" appearance="h5">
-                    Case Study: The “Account Lock” Scam
+                    Case Study: The “Account Lock” Pattern
                   </Text>
                   <Text appearance="body-2">
-                    One of the most common scam flows begins with a message
-                    claiming that an account has been locked. The UI typically:
+                    A common scam flow begins with an alarming security warning.
+                    Typical characteristics include:
                     <br />
                     <br />
-                    • imitates a known brand’s colour palette and typography
+                    • security‑style colour palettes
                     <br />
-                    • displays a prominent warning symbol
+                    • warning icons
                     <br />
-                    • claims “unusual activity detected” with no detail
+                    • vague claims of “unusual activity”
                     <br />
-                    • presents a single oversized button: “Secure My Account”
+                    • oversized “Secure My Account” CTAs
                     <br />
-                    • hides any real navigation or exit path
+                    • hidden or disabled navigation
                     <br />
                     <br />
-                    Legitimate products often replicate pieces of this pattern
-                    unintentionally—especially in security flows. The lesson is
-                    not to avoid urgency altogether, but to remain honest,
-                    specific, and calm. Real security UX gives people context,
-                    choices, and control.
+                    Real security flows often resemble this pattern
+                    unintentionally. The distinction lies in clarity,
+                    reversibility, and calmness.
+                  </Text>
+
+                  <Text tag="h2" appearance="h5">
+                    Designing Interfaces That Feel Nothing Like a Scam
+                  </Text>
+                  <Text appearance="body-2">
+                    Trustworthy products cultivate a distinctly different
+                    atmosphere:
+                    <br />
+                    <br />
+                    • calm visual tone
+                    <br />
+                    • reversible choices
+                    <br />
+                    • clear system status
+                    <br />
+                    • honest, specific explanations
+                    <br />
+                    • obvious exits
+                    <br />
+                    <br />
+                    When an interface feels composed and respectful—even under
+                    stress—people feel safer and more willing to proceed.
                   </Text>
 
                   <Text tag="h2" appearance="h5">
                     Implications for Trust Design
                   </Text>
                   <Text appearance="body-2">
-                    Forensic UX is essential to Trust Design because it
-                    clarifies the line between guidance and coercion. By
-                    studying malicious interfaces, teams learn to design
-                    products that feel distinct from scams in tone, pacing,
-                    clarity, and control. Trustworthy systems avoid:
-                    <br />
-                    <br />
-                    • pressure
-                    <br />
-                    • misdirection
-                    <br />
-                    • urgency without justification
-                    <br />
-                    • hiding decline or opt-out options
-                    <br />
-                    <br />
-                    Instead, they prioritise:
-                    <br />
-                    <br />
-                    • clear explanations
-                    <br />
-                    • reversible choices
-                    <br />
-                    • visual calm
-                    <br />
-                    • honest tone
-                    <br />
-                    • pathways that respect user autonomy
-                    <br />
-                    <br />
-                    When a product feels inherently unlike a scam—even in
-                    moments of friction—users feel safer, more informed, and
-                    more willing to proceed.
+                    Forensic UX sharpens teams’ sensitivity to coercion and
+                    helps them avoid harmful defaults. Trustworthy systems
+                    prioritise user autonomy and clarity, rejecting
+                    pressure‑based patterns. Studying the anatomy of deception
+                    ultimately improves the integrity of legitimate products.
                   </Text>
+
+                  <Text tag="h2" appearance="h6">
+                    Selected references
+                  </Text>
+                  <List appearance="body-2">
+                    <li>
+                      Mathur, A. et al. (2019). <em>Dark Patterns at Scale.</em>{" "}
+                      <Link
+                        href="https://dl.acm.org/doi/10.1145/3359181"
+                        target="_blank"
+                      >
+                        ACM CSCW
+                      </Link>
+                      .
+                    </li>
+                    <li>
+                      Bösch, C. et al. (2016).{" "}
+                      <em>Fakes and Frauds in the Digital World.</em>{" "}
+                      <Link
+                        href="https://link.springer.com/article/10.1007/s10207-016-0328-2"
+                        target="_blank"
+                      >
+                        Springer
+                      </Link>
+                      .
+                    </li>
+                    <li>
+                      thisisfintech.{" "}
+                      <Link
+                        href="https://www.ncsc.gov.uk/guidance/phishing"
+                        target="_blank"
+                      >
+                        NCSC: Phishing Guidance
+                      </Link>
+                      .
+                    </li>
+                    <li>
+                      Maier, B. (2023).{" "}
+                      <em>Interface Deception and User Manipulation.</em>{" "}
+                      <Link
+                        href="https://arxiv.org/abs/2301.10464"
+                        target="_blank"
+                      >
+                        arXiv
+                      </Link>
+                      .
+                    </li>
+                  </List>
                 </Layout>
               </Layout.Column>
               <Layout.Column>&nbsp;</Layout.Column>

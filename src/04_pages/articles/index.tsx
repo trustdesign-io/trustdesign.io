@@ -37,13 +37,15 @@ const Articles: React.FC = () => {
               <List marker={false} margin="md" appearance="body-1">
                 {isReleased("December 2026", forceAll) && (
                   <li>
-                    <Link to="/article-14">The Future of Trust Design</Link>
+                    <Link to="/the-future-of-trust-design">
+                      The Future of Trust Design
+                    </Link>
                     <Text appearance="body-3">Published in December 2026.</Text>
                   </li>
                 )}
                 {isReleased("November 2026", forceAll) && (
                   <li>
-                    <Link to="/article-13">
+                    <Link to="/the-trust-design-toolkit-explained">
                       The Trust Design Toolkit Explained
                     </Link>
                     <Text appearance="body-3">Published in November 2026.</Text>
@@ -51,7 +53,7 @@ const Articles: React.FC = () => {
                 )}
                 {isReleased("October 2026", forceAll) && (
                   <li>
-                    <Link to="/article-12">
+                    <Link to="/trust-by-default-product-design-principles">
                       Trust by Default: Product Design Principles
                     </Link>
                     <Text appearance="body-3">Published in October 2026.</Text>
@@ -59,7 +61,7 @@ const Articles: React.FC = () => {
                 )}
                 {isReleased("September 2026", forceAll) && (
                   <li>
-                    <Link to="/article-11">
+                    <Link to="/designing-for-safety-and-consent">
                       Designing for Safety and Consent
                     </Link>
                     <Text appearance="body-3">
@@ -69,13 +71,13 @@ const Articles: React.FC = () => {
                 )}
                 {isReleased("August 2026", forceAll) && (
                   <li>
-                    <Link to="/article-10">From UX to Policy</Link>
+                    <Link to="/from-ux-to-policy">From UX to Policy</Link>
                     <Text appearance="body-3">Published in August 2026.</Text>
                   </li>
                 )}
                 {isReleased("July 2026", forceAll) && (
                   <li>
-                    <Link to="/article-9">
+                    <Link to="/forensic-ux-case-study-scam-ui-dissection">
                       Forensic UX Case Study: Scam UI Dissection
                     </Link>
                     <Text appearance="body-3">Published in July 2026.</Text>
@@ -83,31 +85,39 @@ const Articles: React.FC = () => {
                 )}
                 {isReleased("June 2026", forceAll) && (
                   <li>
-                    <Link to="/article-8">The Ethics of Persuasion</Link>
+                    <Link to="/the-ethics-of-persuasion">
+                      The Ethics of Persuasion
+                    </Link>
                     <Text appearance="body-3">Published in June 2026.</Text>
                   </li>
                 )}
                 {isReleased("May 2026", forceAll) && (
                   <li>
-                    <Link to="/article-7">Auditing for Trustworthiness</Link>
+                    <Link to="/scam-interfaces-and-forensic-ux">
+                      Auditing for Trustworthiness
+                    </Link>
                     <Text appearance="body-3">Published in May 2026.</Text>
                   </li>
                 )}
                 {isReleased("April 2026", forceAll) && (
                   <li>
-                    <Link to="/article-6">Trust Signals in AI Interfaces</Link>
+                    <Link to="/trust-signals-in-ai-interfaces">
+                      Trust Signals in AI Interfaces
+                    </Link>
                     <Text appearance="body-3">Published in April 2026.</Text>
                   </li>
                 )}
                 {isReleased("March 2026", forceAll) && (
                   <li>
-                    <Link to="/article-5">Designing Transparency</Link>
+                    <Link to="/designing-transparency">
+                      Designing Transparency
+                    </Link>
                     <Text appearance="body-3">Published in March 2026.</Text>
                   </li>
                 )}
                 {isReleased("February 2026", forceAll) && (
                   <li>
-                    <Link to="/article-4">
+                    <Link to="/a-brief-history-of-manipulative-design">
                       A Brief History of Manipulative Design
                     </Link>
                     <Text appearance="body-3">Published in February 2026.</Text>
@@ -115,7 +125,9 @@ const Articles: React.FC = () => {
                 )}
                 {isReleased("January 2026", forceAll) && (
                   <li>
-                    <Link to="/article-3">What Is Trust Design?</Link>
+                    <Link to="/what-is-trust-design">
+                      What Is Trust Design?
+                    </Link>
                     <Text appearance="body-3">Published in January 2026.</Text>
                   </li>
                 )}

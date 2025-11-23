@@ -1,5 +1,5 @@
 import React from "react";
-import { PageSection, Layout, Text } from "../../../";
+import { PageSection, Layout, Text, List, Link } from "../../../";
 import Header from "../../../03_partials/header";
 import Footer from "../../../03_partials/footer";
 
@@ -24,110 +24,164 @@ const Article_5: React.FC = () => {
 
                 <Layout topGutter="xl" bottomGutter="xl">
                   <Text tag="h2" appearance="h5">
-                    Transparency Isn’t Just Disclosure
+                    Why Transparency Matters
                   </Text>
                   <Text appearance="body-2">
-                    When most teams hear the word “transparency,” they think
-                    about disclosures: privacy notices, policy updates, or long
-                    blocks of explanatory text. But transparency is not the same
-                    as disclosure. Disclosure is legal; transparency is
-                    experiential. It describes what people can actually
-                    understand in the moment of making a decision—not what is
-                    technically documented somewhere else. If a person needs to
-                    stop, reread, or translate a message to understand what is
-                    happening to their data, trust is already strained. Real
-                    transparency focuses on clarity, timing, and usability—not
-                    verbosity.
+                    Transparency is often misunderstood as disclosure—as long as
+                    a product links to a privacy policy, the assumption is that
+                    it has fulfilled its obligation. But genuine transparency is
+                    not a legal artefact; it is a lived experience. People
+                    should be able to understand what a system is doing, why it
+                    is doing it, and what will happen next without pausing to
+                    decipher jargon or navigate hidden details. When systems
+                    obscure intent or behaviour, even unintentionally, trust
+                    weakens.
                   </Text>
 
                   <Text tag="h2" appearance="h5">
-                    The Three Layers of Transparency
+                    The Three Dimensions of Transparency
                   </Text>
                   <Text appearance="body-2">
-                    Effective transparency emerges across three layers:
+                    Trust Design approaches transparency through three
+                    dimensions:
                     <br />
                     <br />
-                    <strong>Surface transparency:</strong> clear labels, honest
-                    buttons, visible system states, and predictable results.
-                    People should be able to see what an action will do before
-                    they commit to it.
+                    <strong>Surface transparency:</strong> Labels, actions, and
+                    outcomes are clear. A button reveals the true consequence of
+                    tapping it. System states are visible. Nothing behaves
+                    mysteriously.
                     <br />
-                    <strong>Process transparency:</strong> insight into how the
-                    system works—how data flows, how recommendations are chosen,
-                    how permissions shape outcomes. This doesn’t require full
-                    technical detail; it requires meaningful visibility.
+                    <strong>Process transparency:</strong> People have insight
+                    into how a system works—how data flows, how recommendations
+                    are made, and what processes shape outcomes. They don’t need
+                    full technical detail; they need meaningful visibility.
                     <br />
-                    <strong>Purpose transparency:</strong> the “why” behind the
-                    system. Why is this feature here? Why is this data needed?
-                    Whose interests does this interaction ultimately serve?
+                    <strong>Purpose transparency:</strong> The product clearly
+                    communicates why a process exists. Why does this feature
+                    need this permission? Why is this data collected? Whose
+                    interests does this design serve?
                     <br />
                     <br />
-                    Most products only achieve surface transparency. Trust
-                    Design pushes insight into the deeper layers.
+                    Most digital products achieve surface transparency at best.
+                    Trustworthy systems intentionally support all three
+                    dimensions.
                   </Text>
 
                   <Text tag="h2" appearance="h5">
-                    Moments That Matter
+                    Where Transparency Fails
                   </Text>
                   <Text appearance="body-2">
-                    Transparency is most critical at points of vulnerability:
-                    granting permissions, making purchases, changing identity
-                    information, or interacting with systems that could impact
-                    finances, security, or reputation. People don’t need to
-                    understand everything all the time—they need clarity at the
-                    moments that matter. Mapping these moments reveals where
-                    misunderstandings cluster: subscription renewals,
-                    data-sharing toggles, algorithmic recommendations, or
-                    AI-generated content. These are the places where small
-                    improvements produce major trust gains.
+                    Transparency breaks down in predictable places: consent
+                    flows, checkout processes, permission requests, AI-driven
+                    recommendations, and identity-related interactions. In these
+                    moments, people face uncertainty or potential risk. If the
+                    system does not anticipate their questions—"Why am I seeing
+                    this? What will this do? Can I undo it?"—then hesitation
+                    grows, even when the underlying system is safe.
                   </Text>
 
                   <Text tag="h2" appearance="h5">
                     Designing Explanations That Feel Human
                   </Text>
                   <Text appearance="body-2">
-                    Transparency often fails because explanations are written
-                    for lawyers or engineers, not the humans who actually use
-                    the product. Good transparency feels like a conversation. It
-                    uses familiar language, concrete examples, and avoids
-                    euphemisms. Instead of “We may share anonymised engagement
-                    metadata with trusted partners,” a transparent message might
-                    say, “We use some of your activity to suggest better
-                    content. You can turn this off anytime.” Clarity isn’t
-                    dumbing down—it’s respect.
+                    Explanations often fail because they are written for
+                    compliance teams or engineers, not the people who must act
+                    on them. Human-centred transparency uses familiar language,
+                    avoids euphemism, and offers examples when needed. Instead
+                    of saying, “Your engagement data may be shared with trusted
+                    partners,” a transparent interface might say: “We use some
+                    of your activity to recommend better content. You can turn
+                    this off at any time.” Clarity is respect.
                   </Text>
 
                   <Text tag="h2" appearance="h5">
-                    Making Invisible Systems Visible
+                    Making Invisible Systems Legible
                   </Text>
                   <Text appearance="body-2">
-                    Modern products are full of invisible processes:
-                    machine‑learning models that personalise feeds, risk‑scoring
-                    systems that flag transactions, ranking algorithms that
-                    determine what people see first. When these systems remain
-                    opaque, people cannot form reliable expectations. Trust
-                    Design encourages teams to bring just enough of the system
-                    into view to help people reason about outcomes. Examples
-                    include: confidence indicators for AI, explanations for
-                    recommendations, or summaries of what data influenced a
-                    decision. The goal isn’t total exposure—it’s contextual
-                    legibility.
+                    Modern digital products rely on invisible processes:
+                    machine-learning models, ranking systems, risk scores,
+                    personalisation engines. When hidden, they create
+                    unpredictability; when revealed thoughtfully, they help
+                    people make informed decisions. Effective patterns include
+                    confidence indicators, explanation-on-demand, “Why am I
+                    seeing this?” affordances, and summaries of data inputs.
+                    Legibility is not full technical exposure—it is contextual
+                    clarity.
                   </Text>
 
                   <Text tag="h2" appearance="h5">
-                    Transparency as a Living Practice
+                    Transparency as Ongoing Maintenance
                   </Text>
                   <Text appearance="body-2">
-                    Transparency cannot be written once and forgotten. As
-                    products evolve, adopt new models, add permissions, or
-                    change business incentives, the transparency story must
-                    evolve too. That means regularly reviewing copy, auditing
-                    interactions, and testing whether people still understand
-                    what the product is doing. The Trust Design Audit helps
-                    identify where information has become outdated, ambiguous,
-                    or overloaded. Transparency is not a compliance checkbox—it
-                    is an ongoing conversation between a product and its users.
+                    Transparency must evolve as products evolve. New features
+                    introduce new risks; new model behaviours introduce new
+                    ambiguity. Interfaces should be periodically reviewed to
+                    ensure that explanations remain accurate, copy reflects
+                    reality, and data practices remain clear. The Trust Design
+                    Audit is designed to detect where transparency has drifted
+                    or degraded over time.
                   </Text>
+
+                  <Text tag="h2" appearance="h5">
+                    The Link Between Transparency and Trust
+                  </Text>
+                  <Text appearance="body-2">
+                    People trust systems that behave like good collaborators:
+                    predictable, honest, and calm. When people understand how a
+                    system works, they feel more in control, more willing to
+                    explore, and more capable of forming accurate expectations.
+                    Transparency is not about overwhelming users with detail—it
+                    is about giving them the right information at the right
+                    moment.
+                  </Text>
+
+                  <Text tag="h2" appearance="h6">
+                    Selected references
+                  </Text>
+                  <List appearance="body-2">
+                    <li>
+                      Ehsan, U. et al. (2021).{" "}
+                      <em>Human-Centered Explainable AI.</em>{" "}
+                      <Link
+                        href="https://dl.acm.org/doi/10.1145/3459930"
+                        target="_blank"
+                      >
+                        ACM
+                      </Link>
+                      .
+                    </li>
+                    <li>
+                      Lipton, Z. (2018).{" "}
+                      <em>The Mythos of Model Interpretability.</em>{" "}
+                      <Link
+                        href="https://arxiv.org/abs/1606.08354"
+                        target="_blank"
+                      >
+                        arXiv
+                      </Link>
+                      .
+                    </li>
+                    <li>
+                      Nielsen Norman Group.{" "}
+                      <Link
+                        href="https://www.nngroup.com/articles/transparency/"
+                        target="_blank"
+                      >
+                        Transparency in UX
+                      </Link>
+                      .
+                    </li>
+                    <li>
+                      European Commission.{" "}
+                      <Link
+                        href="https://digital-strategy.ec.europa.eu/en/policies/trustworthy-ai"
+                        target="_blank"
+                      >
+                        Guidance on Trustworthy AI
+                      </Link>
+                      .
+                    </li>
+                  </List>
                 </Layout>
               </Layout.Column>
               <Layout.Column>&nbsp;</Layout.Column>

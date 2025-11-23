@@ -57,18 +57,39 @@ const App: React.FC = () => {
             path="/trust-design-audit-what-it-does-and-why-it-matters"
             element={<Article_2 />}
           />
-          <Route path="/article-3" element={<Article_3 />} />
-          <Route path="/article-4" element={<Article_4 />} />
-          <Route path="/article-5" element={<Article_5 />} />
-          <Route path="/article-6" element={<Article_6 />} />
-          <Route path="/article-7" element={<Article_7 />} />
-          <Route path="/article-8" element={<Article_8 />} />
-          <Route path="/article-9" element={<Article_9 />} />
-          <Route path="/article-10" element={<Article_10 />} />
-          <Route path="/article-11" element={<Article_11 />} />
-          <Route path="/article-12" element={<Article_12 />} />
-          <Route path="/article-13" element={<Article_13 />} />
-          <Route path="/article-14" element={<Article_14 />} />
+          <Route path="/what-is-trust-design" element={<Article_3 />} />
+          <Route
+            path="/a-brief-history-of-manipulative-design"
+            element={<Article_4 />}
+          />
+          <Route path="/designing-transparency" element={<Article_5 />} />
+          <Route
+            path="/trust-signals-in-ai-interfaces"
+            element={<Article_6 />}
+          />
+          <Route
+            path="/scam-interfaces-and-forensic-ux"
+            element={<Article_7 />}
+          />
+          <Route path="/the-ethics-of-persuasion" element={<Article_8 />} />
+          <Route
+            path="/forensic-ux-case-study-scam-ui-dissection"
+            element={<Article_9 />}
+          />
+          <Route path="/from-ux-to-policy" element={<Article_10 />} />
+          <Route
+            path="/designing-for-safety-and-consent"
+            element={<Article_11 />}
+          />
+          <Route
+            path="/trust-by-default-product-design-principles"
+            element={<Article_12 />}
+          />
+          <Route
+            path="/the-trust-design-toolkit-explained"
+            element={<Article_13 />}
+          />
+          <Route path="/the-future-of-trust-design" element={<Article_14 />} />
         </Routes>
       </Router>
     </SchemeProvider>

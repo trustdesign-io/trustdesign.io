@@ -1,5 +1,5 @@
 import React from "react";
-import { PageSection, Layout, Text } from "../../../";
+import { PageSection, Layout, Text, List, Link } from "../../../";
 import Header from "../../../03_partials/header";
 import Footer from "../../../03_partials/footer";
 
@@ -27,135 +27,171 @@ const Article_8: React.FC = () => {
                     Persuasion Is Inevitable
                   </Text>
                   <Text appearance="body-2">
-                    All design persuades. The moment you choose a default, a
-                    button label, a visual hierarchy, or a notification
-                    strategy, you are nudging behaviour. Sometimes gently,
-                    sometimes forcefully. Persuasion is built into the
-                    architecture of interaction—there is no neutral state. The
-                    ethical question is not whether we persuade, but whether
-                    that persuasion aligns with a person’s interests,
-                    understanding, and intent. When design choices amplify
-                    vulnerability, exploit cognitive bias, or steer people
-                    toward outcomes they would not choose under clear
-                    conditions, persuasion crosses a line.
+                    Every interface exerts influence. From button placement to
+                    copy tone to the structure of a form, design inevitably
+                    nudges behaviour—sometimes gently, sometimes forcefully.
+                    There is no neutral interaction. The ethical question is not
+                    whether a product persuades, but whether that persuasion
+                    aligns with a person’s understanding, intent, and wellbeing.
+                    When a flow amplifies vulnerability, exploits limited
+                    attention, or pushes people toward commitments they wouldn’t
+                    make under clear conditions, persuasion becomes
+                    manipulation.
                   </Text>
 
                   <Text tag="h2" appearance="h5">
-                    When Persuasion Becomes Manipulation
+                    When Persuasion Crosses the Line
                   </Text>
                   <Text appearance="body-2">
-                    Manipulation happens when the product benefits from a user’s
-                    confusion, pressure, or limited attention. Unlike ethical
-                    persuasion, manipulation obscures the true cost, meaning, or
-                    consequence of a choice. Common examples include:
+                    Manipulation occurs when a product benefits from a user’s
+                    confusion or impaired decision-making. Unlike ethical
+                    influence, manipulative patterns obscure cost, meaning, or
+                    consequence. Common examples include:
                     <br />
                     <br />
-                    • hiding decline or opt-out options
+                    • hiding decline or opt‑out options
                     <br />
-                    • pre-selecting high-commitment choices by default
+                    • preselecting high‑commitment defaults
                     <br />
-                    • creating urgency where none exists
+                    • adding artificial urgency
                     <br />
-                    • framing decisions in ways that trigger shame or fear
+                    • triggering emotional pressure or shame
                     <br />
                     <br />
-                    These patterns may improve short-term metrics, but they
-                    degrade long-term trust. When people feel tricked or
-                    funneled, they may comply once—but they rarely return
-                    willingly.
+                    These patterns may boost short-term metrics, but they
+                    undermine long-term trust. When people feel tricked, they
+                    may comply once—but they rarely return willingly.
                   </Text>
 
                   <Text tag="h2" appearance="h5">
                     Three Tests for Ethical Influence
                   </Text>
                   <Text appearance="body-2">
-                    Trust Design uses three simple tests to evaluate whether a
-                    flow is ethically persuasive or manipulative:
+                    Trust Design uses three practical tests to assess whether a
+                    pattern is ethical or coercive:
                     <br />
                     <br />
-                    <strong>1. Clarity Test</strong>
-                    <br />
-                    Would a reasonable person understand what they are agreeing
-                    to without needing extra research?
+                    <strong>1. Clarity Test:</strong> Would a reasonable person
+                    understand the decision without extra research?
                     <br />
                     <br />
-                    <strong>2. Alignment Test</strong>
-                    <br />
-                    Is the intended outcome genuinely in the user’s interest—or
-                    primarily in ours?
+                    <strong>2. Alignment Test:</strong> Does the intended
+                    outcome genuinely serve the user—or just the business?
                     <br />
                     <br />
-                    <strong>3. Exposure Test</strong>
-                    <br />
-                    If this screen were screenshot and posted publicly, would we
-                    feel comfortable defending it?
+                    <strong>3. Exposure Test:</strong> Would we feel comfortable
+                    if this screen were publicly shared and scrutinised?
                     <br />
                     <br />
-                    If any of these tests fail, the persuasion pattern needs to
-                    be reconsidered or redesigned.
+                    If any of these tests fail, the pattern is likely
+                    manipulative and needs redesign.
                   </Text>
 
                   <Text tag="h2" appearance="h5">
                     Designing With Rather Than At People
                   </Text>
                   <Text appearance="body-2">
-                    Ethical persuasion involves treating users as collaborators
-                    rather than targets. This means creating flows that respect
-                    autonomy: explaining trade-offs, offering reversible
-                    choices, and giving people time to think. Co-design,
-                    trust-focused usability studies, and interviewing people
-                    about moments of hesitation all help uncover where
-                    intentions and impact diverge. A pattern that feels harmless
-                    in a workshop may feel coercive when encountered during
-                    stress, fatigue, or fear. Trust Design foregrounds those
-                    emotional contexts rather than treating them as edge cases.
+                    Ethical persuasion treats users as collaborators, not
+                    targets. This means respecting autonomy: providing
+                    reversible choices, explaining trade-offs, giving time to
+                    think, and making exits clear. Trust‑focused usability
+                    testing and interviews often reveal subtle pressure
+                    points—moments where users hesitate, feel boxed in, or
+                    cannot articulate why something feels “off.” These signals
+                    matter. Ethical persuasion seeks to eliminate them.
                   </Text>
 
                   <Text tag="h2" appearance="h5">
-                    Long-Term Relationships Over Short-Term Gains
+                    Long-Term Trust Over Short-Term Gains
                   </Text>
                   <Text appearance="body-2">
-                    Ethical persuasion prioritises the long-term relationship
-                    between the person and the product. Teams often face
-                    pressure to maximise conversions, retention, or engagement.
-                    But when those behaviours are achieved through pressure or
-                    misdirection, trust erodes—and erosion is expensive. People
-                    churn quietly. Complaints spike. Reputation weakens.
-                    Regulators take interest. The most valuable products are
-                    those that people recommend willingly, not reluctantly.
-                    Ethical persuasion is not just a moral choice; it is a
-                    strategic one.
+                    Conversion pressure is a common source of manipulation.
+                    Businesses optimising for short-term metrics may push people
+                    toward commitments through friction, misdirection, or
+                    emotional pressure. While this may improve dashboards
+                    temporarily, it damages trust, increases complaints, and
+                    draws regulatory attention. The most successful products are
+                    those people recommend freely—not reluctantly.
                   </Text>
 
                   <Text tag="h2" appearance="h5">
-                    Making Ethics Operational
+                    Operationalising Ethical Persuasion
                   </Text>
                   <Text appearance="body-2">
-                    Values only matter when they show up in the actual work.
-                    This means adding ethics checkpoints into design reviews,
-                    writing pattern guidelines that forbid harmful defaults,
-                    documenting reasoning behind high-impact decisions, and
-                    creating space for dissent during product planning. The
-                    Trust Design Toolkit can surface points where copy,
-                    components, or flow patterns lean toward coercion. These
-                    artefacts help teams make grounded decisions rather than
-                    relying on gut instinct.
+                    Values must be embedded in practice, not stated abstractly.
+                    This means integrating ethics checkpoints into design
+                    reviews, documenting decision rationale, banning harmful
+                    defaults, and encouraging dissent during planning. The Trust
+                    Design Toolkit surfaces coercive signals in copy,
+                    components, and flow structures, giving teams concrete
+                    evidence to guide improvement.
                   </Text>
 
                   <Text tag="h2" appearance="h5">
                     A More Respectful Future for Interface Design
                   </Text>
                   <Text appearance="body-2">
-                    As the industry matures, the line between persuasion and
-                    manipulation will become sharper—not because designers
-                    suddenly become more virtuous, but because trust will become
-                    a competitive advantage. Ethical persuasion builds
-                    credibility, lowers friction, and creates environments where
-                    people feel genuinely empowered. When users feel that a
-                    product is working with them rather than against them, they
-                    invest more deeply—not just with their time, but with their
-                    belief.
+                    The distinction between persuasion and manipulation will
+                    sharpen as the industry matures—not because designers
+                    suddenly become more virtuous, but because trust becomes a
+                    competitive advantage. Ethical persuasion lowers cognitive
+                    load, builds confidence, and signals respect. When people
+                    feel a product is acting with them rather than against them,
+                    they invest more deeply—not only with their time, but with
+                    their belief.
                   </Text>
+
+                  <Text tag="h2" appearance="h6">
+                    Selected references
+                  </Text>
+                  <List appearance="body-2">
+                    <li>
+                      Fogg, B.J. (2003).{" "}
+                      <em>
+                        Persuasive Technology: Using Computers to Change What We
+                        Think and Do.
+                      </em>{" "}
+                      <Link
+                        href="https://dl.acm.org/doi/book/10.5555/772072"
+                        target="_blank"
+                      >
+                        Morgan Kaufmann
+                      </Link>
+                      .
+                    </li>
+                    <li>
+                      Gray, C.M. et al. (2018).{" "}
+                      <em>The Dark (Patterns) Side of UX Design.</em>{" "}
+                      <Link
+                        href="https://dl.acm.org/doi/10.1145/3173574.3174108"
+                        target="_blank"
+                      >
+                        CHI
+                      </Link>
+                      .
+                    </li>
+                    <li>
+                      Narayanan, A. et al. (2020).{" "}
+                      <em>Dark Patterns: Past, Present, and Future.</em>{" "}
+                      <Link
+                        href="https://arxiv.org/abs/2007.10712"
+                        target="_blank"
+                      >
+                        arXiv
+                      </Link>
+                      .
+                    </li>
+                    <li>
+                      UK CMA.{" "}
+                      <Link
+                        href="https://www.gov.uk/government/publications/dark-patterns-preventing-online-manipulation"
+                        target="_blank"
+                      >
+                        Dark Patterns Guidance
+                      </Link>
+                      .
+                    </li>
+                  </List>
                 </Layout>
               </Layout.Column>
               <Layout.Column>&nbsp;</Layout.Column>

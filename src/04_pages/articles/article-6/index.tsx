@@ -1,5 +1,5 @@
 import React from "react";
-import { PageSection, Layout, Text } from "../../../";
+import { PageSection, Layout, Text, List, Link } from "../../../";
 import Header from "../../../03_partials/header";
 import Footer from "../../../03_partials/footer";
 
@@ -28,84 +28,124 @@ const Article_6: React.FC = () => {
                   </Text>
                   <Text appearance="body-2">
                     Traditional interfaces are deterministic: when you tap a
-                    button, the same thing happens every time. AI systems behave
-                    differently. They generate outputs based on probability,
-                    training data, and context. They can be brilliant,
-                    unhelpful, biased, or confidently wrong. Because of this
-                    unpredictability, people rely heavily on trust signals to
-                    decide whether to accept or challenge an AI-generated
-                    response. A smooth UI alone cannot guarantee trust—users
-                    need cues that help them form an accurate mental model of
-                    how the system works.
+                    button, the system responds in predictable, repeatable ways.
+                    AI systems behave differently—they generate outputs
+                    probabilistically, make inferences, and occasionally present
+                    errors with confidence. Because their reasoning is hidden,
+                    users rely on trust signals to understand what the system is
+                    doing and how much to depend on it.
                   </Text>
 
                   <Text tag="h2" appearance="h5">
-                    Setting Expectations Up Front
+                    Setting Expectations Clearly
                   </Text>
                   <Text appearance="body-2">
-                    One of the strongest trust signals is a good introduction.
-                    People should know what an AI assistant is designed for,
-                    what it is good at, what it struggles with, and where it may
-                    fail. An honest framing such as “I can summarise information
-                    and help draft messages, but I may make mistakes—please
-                    double-check important details” empowers the user. It sets
-                    boundaries. Overconfidence erodes trust; transparency
-                    strengthens it.
+                    One of the strongest trust signals for AI is honest framing.
+                    Users need to know what the system is designed for, what it
+                    handles well, where it may fail, and what boundaries it will
+                    not cross. Statements such as “I can summarise your text,
+                    but I may make mistakes—please double-check important
+                    details” create psychological safety. Overconfident framing
+                    invites misplaced trust.
                   </Text>
 
                   <Text tag="h2" appearance="h5">
-                    Showing Confidence, Evidence, and Alternatives
+                    Confidence, Evidence, and Alternatives
                   </Text>
                   <Text appearance="body-2">
-                    AI interfaces benefit from cues that reveal how certain the
-                    system is. Confidence indicators, alternative answers, or
-                    source citations give users something to reason about.
-                    Rather than presenting a single authoritative output, the
-                    system can say: “Here are three possible interpretations,”
-                    or “I am moderately confident in this answer—here is the
-                    data behind it.” These patterns help distinguish between
-                    factual outputs, creative guesses, and areas where the
-                    system’s understanding is thin.
+                    AI interfaces benefit from patterns that reveal uncertainty.
+                    Confidence indicators, citations, provenance cues, and
+                    alternative responses help users calibrate reliability.
+                    Rather than presenting a single authoritative answer,
+                    systems can offer multiple interpretations or highlight
+                    ambiguous areas. These patterns turn AI from a mysterious
+                    oracle into a collaborative assistant.
                   </Text>
 
                   <Text tag="h2" appearance="h5">
-                    Refusal as a Trust-Building Behaviour
+                    Refusal as a Positive Signal
                   </Text>
                   <Text appearance="body-2">
-                    A surprising but powerful trust signal is refusal. When an
-                    AI system declines to answer something dangerous, harmful,
-                    or inappropriate, it demonstrates that the product has
-                    boundaries. A refusal framed with clarity— “I can’t help
-                    with that because it may cause harm”—builds more trust than
-                    a vague error message. People trust systems that can say
-                    “no” for the right reasons.
+                    Refusal is one of the most powerful trust signals an AI
+                    system can express. When a system declines a request because
+                    it is harmful, ambiguous, or outside its scope, users learn
+                    that guardrails exist. A clear refusal—“I can’t help with
+                    that because it may cause harm”—builds more trust than an
+                    evasive or misleading answer.
                   </Text>
 
                   <Text tag="h2" appearance="h5">
-                    Designing for Recovery After Mistakes
+                    Designing for Error Recovery
                   </Text>
                   <Text appearance="body-2">
-                    AI will always make errors. What matters is how easily users
-                    can identify, correct, or recover from them. Interfaces
-                    should make it simple to report problems, adjust the query,
-                    or ask the model to reflect. Features like “Why did you give
-                    me this result?”, “Show another version”, or “Try again with
-                    different input” help people feel in control. Acknowledging
-                    uncertainty and allowing iteration keeps trust intact.
+                    AI will inevitably make mistakes. The key to maintaining
+                    trust is how easily users can identify, correct, or recover
+                    from them. Strong recovery patterns include options like
+                    “Show another version”, “Why did you give this answer?”,
+                    “Try again with different input”, or tools that let users
+                    refine context. These affordances help maintain agency and
+                    clarity.
                   </Text>
 
                   <Text tag="h2" appearance="h5">
-                    Trust Signals as Ongoing Dialogue
+                    Human–AI Collaboration
                   </Text>
                   <Text appearance="body-2">
-                    Trust in AI is not a single moment—it is built through a
-                    sequence of interactions. Every explanation, refusal,
-                    correction, and outcome contributes to the ongoing
-                    relationship between the user and the system. Trust signals
-                    help maintain clarity in a space where the underlying
-                    behaviour can shift over time. As AI capabilities evolve, so
-                    must the cues that guide user expectations.
+                    AI should not replace human judgement—it should scaffold it.
+                    Trustworthy AI makes its limits visible, invites correction,
+                    and adapts without surprising users. It supports decisions
+                    with clarity and humility. The most trusted AI systems
+                    behave like reliable collaborators, not black boxes.
                   </Text>
+
+                  <Text tag="h2" appearance="h6">
+                    Selected references
+                  </Text>
+                  <List appearance="body-2">
+                    <li>
+                      Ehsan, U. et al. (2021).{" "}
+                      <em>Human-Centered Explainable AI.</em>{" "}
+                      <Link
+                        href="https://dl.acm.org/doi/10.1145/3459930"
+                        target="_blank"
+                      >
+                        ACM
+                      </Link>
+                      .
+                    </li>
+                    <li>
+                      Amershi, S. et al. (2019).{" "}
+                      <em>Guidelines for Human–AI Interaction.</em>{" "}
+                      <Link
+                        href="https://dl.acm.org/doi/10.1145/3290605.3300233"
+                        target="_blank"
+                      >
+                        CHI
+                      </Link>
+                      .
+                    </li>
+                    <li>
+                      Doshi-Velez, F. & Kim, B. (2017).{" "}
+                      <em>Interpretability in Machine Learning.</em>{" "}
+                      <Link
+                        href="https://arxiv.org/abs/1702.08608"
+                        target="_blank"
+                      >
+                        arXiv
+                      </Link>
+                      .
+                    </li>
+                    <li>
+                      European Commission.{" "}
+                      <Link
+                        href="https://digital-strategy.ec.europa.eu/en/policies/trustworthy-ai"
+                        target="_blank"
+                      >
+                        Guidance on Trustworthy AI
+                      </Link>
+                      .
+                    </li>
+                  </List>
                 </Layout>
               </Layout.Column>
               <Layout.Column>&nbsp;</Layout.Column>
