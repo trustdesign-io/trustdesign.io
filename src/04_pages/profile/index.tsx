@@ -119,14 +119,38 @@ const Profile: React.FC = () => {
                       Product Director, Tesco
                     </Text>
                     <Text appearance="body-3" alignment="center">
-                      Danny has helped us resolve many customer experience
-                      issues and has been key in setting the tone for a user
-                      centred culture.
+                      Danny has resolved many customer experience issues and has
+                      been key in setting the tone for a user centred culture.
                     </Text>
                   </Layout>
                 </Layout.Column>
 
-                <Layout.Column>
+                {/* <Layout.Column>
+                  <Layout bottomGutter="lg">
+                    <Layout bottomGutter="md">
+                      <Avatar size="md" src={JamesHirst} />
+                    </Layout>
+                    <Layout bottomGutter="sm">
+                      <Text
+                        tag="h3"
+                        appearance="h7"
+                        alignment="center"
+                        layout={false}
+                      >
+                        James Hirst
+                      </Text>
+                    </Layout>
+                    <Text tag="h4" appearance="body-3" alignment="center">
+                      Co Founder @ Tyk
+                    </Text>
+                    <Text appearance="body-3" alignment="center">
+                      Creativity and Technical aptitude roll together with Danny
+                      - a change-maker you can trust.
+                    </Text>
+                  </Layout>
+                </Layout.Column> */}
+
+                {/* <Layout.Column>
                   <Layout bottomGutter="lg">
                     <Layout bottomGutter="md">
                       <Avatar size="md" src={ChristianMacedo} />
@@ -149,9 +173,9 @@ const Profile: React.FC = () => {
                       Commitment to quality was evident throughout.
                     </Text>
                   </Layout>
-                </Layout.Column>
+                </Layout.Column> */}
 
-                <Layout.Column>
+                {/* <Layout.Column>
                   <Layout bottomGutter="lg">
                     <Layout bottomGutter="md">
                       <Avatar size="md" src={SimonCohen} />
@@ -175,35 +199,7 @@ const Profile: React.FC = () => {
                       together.
                     </Text>
                   </Layout>
-                </Layout.Column>
-
-                <Layout.Column>
-                  <Layout bottomGutter="lg">
-                    <Layout bottomGutter="md">
-                      <Avatar size="md" src={JamesHirst} />
-                    </Layout>
-                    <Layout bottomGutter="sm">
-                      <Text
-                        tag="h3"
-                        appearance="h7"
-                        alignment="center"
-                        layout={false}
-                      >
-                        James Hirst
-                      </Text>
-                    </Layout>
-                    <Text tag="h4" appearance="body-3" alignment="center">
-                      Co Founder @ Tyk
-                    </Text>
-                    <Text appearance="body-3" alignment="center">
-                      Creativity and Technical aptitude roll together with
-                      Danny.
-                    </Text>
-                    <Text appearance="body-3" alignment="center">
-                      A change-maker you can trust.
-                    </Text>
-                  </Layout>
-                </Layout.Column>
+                </Layout.Column> */}
               </Layout>
             </Layout>
 
