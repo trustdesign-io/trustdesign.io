@@ -216,18 +216,20 @@ const Home: React.FC = () => {
         <Layout container>
           <Layout grid="60_40" gap="xl" stack="md">
             <Layout.Column>
-              <Text tag="h2" appearance="h5">
-                About TrustDesign
-              </Text>
-              <Text appearance="body-1">
-                This project explores how trust can be understood, measured, and
-                designed into emerging technologies.
-              </Text>
-              <Text appearance="body-1">
-                We build tools that make the mechanics of trust visible -
-                helping designers, businesses, and researchers see where
-                technology supports human intention.
-              </Text>
+              <Layout bottomGutter="lg">
+                <Text tag="h2" appearance="h5">
+                  About TrustDesign
+                </Text>
+                <Text appearance="body-1">
+                  This project explores how trust can be understood, measured,
+                  and designed into emerging technologies.
+                </Text>
+                <Text appearance="body-1">
+                  We build tools that make the mechanics of trust visible -
+                  helping designers, businesses, and researchers see where
+                  technology supports human intention.
+                </Text>
+              </Layout>
             </Layout.Column>
             <Layout.Column>
               <Text tag="h2" appearance="h5">
