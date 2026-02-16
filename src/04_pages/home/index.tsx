@@ -1,22 +1,12 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
 
-import {
-  PageSection,
-  Layout,
-  Text,
-  Button,
-  ButtonGroup,
-  Link,
-  Avatar,
-} from "../../";
+import { PageSection, Layout, Text, Button, ButtonGroup, Link } from "../../";
 
 import Header from "../../03_partials/header";
 import Footer from "../../03_partials/footer";
 
 /* -- Content -- */
-
-import DannyChambers from "../../00_assets/images/DannyClaydenChambers.jpg";
 
 type ArticlePromo = {
   id: number;
@@ -245,8 +235,8 @@ const Home: React.FC = () => {
               </Text>
               <Text appearance="body-1">
                 I'm Danny Chambers - a Design Technologist working at the
-                intersection of user experience design and front-end
-                engineering.
+                intersection of user experience design and interface
+                development.
               </Text>
               <Text appearance="body-1">
                 <Link url="/dannyclaydenchambers" target="_blank">
