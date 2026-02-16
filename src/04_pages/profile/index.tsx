@@ -30,7 +30,7 @@ const Profile: React.FC = () => {
               <Avatar src={DannyChambers} size="xl" />
             </Layout>
             <Text tag="h1" appearance="h4">
-              Design technology, human-centred interfaces and systems
+              Design technology, human-centred interfaces and design systems
             </Text>
             <Text appearance="body-1">
               I'm Danny Chambers — a Design Technologist with 20 years of
