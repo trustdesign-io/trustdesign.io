@@ -11,12 +11,12 @@ import {
 } from "../../";
 
 import DannyChambers from "../../00_assets/images/DannyClaydenChambers-1.jpg";
-import JBChaykowski from "../../00_assets/images/testimonials/J.B.Chaykowski.jpeg";
-import NeilOates from "../../00_assets/images/testimonials/NeilOates.jpeg";
-import ChristianMacedo from "../../00_assets/images/testimonials/ChristianMacedo.jpeg";
-import SimonCohen from "../../00_assets/images/testimonials/SimonCohen.jpeg";
-import EricEnders from "../../00_assets/images/testimonials/EricEnders.jpeg";
-import JamesHirst from "../../00_assets/images/testimonials/JamesHirst.jpeg";
+// import JBChaykowski from "../../00_assets/images/testimonials/J.B.Chaykowski.jpeg";
+// import NeilOates from "../../00_assets/images/testimonials/NeilOates.jpeg";
+// import ChristianMacedo from "../../00_assets/images/testimonials/ChristianMacedo.jpeg";
+// import SimonCohen from "../../00_assets/images/testimonials/SimonCohen.jpeg";
+// import EricEnders from "../../00_assets/images/testimonials/EricEnders.jpeg";
+// import JamesHirst from "../../00_assets/images/testimonials/JamesHirst.jpeg";
 
 /* -- Content -- */
 
@@ -42,7 +42,44 @@ const Profile: React.FC = () => {
               effective designer–developer relationships.
             </Text>
 
-            <Text appearance="h7" visuallyhidden>
+            <Text appearance="body-1">
+              If you’re building something and want to deliver robust, scalable
+              interfaces - lets talk!
+            </Text>
+            <Layout topGutter="lg">
+              <LinkGroup alignment="center">
+                {/* <Link url="mailto:danny@trustdesign.io" title="Email">
+                  <span className="visually-hidden">Email</span>
+                  <Icon name="email" />
+                </Link> */}
+                <Link
+                  url="https://www.linkedin.com/in/dannyclaydenchambers"
+                  title="Find me on LinkedIn"
+                  target="_blank"
+                >
+                  <span className="visually-hidden">LinkedIn</span>
+                  <Icon name="linkedin-logo" />
+                </Link>
+                <Link
+                  url="https://github.com/dannychambers"
+                  title="Find me on Github"
+                  target="_blank"
+                >
+                  <span className="visually-hidden">Github</span>
+                  <Icon name="github-logo" />
+                </Link>
+                <Link
+                  url="https://x.com/claydenchambers"
+                  title="Find me on X"
+                  target="_blank"
+                >
+                  <span className="visually-hidden">X</span>
+                  <Icon name="x-logo" />
+                </Link>
+              </LinkGroup>
+            </Layout>
+
+            {/* <Text appearance="h7" visuallyhidden>
               Happy clients
             </Text>
 
@@ -125,7 +162,7 @@ const Profile: React.FC = () => {
                   </Layout>
                 </Layout.Column>
 
-                {/* <Layout.Column>
+                <Layout.Column>
                   <Layout bottomGutter="lg">
                     <Layout bottomGutter="md">
                       <Avatar size="md" src={JamesHirst} />
@@ -148,9 +185,9 @@ const Profile: React.FC = () => {
                       - a change-maker you can trust.
                     </Text>
                   </Layout>
-                </Layout.Column> */}
+                </Layout.Column>
 
-                {/* <Layout.Column>
+                <Layout.Column>
                   <Layout bottomGutter="lg">
                     <Layout bottomGutter="md">
                       <Avatar size="md" src={ChristianMacedo} />
@@ -173,9 +210,9 @@ const Profile: React.FC = () => {
                       Commitment to quality was evident throughout.
                     </Text>
                   </Layout>
-                </Layout.Column> */}
+                </Layout.Column>
 
-                {/* <Layout.Column>
+                <Layout.Column>
                   <Layout bottomGutter="lg">
                     <Layout bottomGutter="md">
                       <Avatar size="md" src={SimonCohen} />
@@ -199,46 +236,9 @@ const Profile: React.FC = () => {
                       together.
                     </Text>
                   </Layout>
-                </Layout.Column> */}
+                </Layout.Column>
               </Layout>
-            </Layout>
-
-            <Text appearance="body-1">
-              If you’re building something and want to deliver robust, scalable
-              interfaces - lets talk!
-            </Text>
-            <Layout topGutter="lg">
-              <LinkGroup alignment="center">
-                {/* <Link url="mailto:danny@trustdesign.io" title="Email">
-                  <span className="visually-hidden">Email</span>
-                  <Icon name="email" />
-                </Link> */}
-                <Link
-                  url="https://www.linkedin.com/in/dannyclaydenchambers"
-                  title="Find me on LinkedIn"
-                  target="_blank"
-                >
-                  <span className="visually-hidden">LinkedIn</span>
-                  <Icon name="linkedin-logo" />
-                </Link>
-                <Link
-                  url="https://github.com/dannychambers"
-                  title="Find me on Github"
-                  target="_blank"
-                >
-                  <span className="visually-hidden">Github</span>
-                  <Icon name="github-logo" />
-                </Link>
-                <Link
-                  url="https://x.com/claydenchambers"
-                  title="Find me on X"
-                  target="_blank"
-                >
-                  <span className="visually-hidden">X</span>
-                  <Icon name="x-logo" />
-                </Link>
-              </LinkGroup>
-            </Layout>
+            </Layout> */}
           </div>
         </Layout>
       </PageSection>
