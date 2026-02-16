@@ -11,6 +11,12 @@ import {
 } from "../../";
 
 import DannyChambers from "../../00_assets/images/DannyClaydenChambers-1.jpg";
+import JBChaykowski from "../../00_assets/images/testimonials/J.B.Chaykowski.jpeg";
+import NeilOates from "../../00_assets/images/testimonials/NeilOates.jpeg";
+import ChristianMacedo from "../../00_assets/images/testimonials/ChristianMacedo.jpeg";
+import SimonCohen from "../../00_assets/images/testimonials/SimonCohen.jpeg";
+import EricEnders from "../../00_assets/images/testimonials/EricEnders.jpeg";
+import JamesHirst from "../../00_assets/images/testimonials/JamesHirst.jpeg";
 
 /* -- Content -- */
 
@@ -29,12 +35,178 @@ const Profile: React.FC = () => {
             <Text appearance="body-1">
               I'm Danny Chambers — a Design Technologist with 20 years of
               experience working at the intersection of user experience design
-              and front-end engineering.
+              and interface developemnt.
             </Text>
             <Text appearance="body-1">
-              I specialise in prototyping, design systems and nurturing
+              I specialise in rapid prototyping, design systems and nurturing
               effective designer–developer relationships.
             </Text>
+
+            <Text appearance="h7" visuallyhidden>
+              Happy clients
+            </Text>
+
+            <Layout topGutter="xl" bottomGutter="xl">
+              <Layout grid="33_33_33" stack="sm">
+                <Layout.Column>
+                  <Layout bottomGutter="lg">
+                    <Layout bottomGutter="md">
+                      <Avatar size="md" src={JBChaykowski} />
+                    </Layout>
+                    <Layout bottomGutter="sm">
+                      <Text
+                        tag="h3"
+                        appearance="h7"
+                        alignment="center"
+                        layout={false}
+                      >
+                        J.B. Chaykowsky
+                      </Text>
+                    </Layout>
+                    <Text tag="h4" appearance="body-3" alignment="center">
+                      Global Design Leader @ Intuit
+                    </Text>
+                    <Text appearance="body-3" alignment="center">
+                      Danny came to deliver a <em>forward facing prototype</em>{" "}
+                      of how our product could evolve - and he absolutely nailed
+                      it.
+                    </Text>
+                  </Layout>
+                </Layout.Column>
+
+                <Layout.Column>
+                  <Layout bottomGutter="lg">
+                    <Layout bottomGutter="md">
+                      <Avatar size="md" src={NeilOates} />
+                    </Layout>
+                    <Layout bottomGutter="sm">
+                      <Text
+                        tag="h3"
+                        appearance="h7"
+                        alignment="center"
+                        layout={false}
+                      >
+                        Neil Oates
+                      </Text>
+                    </Layout>
+                    <Text tag="h4" appearance="body-3" alignment="center">
+                      Partnership prosperity at Intuit
+                    </Text>
+                    <Text appearance="body-3" alignment="center">
+                      Danny's skill in prototyping customer journeys has been
+                      critical in our journey to deliver for businesses across
+                      the UK.
+                    </Text>
+                  </Layout>
+                </Layout.Column>
+
+                <Layout.Column>
+                  <Layout bottomGutter="lg">
+                    <Layout bottomGutter="md">
+                      <Avatar size="md" src={EricEnders} />
+                    </Layout>
+                    <Layout bottomGutter="sm">
+                      <Text
+                        tag="h3"
+                        appearance="h7"
+                        alignment="center"
+                        layout={false}
+                      >
+                        Eric Enders
+                      </Text>
+                    </Layout>
+                    <Text tag="h4" appearance="body-3" alignment="center">
+                      Product Director, Tesco
+                    </Text>
+                    <Text appearance="body-3" alignment="center">
+                      Danny has helped us resolve many customer experience
+                      issues and has been key in setting the tone for a user
+                      centred culture.
+                    </Text>
+                  </Layout>
+                </Layout.Column>
+
+                <Layout.Column>
+                  <Layout bottomGutter="lg">
+                    <Layout bottomGutter="md">
+                      <Avatar size="md" src={ChristianMacedo} />
+                    </Layout>
+                    <Layout bottomGutter="sm">
+                      <Text
+                        tag="h3"
+                        appearance="h7"
+                        alignment="center"
+                        layout={false}
+                      >
+                        Christian Macedo
+                      </Text>
+                    </Layout>
+                    <Text tag="h4" appearance="body-3" alignment="center">
+                      TPM at Hurtigruten
+                    </Text>
+                    <Text appearance="body-3" alignment="center">
+                      Danny led the the design system effort at Hurtigruten.
+                      Commitment to quality was evident throughout.
+                    </Text>
+                  </Layout>
+                </Layout.Column>
+
+                <Layout.Column>
+                  <Layout bottomGutter="lg">
+                    <Layout bottomGutter="md">
+                      <Avatar size="md" src={SimonCohen} />
+                    </Layout>
+                    <Layout bottomGutter="sm">
+                      <Text
+                        tag="h3"
+                        appearance="h7"
+                        alignment="center"
+                        layout={false}
+                      >
+                        Simon Cohen
+                      </Text>
+                    </Layout>
+                    <Text tag="h4" appearance="body-3" alignment="center">
+                      Product Leader at Tesco
+                    </Text>
+                    <Text appearance="body-3" alignment="center">
+                      Danny is an expert prototyper. He brings a lot of
+                      experience and guidance - coaching and gelling the team
+                      together.
+                    </Text>
+                  </Layout>
+                </Layout.Column>
+
+                <Layout.Column>
+                  <Layout bottomGutter="lg">
+                    <Layout bottomGutter="md">
+                      <Avatar size="md" src={JamesHirst} />
+                    </Layout>
+                    <Layout bottomGutter="sm">
+                      <Text
+                        tag="h3"
+                        appearance="h7"
+                        alignment="center"
+                        layout={false}
+                      >
+                        James Hirst
+                      </Text>
+                    </Layout>
+                    <Text tag="h4" appearance="body-3" alignment="center">
+                      Co Founder @ Tyk
+                    </Text>
+                    <Text appearance="body-3" alignment="center">
+                      Creativity and Technical aptitude roll together with
+                      Danny.
+                    </Text>
+                    <Text appearance="body-3" alignment="center">
+                      A change-maker you can trust.
+                    </Text>
+                  </Layout>
+                </Layout.Column>
+              </Layout>
+            </Layout>
+
             <Text appearance="body-1">
               If you’re building something and want to deliver robust, scalable
               interfaces - lets talk!
