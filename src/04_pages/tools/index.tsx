@@ -1,14 +1,6 @@
 import React from "react";
 
-import {
-  PageSection,
-  Layout,
-  Text,
-  Link,
-  ButtonGroup,
-  Button,
-  Card,
-} from "../../";
+import { PageSection, Layout, Text, ButtonGroup, Button, Card } from "../../";
 
 import Header from "../../03_partials/header";
 import Footer from "../../03_partials/footer";
@@ -96,7 +88,7 @@ const Tools: React.FC = () => {
                         factors - from transparency and consent to honesty in
                         influence - and generates an overall Trust Score.
                       </Text>
-                      <Text appearance="body-3">
+                      {/* <Text appearance="body-3">
                         Learn more in our article{" "}
                         <Link
                           href="/articles/trust-design-audit-what-it-does-and-why-it-matters"
@@ -104,7 +96,7 @@ const Tools: React.FC = () => {
                         >
                           Trust Design Audit: what it does and why it matters.
                         </Link>
-                      </Text>
+                      </Text> */}
                     </Card.Body>
                   </Card>
                 </Layout>

@@ -36,6 +36,8 @@ export interface LayoutProps {
     | "52_48"
     | "66_33"
     | "70_30"
+    | "30_70"
+    | "20_80"
     | "80_20"
     | "33_33_33"
     | "25_25_25_25";
@@ -97,7 +99,7 @@ function Layout({
       "data-component": "Layout",
       className: classes,
     },
-    children
+    children,
   );
 }
 

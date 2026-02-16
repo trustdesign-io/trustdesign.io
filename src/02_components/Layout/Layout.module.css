@@ -212,6 +212,21 @@
   order: 1;
 }
 
+/* 20_80 --------------------------------------------*/
+
+.layout--20_80 {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+.layout--20_80.layout--content-reverse :first-child {
+  order: 2;
+}
+
+.layout--20_80.layout--content-reverse :nth-child(2) {
+  order: 1;
+}
+
 /* 33_33_33 --------------------------------------------*/
 
 .layout--33_33_33 {

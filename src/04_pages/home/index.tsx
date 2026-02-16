@@ -1,12 +1,22 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
 
-import { PageSection, Layout, Text, Button, ButtonGroup } from "../../";
+import {
+  PageSection,
+  Layout,
+  Text,
+  Button,
+  ButtonGroup,
+  Link,
+  Avatar,
+} from "../../";
 
 import Header from "../../03_partials/header";
 import Footer from "../../03_partials/footer";
 
 /* -- Content -- */
+
+import DannyChambers from "../../00_assets/images/DannyClaydenChambers.jpg";
 
 type ArticlePromo = {
   id: number;
@@ -144,7 +154,7 @@ const Home: React.FC = () => {
   const articleOverride = params.get("article");
 
   const releasedArticles = articlePromos.filter((article) =>
-    isReleased(article.monthYear)
+    isReleased(article.monthYear),
   );
 
   const latestArticle = releasedArticles[0];
@@ -214,19 +224,34 @@ const Home: React.FC = () => {
 
       <PageSection screen="half">
         <Layout container>
-          <Layout grid="50_50" stack="md">
+          <Layout grid="60_40" gap="xl" stack="md">
             <Layout.Column>
               <Text tag="h2" appearance="h5">
-                About us
+                About TrustDesign
               </Text>
               <Text appearance="body-1">
-                Our work explores how trust can be understood, measured, and
+                This project explores how trust can be understood, measured, and
                 designed into emerging technologies.
               </Text>
               <Text appearance="body-1">
                 We build tools that make the mechanics of trust visible -
                 helping designers, businesses, and researchers see where
                 technology supports human intention.
+              </Text>
+            </Layout.Column>
+            <Layout.Column>
+              <Text tag="h2" appearance="h5">
+                About me
+              </Text>
+              <Text appearance="body-1">
+                I'm Danny Chambers - a Design Technologist working at the
+                intersection of user experience design and front-end
+                engineering.
+              </Text>
+              <Text appearance="body-1">
+                <Link url="/dannyclaydenchambers" target="_blank">
+                  More about my experience
+                </Link>
               </Text>
             </Layout.Column>
           </Layout>
