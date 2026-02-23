@@ -6,10 +6,13 @@
 /* -------------------------------------------- */
 
 .site-footer {
-  background: var(--color-abyss);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   padding: var(--size-5);
   border-top: 1px solid var(--color-steel-33);
   text-align: center;
+  z-index: 999;
 
   .site-footer-inner {
     display: flex;
