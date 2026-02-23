@@ -212,7 +212,9 @@ const Home: React.FC = () => {
                     </Text>
                     <Text appearance="body-3">
                       Published in {latestArticle.monthYear} by{" "}
-                      <Link url="/profile">{latestArticle.author}</Link>
+                      <Link url="/dannyclaydenchambers">
+                        {latestArticle.author}
+                      </Link>
                     </Text>
                   </Layout>
                   <Text appearance="body-1">{overriddenArticle.blurb}</Text>
@@ -241,7 +243,9 @@ const Home: React.FC = () => {
                     </Text>
                     <Text appearance="body-3">
                       Published in {latestArticle.monthYear} by{" "}
-                      <Link url="/profile">{latestArticle.author}</Link>
+                      <Link url="/dannyclaydenchambers">
+                        {latestArticle.author}
+                      </Link>
                     </Text>
                   </Layout>
                   <Text appearance="body-1">{latestArticle.blurb}</Text>
