@@ -166,7 +166,7 @@ export default function ActivityHeatmap({ weeks = 26 }: ActivityHeatmapProps) {
   }
 
   // Use mock only after fetch completes AND there is no in-range activity
-  const useMock = fetched && realCounts.size === 0;
+  const useMock = fetched && items.length === 0;
   const activeCounts = useMock ? buildMockCounts(days) : realCounts;
 
   return (
