@@ -332,7 +332,7 @@ const Home: React.FC = () => {
             </Text>
 
             <Layout topGutter="md" bottomGutter="sm">
-              <ActivityHeatmap weeks={isDesktopLarge ? 36 : 7} />
+              <ActivityHeatmap weeks={isDesktopLarge ? 36 : 10} />
             </Layout>
           </div>
         </Layout>
