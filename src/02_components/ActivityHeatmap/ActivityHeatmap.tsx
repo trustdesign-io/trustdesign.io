@@ -16,14 +16,10 @@ import styles from "./ActivityHeatmap.module.css";
 
 type ActivityItem = {
   ts: string;
-  actor: string;
-  type: string;
-  repo: string;
-  url: string;
   count: number;
 };
 
-type DayCell = { key: string; count: number };
+type DayCell = { key: string };
 
 type ActivityHeatmapProps = {
   weeks?: number;
@@ -53,8 +49,14 @@ function addDaysUTC(d: Date, days: number) {
 }
 
 function startOfWeekUTC(d: Date) {
+  // Sunday-start week (0..6)
   const day = d.getUTCDay();
   return addDaysUTC(d, -day);
+}
+
+function diffDaysUTC(a: Date, b: Date) {
+  // assumes both are midnight UTC
+  return Math.round((a.getTime() - b.getTime()) / 86400000);
 }
 
 function intensity(count: number) {
@@ -75,18 +77,18 @@ function mulberry32(seed: number) {
   };
 }
 
-function buildMockCounts(days: DayCell[]) {
+function buildMockCounts(dayKeys: string[]) {
   const rnd = mulberry32(42);
 
   const bursts = [
-    { center: Math.floor(days.length * 0.2), radius: 7, peak: 4 },
-    { center: Math.floor(days.length * 0.5), radius: 10, peak: 3 },
-    { center: Math.floor(days.length * 0.8), radius: 6, peak: 4 },
+    { center: Math.floor(dayKeys.length * 0.2), radius: 7, peak: 4 },
+    { center: Math.floor(dayKeys.length * 0.5), radius: 10, peak: 3 },
+    { center: Math.floor(dayKeys.length * 0.8), radius: 6, peak: 4 },
   ];
 
   const map = new Map<string, number>();
 
-  for (let i = 0; i < days.length; i++) {
+  for (let i = 0; i < dayKeys.length; i++) {
     let c = 0;
 
     const r = rnd();
@@ -102,8 +104,7 @@ function buildMockCounts(days: DayCell[]) {
     }
 
     if (c > 7) c = 7;
-
-    map.set(days[i].key, c);
+    map.set(dayKeys[i], c);
   }
 
   return map;
@@ -133,7 +134,7 @@ export default function ActivityHeatmap({ weeks = 26 }: ActivityHeatmapProps) {
 
   if (error) return <div>{error}</div>;
 
-  const safeWeeks = clampInt(weeks, 4, 52); // 4–52 weeks
+  const safeWeeks = clampInt(weeks, 4, 52);
   const rows = 7;
   const daysTotal = safeWeeks * rows;
 
@@ -145,29 +146,41 @@ export default function ActivityHeatmap({ weeks = 26 }: ActivityHeatmapProps) {
     ),
   );
 
-  const gridStart = startOfWeekUTC(addDaysUTC(todayUTC, -(daysTotal - 1)));
+  // --- FIX: align start to Sunday, then shift window forward so it ends on today ---
+  const rawStart = addDaysUTC(todayUTC, -(daysTotal - 1));
+  let gridStart = startOfWeekUTC(rawStart);
+  const gridEnd = addDaysUTC(gridStart, daysTotal - 1);
 
+  if (gridEnd.getTime() < todayUTC.getTime()) {
+    const shift = diffDaysUTC(todayUTC, gridEnd);
+    gridStart = addDaysUTC(gridStart, shift);
+  }
+  // -------------------------------------------------------------------------------
+
+  // Build day keys in the rendered window
   const days: DayCell[] = [];
-  const dayKeys = new Set<string>();
+  const dayKeys: string[] = [];
+  const dayKeySet = new Set<string>();
 
   for (let i = 0; i < daysTotal; i++) {
     const date = addDaysUTC(gridStart, i);
     const key = yyyyMmDdUTC(date);
-    days.push({ key, count: 0 });
-    dayKeys.add(key);
+    days.push({ key });
+    dayKeys.push(key);
+    dayKeySet.add(key);
   }
 
-  // Build real counts, but only for keys inside the rendered window
+  // Count real events for days in window
   const realCounts = new Map<string, number>();
   for (const it of items) {
     const day = yyyyMmDdUTC(new Date(it.ts));
-    if (!dayKeys.has(day)) continue;
+    if (!dayKeySet.has(day)) continue;
     realCounts.set(day, (realCounts.get(day) || 0) + (it.count || 1));
   }
 
-  // Use mock only after fetch completes AND there is no in-range activity
+  // Mock only when API returned nothing
   const useMock = fetched && items.length === 0;
-  const activeCounts = useMock ? buildMockCounts(days) : realCounts;
+  const activeCounts = useMock ? buildMockCounts(dayKeys) : realCounts;
 
   return (
     <div className={styles.root}>
@@ -177,7 +190,7 @@ export default function ActivityHeatmap({ weeks = 26 }: ActivityHeatmapProps) {
         aria-label="Contribution heatmap"
         style={
           {
-            ["--rows" as any]: rows,
+            ["--rows"]: rows,
           } as React.CSSProperties
         }
       >
