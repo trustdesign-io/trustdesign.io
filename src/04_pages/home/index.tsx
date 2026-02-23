@@ -211,9 +211,8 @@ const Home: React.FC = () => {
                       {overriddenArticle.title}
                     </Text>
                     <Text appearance="body-3">
-                      Published by{" "}
-                      <Link url="/profile">{latestArticle.author}</Link> in{" "}
-                      {latestArticle.monthYear}{" "}
+                      Published in {latestArticle.monthYear} by
+                      <Link url="/profile">{latestArticle.author}</Link>
                     </Text>
                   </Layout>
                   <Text appearance="body-1">{overriddenArticle.blurb}</Text>
@@ -241,8 +240,8 @@ const Home: React.FC = () => {
                       {latestArticle.title}
                     </Text>
                     <Text appearance="body-3">
-                      <Link url="/profile">{latestArticle.author}</Link> in{" "}
-                      {latestArticle.monthYear}
+                      Published in {latestArticle.monthYear} by
+                      <Link url="/profile">{latestArticle.author}</Link>
                     </Text>
                   </Layout>
                   <Text appearance="body-1">{latestArticle.blurb}</Text>
