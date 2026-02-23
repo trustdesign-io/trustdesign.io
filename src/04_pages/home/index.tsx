@@ -11,7 +11,7 @@ import { useMediaQuery } from "../../05_utilities/useMediaQuery.ts";
 
 /* -- Content -- */
 
-import DannyChambers from "../../00_assets/images/DannyClaydenChambers-1.jpg";
+// import DannyChambers from "../../00_assets/images/DannyClaydenChambers-1.jpg";
 // import ChristianMacedo from "../../00_assets/images/testimonials/ChristianMacedo.jpeg";
 
 type ArticlePromo = {
@@ -211,7 +211,8 @@ const Home: React.FC = () => {
                       {overriddenArticle.title}
                     </Text>
                     <Text appearance="body-3">
-                      Published by {latestArticle.author} in{" "}
+                      Published by{" "}
+                      <Link url="/profile">{latestArticle.author}</Link> in{" "}
                       {latestArticle.monthYear}{" "}
                     </Text>
                   </Layout>
@@ -240,8 +241,8 @@ const Home: React.FC = () => {
                       {latestArticle.title}
                     </Text>
                     <Text appearance="body-3">
-                      Published by {latestArticle.author} in{" "}
-                      {latestArticle.monthYear}{" "}
+                      <Link url="/profile">{latestArticle.author}</Link> in{" "}
+                      {latestArticle.monthYear}
                     </Text>
                   </Layout>
                   <Text appearance="body-1">{latestArticle.blurb}</Text>
