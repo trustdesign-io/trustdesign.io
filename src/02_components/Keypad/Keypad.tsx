@@ -63,7 +63,7 @@ const Keypad: React.FC<KeypadProps> & { Item: React.FC<KeypadItemProps> } = ({
             setTimeout(() => {
               currentIndex += 1;
               runSequence();
-            }, interval)
+            }, interval),
           );
         } else {
           setActiveKey(null); // Reset after sequence completes
@@ -85,7 +85,7 @@ const Keypad: React.FC<KeypadProps> & { Item: React.FC<KeypadItemProps> } = ({
 
   const handleCombinedClick = (
     childOnClick: (index: number) => void,
-    index: number
+    index: number,
   ) => {
     if (activeKey === null) {
       setActiveKey(index);

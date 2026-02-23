@@ -1,10 +1,13 @@
-import React from "react";
 import { useLocation } from "react-router-dom";
 
 import { PageSection, Layout, Text, Button, ButtonGroup, Link } from "../../";
 
 import Header from "../../03_partials/header";
 import Footer from "../../03_partials/footer";
+import { ActivityHeatmap } from "../../02_components/ActivityHeatmap";
+
+import { breakpoint } from "../../01_foundation/dimension/dimension.ts";
+import { useMediaQuery } from "../../05_utilities/useMediaQuery.ts";
 
 /* -- Content -- */
 
@@ -143,6 +146,8 @@ const Home: React.FC = () => {
   const params = new URLSearchParams(location.search);
   const articleOverride = params.get("article");
 
+  const isDesktopLarge = useMediaQuery(`(min-width: ${breakpoint.lg.value})`);
+
   const releasedArticles = articlePromos.filter((article) =>
     isReleased(article.monthYear),
   );
@@ -151,14 +156,17 @@ const Home: React.FC = () => {
   const overriddenArticle =
     articleOverride &&
     articlePromos.find((a) => String(a.id) === articleOverride);
+
   return (
     <Layout wrapper className="homepage">
       <Header />
+
       <PageSection screen="half">
         <Layout container>
           <div className="visually-hidden">
             <Text appearance="h3">Latest article..</Text>
           </div>
+
           <Layout grid="70_30" stack="md">
             <Layout.Column>
               {overriddenArticle && (
@@ -167,6 +175,7 @@ const Home: React.FC = () => {
                     {overriddenArticle.title}
                   </Text>
                   <Text appearance="body-1">{overriddenArticle.blurb}</Text>
+
                   <Layout topGutter="lg">
                     <ButtonGroup>
                       <Button url={overriddenArticle.slug} appearance="body-1">
@@ -190,6 +199,7 @@ const Home: React.FC = () => {
                     {latestArticle.title}
                   </Text>
                   <Text appearance="body-1">{latestArticle.blurb}</Text>
+
                   <Layout topGutter="lg">
                     <ButtonGroup>
                       <Button url={latestArticle.slug} appearance="body-1">
@@ -207,6 +217,7 @@ const Home: React.FC = () => {
                 </>
               )}
             </Layout.Column>
+
             <Layout.Column>&nbsp;</Layout.Column>
           </Layout>
         </Layout>
@@ -220,10 +231,13 @@ const Home: React.FC = () => {
                 <Text tag="h2" appearance="h5">
                   About TrustDesign
                 </Text>
+
                 <Text appearance="body-1">
-                  This project explores how trust can be understood, measured,
-                  and designed into emerging technologies.
+                  This project explores the human computer relationship, and how
+                  trust can be understood, measured, and designed into emerging
+                  technologies.
                 </Text>
+
                 <Text appearance="body-1">
                   We build tools that make the mechanics of trust visible -
                   helping designers, businesses, and researchers see where
@@ -231,15 +245,18 @@ const Home: React.FC = () => {
                 </Text>
               </Layout>
             </Layout.Column>
+
             <Layout.Column>
               <Text tag="h2" appearance="h5">
                 About me
               </Text>
+
               <Text appearance="body-1">
                 I'm Danny Chambers - a Design Technologist working at the
                 intersection of user experience design and interface
                 development.
               </Text>
+
               <Text appearance="body-1">
                 <Link url="/dannyclaydenchambers" target="_blank">
                   More about my experience
@@ -247,6 +264,28 @@ const Home: React.FC = () => {
               </Text>
             </Layout.Column>
           </Layout>
+        </Layout>
+      </PageSection>
+
+      <PageSection screen="half" backgroundColor="rgb(4 10 16 / 90%)">
+        <Layout container>
+          <div className="activity-feed">
+            <Text tag="h2" appearance="h5">
+              Activity
+            </Text>
+
+            <Text appearance="body-1">
+              Contributions across the{" "}
+              <Link href="https://github.com/trustdesign-io" target="blank">
+                trustdesign-io
+              </Link>{" "}
+              github org - human and agent.
+            </Text>
+
+            <Layout topGutter="md" bottomGutter="sm">
+              <ActivityHeatmap weeks={isDesktopLarge ? 36 : 7} />
+            </Layout>
+          </div>
         </Layout>
       </PageSection>
 

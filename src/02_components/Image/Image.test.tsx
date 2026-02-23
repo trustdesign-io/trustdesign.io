@@ -13,7 +13,7 @@ import "@testing-library/jest-dom";
 import { render } from "@testing-library/react";
 import { test, expect, describe } from "vitest";
 import Image from "./Image";
-import styles from "./Image.module.css";
+import "./Image.module.css";
 
 // --------------------------------------------
 // Tests

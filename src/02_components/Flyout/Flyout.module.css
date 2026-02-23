@@ -31,7 +31,7 @@
 
 .flyout-content {
   border-left: 1px solid var(--color-abyss);
-  padding: var(--size-22) var(--size-9) var(--size-12) var(--size-9);
+  padding: 180px var(--size-9) var(--size-12) var(--size-9);
   position: fixed;
   height: 100vh;
   width: 100vw;
@@ -45,6 +45,10 @@
     radial-gradient(at 51.5% 51.5%, #df00a8 0px, transparent 50%),
     radial-gradient(at 34.6% 33.3%, #456882 0px, transparent 50%) #000000;
   mix-blend-mode: normal;
+
+  .avatar {
+    position: absolute;
+  }
 
   ul {
     width: fit-content;
@@ -102,8 +106,9 @@
     height: auto;
     width: auto;
     max-width: none;
-    padding: 0;
+    padding: 0 0 0 0;
     background: none;
+    display: flex;
   }
 
   .flyout--left .flyout-trigger,

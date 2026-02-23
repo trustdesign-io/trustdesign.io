@@ -55,7 +55,7 @@ export const PrimaryNavigationItem: React.FC<PrimaryNavigationItemProps> = ({
       className={clsx(
         styles["primary-navigation-item"],
         active && styles["primary-navigation-item--active"],
-        spaced && styles["primary-navigation-item--spaced"]
+        spaced && styles["primary-navigation-item--spaced"],
       )}
     >
       {children}
@@ -91,7 +91,7 @@ export const PrimarySubNavigationItem: React.FC<
       className={clsx(
         styles["primary-sub-navigation-item"],
         active && styles["primary-sub-navigation-item--active"],
-        spaced && styles["primary-sub-navigation-item--spaced"]
+        spaced && styles["primary-sub-navigation-item--spaced"],
       )}
     >
       {children}

@@ -61,7 +61,7 @@ function PageSection({
         screen && styles[`page-section--${screen}`],
         padding && styles[`page-section--padding-${padding}`],
         backgroundImagePosition &&
-          styles[`page-section-backgroundPosition--${backgroundImagePosition}`]
+          styles[`page-section-backgroundPosition--${backgroundImagePosition}`],
       )}
       style={style}
     >

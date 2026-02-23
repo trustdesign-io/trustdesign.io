@@ -13,7 +13,7 @@ import "@testing-library/jest-dom";
 import { render } from "@testing-library/react";
 import { test, expect, describe, vi } from "vitest";
 import PageSection from "./PageSection";
-import styles from "./PageSection.module.css";
+import "./PageSection.module.css";
 
 vi.mock("../Layout", () => ({
   default: ({ children }: { children: React.ReactNode }) => (
@@ -42,7 +42,7 @@ describe("PageSection", () => {
     const { container } = render(
       <PageSection tag="section" screen="full">
         Content
-      </PageSection>
+      </PageSection>,
     );
     const section = getOutermostElement(container);
     expect(section?.tagName.toLowerCase()).toBe("section");

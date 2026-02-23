@@ -18,7 +18,7 @@ const Header: React.FC = () => {
       <span className="visually-hidden">Trust Design</span>
       <span className="visually-hidden">
         <Text appearance="body-2">
-          Trustworthy design for emerging technology
+          Trustworthy design and emerging technology
         </Text>
       </span>
       <Navigation />

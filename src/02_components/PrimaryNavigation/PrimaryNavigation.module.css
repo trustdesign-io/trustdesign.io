@@ -5,6 +5,10 @@
 /*                                              */
 /* -------------------------------------------- */
 
+.primary-navigation {
+  margin-top: var(--size-5);
+}
+
 .primary-navigation ul,
 .primary-sub-navigation ul {
   list-style: none;
@@ -99,7 +103,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (--min-breakpoint-sm) {
   .primary-navigation > ul {
     width: auto;
     margin: 0;

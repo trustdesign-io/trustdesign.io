@@ -60,7 +60,7 @@ function Button({
     styles[`button--${tier}`],
     styles[`button--${appearance}`],
     stretch && styles["button--stretch"],
-    iconOnly && styles["button--icon-only"]
+    iconOnly && styles["button--icon-only"],
   );
 
   const content = (
@@ -115,7 +115,7 @@ function ButtonGroup({
       data-component="ButtonGroup"
       className={clsx(
         styles["button-group"],
-        styles[`button-group--${alignment}`]
+        styles[`button-group--${alignment}`],
       )}
     >
       {children}

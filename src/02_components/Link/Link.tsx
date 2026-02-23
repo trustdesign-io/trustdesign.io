@@ -72,7 +72,7 @@ function Link({
         styles.link,
         appearance && styles[`link--${appearance}`],
         stretch && styles["link--stretch"],
-        iconOnly && styles["link--icon-only"]
+        iconOnly && styles["link--icon-only"],
       )}
     >
       {stretch && <span className={clsx(styles["link__hit-area"])}></span>}

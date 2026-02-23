@@ -66,7 +66,7 @@ const Tabs: React.FC<TabsProps> & { Panel: React.FC<TabPanelProps> } = ({
               activeTab === index && styles["tab-button--active"],
             )}
             onClick={() => setActiveTab(index)}
-            onKeyDown={e => handleKeyDown(e, index)}
+            onKeyDown={(e) => handleKeyDown(e, index)}
             tabIndex={activeTab === index ? 0 : -1}
           >
             {tab.props.label}

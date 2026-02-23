@@ -33,13 +33,13 @@ const Profile: React.FC = () => {
               Design technology, human-centred interfaces and design systems
             </Text>
             <Text appearance="body-1">
-              I'm Danny Chambers — a Design Technologist with 20 years of
-              experience working at the intersection of user experience design
-              and interface developemnt.
+              I'm Danny Chambers — a Design Technologist with 19 years of
+              professional experience working at the intersection of user
+              experience design and interface development.
             </Text>
             <Text appearance="body-1">
-              I specialise in rapid prototyping, design systems and nurturing
-              effective designer–developer relationships.
+              I specialise in rapid prototyping (human and agentic), design
+              systems and nurturing effective designer–developer relationships.
             </Text>
 
             <Text appearance="body-1">

@@ -1,0 +1,64 @@
+.root {
+  width: 100%;
+}
+
+/* Responsive grid: fills container width, squares via aspect-ratio */
+.grid {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(var(--rows, 7), 1fr);
+  gap: min(0.35vw, 4px);
+  width: 100%;
+}
+
+/* Each cell scales with its column width and stays square */
+.cell {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: min(0.35vw, 4px);
+  display: block;
+}
+
+/* Legend */
+.legend {
+  font-size: 12px;
+  opacity: 0.8;
+  margin-top: 8px;
+}
+
+.legendSwatches {
+  display: inline-flex;
+  gap: 4px;
+  vertical-align: middle;
+  margin: 0 8px;
+}
+
+.legendCell {
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  display: block;
+}
+
+/* Brand gradations (#DF00A8) */
+.level0 {
+  background: rgba(223, 0, 168, 0.08);
+}
+.level1 {
+  background: rgba(223, 0, 168, 0.2);
+}
+.level2 {
+  background: rgba(223, 0, 168, 0.4);
+}
+.level3 {
+  background: rgba(223, 0, 168, 0.65);
+}
+.level4 {
+  background: #df00a8;
+}
+
+.mockNote {
+  margin-top: 8px;
+  font-size: 12px;
+  opacity: 0.65;
+}

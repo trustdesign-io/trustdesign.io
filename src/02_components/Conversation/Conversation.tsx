@@ -34,12 +34,12 @@ const Conversation: React.FC<ConversationProps> & {
     sequence.forEach((step, index) => {
       // Set timeout to add the "visible" state after the specified delay
       const showTimeout = setTimeout(() => {
-        setVisibleIndices(prev => new Set(prev).add(index));
+        setVisibleIndices((prev) => new Set(prev).add(index));
 
         // If duration is specified, set timeout to remove "visible" after duration
         if (step.duration) {
           setTimeout(() => {
-            setVisibleIndices(prev => {
+            setVisibleIndices((prev) => {
               const newVisibleIndices = new Set(prev);
               newVisibleIndices.delete(index);
               return newVisibleIndices;

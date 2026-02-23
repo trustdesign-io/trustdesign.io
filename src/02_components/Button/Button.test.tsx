@@ -13,7 +13,7 @@ import "@testing-library/jest-dom";
 import { render, screen } from "@testing-library/react";
 import { vi, test, expect, describe } from "vitest";
 import { Button, ButtonProps } from "./Button";
-import styles from "./Button.module.css";
+import "./Button.module.css";
 
 // --------------------------------------------
 // Tests
@@ -34,7 +34,7 @@ describe("Button", () => {
 
   test.each(["button", "submit", "reset"] as const)(
     "renders button with type %s",
-    type => {
+    (type) => {
       render(<Button {...defaultProps} type={type} />);
       expect(screen.getByRole("button")).toHaveAttribute("type", type);
     },
@@ -42,7 +42,7 @@ describe("Button", () => {
 
   test.each(["primary", "secondary"] as const)(
     "renders button with appearance %s",
-    appearance => {
+    (appearance) => {
       render(<Button {...defaultProps} tier={appearance} />);
       expect(screen.getByRole("button")).toHaveClass(
         styles[`button--${appearance}`],
@@ -52,7 +52,7 @@ describe("Button", () => {
 
   test.each(["body-1", "body-2", "body-3"] as const)(
     "renders button with size %s",
-    size => {
+    (size) => {
       render(<Button {...defaultProps} appearance={size} />);
       expect(screen.getByRole("button")).toHaveClass(styles[`button--${size}`]);
     },
