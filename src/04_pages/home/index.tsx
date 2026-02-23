@@ -11,12 +11,17 @@ import { useMediaQuery } from "../../05_utilities/useMediaQuery.ts";
 
 /* -- Content -- */
 
+import DannyChambers from "../../00_assets/images/DannyClaydenChambers-1.jpg";
+// import ChristianMacedo from "../../00_assets/images/testimonials/ChristianMacedo.jpeg";
+
 type ArticlePromo = {
   id: number;
   slug: string;
   title: string;
   blurb: string;
   monthYear: string;
+  author: string;
+  avatar: string;
 };
 
 const isReleased = (monthYear: string): boolean => {
@@ -34,6 +39,8 @@ const articlePromos: ArticlePromo[] = [
     blurb:
       "Trust Design is moving from niche topic to standard practice. This article looks ahead at how regulation, AI, and shifting public expectations will make trustworthiness a basic requirement for any serious product, not a branding claim or marketing message.",
     monthYear: "December 2026",
+    author: "Danny Clayden Chambers",
+    avatar: "DannyChambers",
   },
   {
     id: 13,
@@ -42,6 +49,8 @@ const articlePromos: ArticlePromo[] = [
     blurb:
       "The Trust Design Toolkit turns fuzzy worries about trust into structured audits, screenshots, and findings that teams can act on. We explain what each tool does, how they work together, and how to use them to improve a real product rather than just a slide deck.",
     monthYear: "November 2026",
+    author: "Danny Clayden Chambers",
+    avatar: "DannyChambers",
   },
   {
     id: 12,
@@ -50,6 +59,8 @@ const articlePromos: ArticlePromo[] = [
     blurb:
       "Defaults quietly decide what happens to people who never change a setting. This piece introduces Trust by Default as a practical set of design principles for privacy, data use, consent, and safety, and shows how to use them when your product is under real commercial pressure.",
     monthYear: "October 2026",
+    author: "Danny Clayden Chambers",
+    avatar: "DannyChambers",
   },
   {
     id: 11,
@@ -58,6 +69,8 @@ const articlePromos: ArticlePromo[] = [
     blurb:
       "Consent and safety often show up as legal or edge-case concerns, but they are central to how people experience your product. This article looks at patterns for reversible choices, clear warnings, and recovery paths that reduce harm without turning every flow into a legal document.",
     monthYear: "September 2026",
+    author: "Danny Clayden Chambers",
+    avatar: "DannyChambers",
   },
   {
     id: 10,
@@ -66,6 +79,8 @@ const articlePromos: ArticlePromo[] = [
     blurb:
       "Interfaces now implement policy in practice. We explore how emerging rules on dark patterns, consent, and transparency intersect with design systems, and how Trust Design can help teams ship flows that are both compliant and understandable to the people who have to use them.",
     monthYear: "August 2026",
+    author: "Danny Clayden Chambers",
+    avatar: "DannyChambers",
   },
   {
     id: 9,
@@ -74,6 +89,8 @@ const articlePromos: ArticlePromo[] = [
     blurb:
       "Scam UIs compress the worst ideas in interface design into a few screens. By dissecting a common ‘account locked’ fraud flow, this article shows which visual and behavioural patterns are reused in scams and how legitimate products can avoid accidentally looking or feeling the same.",
     monthYear: "July 2026",
+    author: "Danny Clayden Chambers",
+    avatar: "DannyChambers",
   },
   {
     id: 8,
@@ -82,6 +99,8 @@ const articlePromos: ArticlePromo[] = [
     blurb:
       "Every product nudges behaviour. The question is whether that influence aligns with the person using it. We unpack where persuasive design becomes manipulative, offer practical tests teams can run on their own flows, and discuss how to handle commercial targets without crossing the line.",
     monthYear: "June 2026",
+    author: "Danny Clayden Chambers",
+    avatar: "DannyChambers",
   },
   {
     id: 7,
@@ -90,6 +109,8 @@ const articlePromos: ArticlePromo[] = [
     blurb:
       "Scam interfaces concentrate the most coercive patterns in interface design into a few high-pressure screens. This article looks at scam flows through a forensic UX lens and shows how legitimate products can avoid resembling them, so they feel nothing like fraud even in moments of friction.",
     monthYear: "May 2026",
+    author: "Danny Clayden Chambers",
+    avatar: "DannyChambers",
   },
   {
     id: 6,
@@ -98,6 +119,8 @@ const articlePromos: ArticlePromo[] = [
     blurb:
       "AI systems are probabilistic and can be confidently wrong. We look at which trust signals matter most in AI interfaces—such as expectation setting, evidence, uncertainty, and refusal—and how to design them so that people can decide when to rely on an output and when to double-check.",
     monthYear: "April 2026",
+    author: "Danny Clayden Chambers",
+    avatar: "DannyChambers",
   },
   {
     id: 5,
@@ -106,6 +129,8 @@ const articlePromos: ArticlePromo[] = [
     blurb:
       "Transparency is not about dumping more text into a privacy policy. It is about helping people understand what is happening to them at the moment they act. This article breaks down where transparency matters most in a product and offers patterns for explaining decisions in plain language.",
     monthYear: "March 2026",
+    author: "Danny Clayden Chambers",
+    avatar: "DannyChambers",
   },
   {
     id: 4,
@@ -114,6 +139,8 @@ const articlePromos: ArticlePromo[] = [
     blurb:
       "Manipulative design did not start with a single bad actor. It emerged from optimisation culture, growth targets, and experiments that slowly pushed interfaces toward pressure and obscurity. We trace that history and outline what needs to change if we want a different pattern language.",
     monthYear: "February 2026",
+    author: "Danny Clayden Chambers",
+    avatar: "DannyChambers",
   },
   {
     id: 3,
@@ -122,6 +149,8 @@ const articlePromos: ArticlePromo[] = [
     blurb:
       "Trust Design is our working name for a discipline that treats trust as something you can deliberately shape in products. This piece defines the term, places it in relation to UX, ethics, and security, and argues for why teams need a more precise language for these decisions.",
     monthYear: "January 2026",
+    author: "Danny Clayden Chambers",
+    avatar: "DannyChambers",
   },
   {
     id: 2,
@@ -130,6 +159,8 @@ const articlePromos: ArticlePromo[] = [
     blurb:
       "The Trust Design Audit is a structured way to examine how a product communicates, asks for consent, and handles risk. We describe the audit model, what it measures, and how teams can use the findings to have clearer conversations with design, product, and leadership.",
     monthYear: "December 2025",
+    author: "Danny Clayden Chambers",
+    avatar: "DannyChambers",
   },
   {
     id: 1,
@@ -138,6 +169,8 @@ const articlePromos: ArticlePromo[] = [
     blurb:
       "As new technologies move from prototypes to infrastructure, the question is no longer just whether they work, but whether people can safely rely on them. This introductory article looks at how trust considerations change as products become part of everyday, non-expert life.",
     monthYear: "November 2025",
+    author: "Danny Clayden Chambers",
+    avatar: "DannyChambers",
   },
 ];
 
@@ -164,18 +197,25 @@ const Home: React.FC = () => {
       <PageSection screen="half">
         <Layout container>
           <div className="visually-hidden">
-            <Text appearance="h3">Latest article..</Text>
+            <Text appearance="h3" tag="h2">
+              Latest article..
+            </Text>
           </div>
 
           <Layout grid="70_30" stack="md">
             <Layout.Column>
               {overriddenArticle && (
                 <>
-                  <Text tag="h2" appearance="h2">
-                    {overriddenArticle.title}
-                  </Text>
+                  <Layout bottomGutter="md">
+                    <Text tag="h3" appearance="h2">
+                      {overriddenArticle.title}
+                    </Text>
+                    <Text appearance="body-3">
+                      Published by {latestArticle.author} in{" "}
+                      {latestArticle.monthYear}{" "}
+                    </Text>
+                  </Layout>
                   <Text appearance="body-1">{overriddenArticle.blurb}</Text>
-
                   <Layout topGutter="lg">
                     <ButtonGroup>
                       <Button url={overriddenArticle.slug} appearance="body-1">
@@ -195,11 +235,16 @@ const Home: React.FC = () => {
 
               {!overriddenArticle && latestArticle && (
                 <>
-                  <Text tag="h2" appearance="h2">
-                    {latestArticle.title}
-                  </Text>
+                  <Layout bottomGutter="md">
+                    <Text tag="h2" appearance="h2">
+                      {latestArticle.title}
+                    </Text>
+                    <Text appearance="body-3">
+                      Published by {latestArticle.author} in{" "}
+                      {latestArticle.monthYear}{" "}
+                    </Text>
+                  </Layout>
                   <Text appearance="body-1">{latestArticle.blurb}</Text>
-
                   <Layout topGutter="lg">
                     <ButtonGroup>
                       <Button url={latestArticle.slug} appearance="body-1">
