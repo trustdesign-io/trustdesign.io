@@ -47,7 +47,7 @@ const Navigation: React.FC = () => {
               })}
         >
           <Link to="/dannyclaydenchambers" target="_blank">
-            <Avatar src={DannyChambers} size="xs" />
+            <Avatar src={DannyChambers} size="xs" link />
           </Link>
         </div>
       </Flyout>

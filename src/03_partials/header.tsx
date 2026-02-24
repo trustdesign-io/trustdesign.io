@@ -9,12 +9,7 @@ const Header: React.FC = () => {
 
   return (
     <PageHeader>
-      <Logo
-        // size="xs"
-        alt="trust design logo"
-        url="/"
-        tag={isHomePage ? "h1" : "span"}
-      />
+      <Logo alt="trust design logo" url="/" tag={isHomePage ? "h1" : "span"} />
       <span className="visually-hidden">Trust Design</span>
       <span className="visually-hidden">
         <Text appearance="body-2">

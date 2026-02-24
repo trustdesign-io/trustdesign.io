@@ -23,6 +23,10 @@
   border-radius: 50%;
   overflow: hidden;
   border: 3px solid var(--color-frost);
+}
+
+.avatar.avatar--link .avatar_image img {
+  border: 3px solid var(--color-frost);
   transition: all var(--transition-1);
 
   &:hover {

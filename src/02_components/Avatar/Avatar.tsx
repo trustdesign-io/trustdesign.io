@@ -23,7 +23,8 @@ export interface AvatarProps {
   src?: string;
   username?: string;
   size?: "xs" | "sm" | "md" | "lg" | "xl";
-  onImageUpload?: (file: File) => void; // Function to handle image upload
+  onImageUpload?: (file: File) => void;
+  link?: boolean;
 }
 
 // --------------------------------------------
@@ -35,6 +36,7 @@ const Avatar: React.FC<AvatarProps> = ({
   username,
   size = "md",
   onImageUpload,
+  link,
 }) => {
   const [isHovered, setIsHovered] = useState(false);
 
@@ -49,7 +51,11 @@ const Avatar: React.FC<AvatarProps> = ({
   return (
     <div
       data-component="Avatar"
-      className={clsx(styles["avatar"], styles[`avatar--${size}`])} // Apply size class
+      className={clsx(
+        styles["avatar"],
+        styles[`avatar--${size}`],
+        link && styles[`avatar--link`],
+      )}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
