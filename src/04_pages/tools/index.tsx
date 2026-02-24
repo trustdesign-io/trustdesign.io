@@ -105,9 +105,6 @@ const Tools: React.FC = () => {
                 <Text tag="h2" appearance="h5">
                   Trust Design Toolkit
                 </Text>
-                <Text tag="h3" appearance="h6">
-                  Installation
-                </Text>
                 <Text appearance="body-2">
                   The Trust Design Toolkit contains all of these tools is
                   available on the Chrome Web Store.
