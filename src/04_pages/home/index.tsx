@@ -323,7 +323,7 @@ const Home: React.FC = () => {
               Activity
             </Text>
 
-            <Text appearance="body-1">
+            <Text appearance="body-2">
               Contributions across the{" "}
               <Link href="https://github.com/trustdesign-io" target="blank">
                 trustdesign-io
