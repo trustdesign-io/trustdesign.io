@@ -40,21 +40,36 @@
   display: block;
 }
 
-/* Brand gradations (#DF00A8) */
+/* -------------------------------------------------- */
+/* Orchid scale — smoother ramp toward #DF00A8       */
+/* -------------------------------------------------- */
+
 .level0 {
-  background: rgba(223, 0, 168, 0.08);
+  background-color: rgba(223, 0, 168, 0.05);
 }
 .level1 {
-  background: rgba(223, 0, 168, 0.2);
+  background-color: rgba(223, 0, 168, 0.1);
 }
 .level2 {
-  background: rgba(223, 0, 168, 0.4);
+  background-color: rgba(223, 0, 168, 0.16);
 }
 .level3 {
-  background: rgba(223, 0, 168, 0.65);
+  background-color: rgba(223, 0, 168, 0.24);
 }
 .level4 {
-  background: #df00a8;
+  background-color: rgba(223, 0, 168, 0.36);
+}
+.level5 {
+  background-color: rgba(223, 0, 168, 0.5);
+}
+.level6 {
+  background-color: rgba(223, 0, 168, 0.68);
+}
+.level7 {
+  background-color: rgba(223, 0, 168, 0.85);
+}
+.level8 {
+  background-color: #df00a8;
 }
 
 .mockNote {
