@@ -109,7 +109,8 @@ const Tools: React.FC = () => {
                   Installation
                 </Text>
                 <Text appearance="body-2">
-                  The TDT is available on the Chrome Web Store
+                  The Trust Design Toolkit contains all of these tools is
+                  available on the Chrome Web Store.
                 </Text>
                 <ButtonGroup>
                   <Button
