@@ -22,7 +22,7 @@ const Article_2: React.FC = () => {
 
                 <Layout bottomGutter="xl">
                   <Text appearance="body-2">
-                    <em>Published on December 1, 2025 by Danny Chambers</em>
+                    <em>Published inDecember 1, 2025 by Danny Chambers</em>
                   </Text>
                 </Layout>
 

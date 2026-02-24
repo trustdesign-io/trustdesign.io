@@ -18,7 +18,7 @@ const Article_13: React.FC = () => {
 
                 <Layout bottomGutter="xl">
                   <Text appearance="body-2">
-                    <em>Published on November 2026 by Danny Chambers</em>
+                    <em>Published inNovember 2026 by Danny Chambers</em>
                   </Text>
                 </Layout>
 
