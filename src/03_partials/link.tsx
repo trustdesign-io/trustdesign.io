@@ -11,6 +11,7 @@ interface ReactLinkProps {
   rel?: string;
   onClick?: React.MouseEventHandler<HTMLAnchorElement>;
   children: React.ReactNode;
+  subtle?: boolean;
 }
 
 const ReactLink: React.FC<ReactLinkProps> = ({
@@ -22,6 +23,7 @@ const ReactLink: React.FC<ReactLinkProps> = ({
   rel,
   onClick,
   children,
+  subtle,
 }) => {
   return (
     <RouterLink to={to}>
@@ -32,6 +34,7 @@ const ReactLink: React.FC<ReactLinkProps> = ({
         {...(target && { target })}
         {...(onClick && { onClick })}
         {...(rel && { rel })}
+        {...(subtle && { subtle })}
       >
         {children}
       </Link>

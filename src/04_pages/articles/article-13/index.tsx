@@ -18,7 +18,10 @@ const Article_13: React.FC = () => {
 
                 <Layout bottomGutter="xl">
                   <Text appearance="body-2">
-                    <em>Published in November 2026 by Danny Chambers</em>
+                    Published in November 2026 by{" "}
+                    <Link url="/dannyclaydenchambers" subtle>
+                      Danny Clayden Chambers
+                    </Link>
                   </Text>
                 </Layout>
 

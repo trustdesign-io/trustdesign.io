@@ -26,7 +26,10 @@ const Article_1: React.FC = () => {
 
                 <Layout bottomGutter="xl">
                   <Text appearance="body-2">
-                    <em>Published in November 1st 2025 by Danny Chambers</em>
+                    Published in November 1st 2025 by{" "}
+                    <Link url="/dannyclaydenchambers" subtle>
+                      Danny Clayden Chambers
+                    </Link>
                   </Text>
                 </Layout>
                 <Layout topGutter="xl" bottomGutter="xl">

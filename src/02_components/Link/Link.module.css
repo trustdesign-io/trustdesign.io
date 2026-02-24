@@ -41,10 +41,20 @@
       stroke: var(--color-neptune);
     }
   }
+
+  &.link--subtle {
+    text-decoration-color: transparent;
+
+    &:hover {
+      color: var(--color-neptune);
+      text-decoration-color: var(--color-neptune);
+    }
+  }
 }
 
 :global(.scheme--dark) .link {
   color: var(--color-text-light);
+  text-decoration-color: var(--color-text-light);
 
   svg,
   svg path {
@@ -60,6 +70,14 @@
     svg path {
       fill: var(--color-neptune);
       stroke: var(--color-neptune);
+    }
+  }
+
+  &.link--subtle {
+    text-decoration-color: transparent;
+
+    &:hover {
+      text-decoration-color: var(--color-neptune);
     }
   }
 }

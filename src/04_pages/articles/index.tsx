@@ -40,7 +40,12 @@ const Articles: React.FC = () => {
                     <Link to="/the-future-of-trust-design">
                       The Future of Trust Design
                     </Link>
-                    <Text appearance="body-3">Published in December 2026.</Text>
+                    <Text appearance="body-3">
+                      Published in December 2026 by{" "}
+                      <Link to="/dannyclaydenchambers" subtle>
+                        Danny Clayden Chambers
+                      </Link>
+                    </Text>
                   </li>
                 )}
                 {isReleased("November 2026", forceAll) && (
@@ -48,7 +53,12 @@ const Articles: React.FC = () => {
                     <Link to="/the-trust-design-toolkit-explained">
                       The Trust Design Toolkit Explained
                     </Link>
-                    <Text appearance="body-3">Published in November 2026.</Text>
+                    <Text appearance="body-3">
+                      Published in November 2026 by{" "}
+                      <Link to="/dannyclaydenchambers" subtle>
+                        Danny Clayden Chambers
+                      </Link>
+                    </Text>
                   </li>
                 )}
                 {isReleased("October 2026", forceAll) && (
@@ -56,7 +66,12 @@ const Articles: React.FC = () => {
                     <Link to="/trust-by-default-product-design-principles">
                       Trust by Default: Product Design Principles
                     </Link>
-                    <Text appearance="body-3">Published in October 2026.</Text>
+                    <Text appearance="body-3">
+                      Published in October 2026 by{" "}
+                      <Link to="/dannyclaydenchambers" subtle>
+                        Danny Clayden Chambers
+                      </Link>
+                    </Text>
                   </li>
                 )}
                 {isReleased("September 2026", forceAll) && (
@@ -65,14 +80,22 @@ const Articles: React.FC = () => {
                       Designing for Safety and Consent
                     </Link>
                     <Text appearance="body-3">
-                      Published in September 2026.
+                      Published in September 2026 by{" "}
+                      <Link to="/dannyclaydenchambers" subtle>
+                        Danny Clayden Chambers
+                      </Link>
                     </Text>
                   </li>
                 )}
                 {isReleased("August 2026", forceAll) && (
                   <li>
                     <Link to="/from-ux-to-policy">From UX to Policy</Link>
-                    <Text appearance="body-3">Published in August 2026.</Text>
+                    <Text appearance="body-3">
+                      Published in August 2026 by{" "}
+                      <Link to="/dannyclaydenchambers" subtle>
+                        Danny Clayden Chambers
+                      </Link>
+                    </Text>
                   </li>
                 )}
                 {isReleased("July 2026", forceAll) && (
@@ -80,7 +103,12 @@ const Articles: React.FC = () => {
                     <Link to="/forensic-ux-case-study-scam-ui-dissection">
                       Forensic UX Case Study: Scam UI Dissection
                     </Link>
-                    <Text appearance="body-3">Published in July 2026.</Text>
+                    <Text appearance="body-3">
+                      Published in July 2026 by{" "}
+                      <Link to="/dannyclaydenchambers" subtle>
+                        Danny Clayden Chambers
+                      </Link>
+                    </Text>
                   </li>
                 )}
                 {isReleased("June 2026", forceAll) && (
@@ -88,7 +116,12 @@ const Articles: React.FC = () => {
                     <Link to="/the-ethics-of-persuasion">
                       The Ethics of Persuasion
                     </Link>
-                    <Text appearance="body-3">Published in June 2026.</Text>
+                    <Text appearance="body-3">
+                      Published in June 2026 by{" "}
+                      <Link to="/dannyclaydenchambers" subtle>
+                        Danny Clayden Chambers
+                      </Link>
+                    </Text>
                   </li>
                 )}
                 {isReleased("May 2026", forceAll) && (
@@ -96,7 +129,12 @@ const Articles: React.FC = () => {
                     <Link to="/scam-interfaces-and-forensic-ux">
                       Auditing for Trustworthiness
                     </Link>
-                    <Text appearance="body-3">Published in May 2026.</Text>
+                    <Text appearance="body-3">
+                      Published in May 2026 by{" "}
+                      <Link to="/dannyclaydenchambers" subtle>
+                        Danny Clayden Chambers
+                      </Link>
+                    </Text>
                   </li>
                 )}
                 {isReleased("April 2026", forceAll) && (
@@ -104,7 +142,12 @@ const Articles: React.FC = () => {
                     <Link to="/trust-signals-in-ai-interfaces">
                       Trust Signals in AI Interfaces
                     </Link>
-                    <Text appearance="body-3">Published in April 2026.</Text>
+                    <Text appearance="body-3">
+                      Published in April 2026 by{" "}
+                      <Link to="/dannyclaydenchambers" subtle>
+                        Danny Clayden Chambers
+                      </Link>
+                    </Text>
                   </li>
                 )}
                 {isReleased("March 2026", forceAll) && (
@@ -112,7 +155,12 @@ const Articles: React.FC = () => {
                     <Link to="/designing-transparency">
                       Designing Transparency
                     </Link>
-                    <Text appearance="body-3">Published in March 2026.</Text>
+                    <Text appearance="body-3">
+                      Published in March 2026 by{" "}
+                      <Link to="/dannyclaydenchambers" subtle>
+                        Danny Clayden Chambers
+                      </Link>
+                    </Text>
                   </li>
                 )}
                 {isReleased("February 2026", forceAll) && (
@@ -120,7 +168,12 @@ const Articles: React.FC = () => {
                     <Link to="/a-brief-history-of-manipulative-design">
                       A Brief History of Manipulative Design
                     </Link>
-                    <Text appearance="body-3">Published in February 2026.</Text>
+                    <Text appearance="body-3">
+                      Published in February 2026 by{" "}
+                      <Link to="/dannyclaydenchambers" subtle>
+                        Danny Clayden Chambers
+                      </Link>
+                    </Text>
                   </li>
                 )}
                 {isReleased("January 2026", forceAll) && (
@@ -128,7 +181,12 @@ const Articles: React.FC = () => {
                     <Link to="/what-is-trust-design">
                       What Is Trust Design?
                     </Link>
-                    <Text appearance="body-3">Published in January 2026.</Text>
+                    <Text appearance="body-3">
+                      Published in January 2026 by{" "}
+                      <Link to="/dannyclaydenchambers" subtle>
+                        Danny Clayden Chambers
+                      </Link>
+                    </Text>
                   </li>
                 )}
                 {isReleased("December 2025", forceAll) && (
@@ -136,7 +194,12 @@ const Articles: React.FC = () => {
                     <Link to="/trust-design-audit-what-it-does-and-why-it-matters">
                       Trust Design Audit: what it does and why it matters
                     </Link>
-                    <Text appearance="body-3">Published in December 2025.</Text>
+                    <Text appearance="body-3">
+                      Published in December 2025 by{" "}
+                      <Link to="/dannyclaydenchambers" subtle>
+                        Danny Clayden Chambers
+                      </Link>
+                    </Text>
                   </li>
                 )}
                 {isReleased("November 2025", forceAll) && (
@@ -144,7 +207,12 @@ const Articles: React.FC = () => {
                     <Link to="/designing-trust-for-emerging-technology">
                       Designing Trust for emerging technology
                     </Link>
-                    <Text appearance="body-3">Published in November 2025.</Text>
+                    <Text appearance="body-3">
+                      Published in November 2025 by{" "}
+                      <Link to="/dannyclaydenchambers" subtle>
+                        Danny Clayden Chambers
+                      </Link>
+                    </Text>
                   </li>
                 )}
               </List>

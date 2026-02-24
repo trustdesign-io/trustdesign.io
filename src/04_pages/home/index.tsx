@@ -212,7 +212,7 @@ const Home: React.FC = () => {
                     </Text>
                     <Text appearance="body-3">
                       Published in {latestArticle.monthYear} by{" "}
-                      <Link url="/dannyclaydenchambers">
+                      <Link url="/dannyclaydenchambers" subtle>
                         {latestArticle.author}
                       </Link>
                     </Text>
@@ -243,7 +243,7 @@ const Home: React.FC = () => {
                     </Text>
                     <Text appearance="body-3">
                       Published in {latestArticle.monthYear} by{" "}
-                      <Link url="/dannyclaydenchambers">
+                      <Link url="/dannyclaydenchambers" subtle>
                         {latestArticle.author}
                       </Link>
                     </Text>

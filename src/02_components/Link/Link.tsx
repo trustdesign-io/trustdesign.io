@@ -30,6 +30,7 @@ export interface LinkProps {
   iconPosition?: "before" | "after";
   iconColor?: string;
   iconOnly?: boolean;
+  subtle?: boolean;
 }
 
 // --------------------------------------------
@@ -49,6 +50,7 @@ function Link({
   iconPosition = "after",
   iconColor,
   iconOnly = false,
+  subtle,
 }: LinkProps) {
   const ref = external ? { rel: "noreferrer" } : {};
   const Tag = url || href ? "a" : "span";
@@ -73,6 +75,7 @@ function Link({
         appearance && styles[`link--${appearance}`],
         stretch && styles["link--stretch"],
         iconOnly && styles["link--icon-only"],
+        subtle && styles["link--subtle"],
       )}
     >
       {stretch && <span className={clsx(styles["link__hit-area"])}></span>}
