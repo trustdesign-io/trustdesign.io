@@ -13,6 +13,38 @@ import clsx from "clsx";
 import styles from "./Logo.module.css";
 
 // --------------------------------------------
+// Client logo map
+// --------------------------------------------
+//
+// Add imports at the top and map them here.
+
+import elastic from "../../00_assets/images/logos/elastic.svg";
+import hurtigruten from "../../00_assets/images/logos/hurtigruten.svg";
+import intuit from "../../00_assets/images/logos/intuit.svg";
+import mindgym from "../../00_assets/images/logos/mindgym.svg";
+import tesco from "../../00_assets/images/logos/tesco.svg";
+import akqa from "../../00_assets/images/logos/akqa.svg";
+import thisplace from "../../00_assets/images/logos/thisplace.svg";
+import readingroom from "../../00_assets/images/logos/readingroom.svg";
+
+const CLIENT_LOGOS = {
+  elastic: elastic,
+  hurtigruten: hurtigruten,
+  intuit: intuit,
+  mindgym: mindgym,
+  tesco: tesco,
+  akqa: akqa,
+  thisplace: thisplace,
+  readingroom: readingroom,
+} as const;
+
+type ClientKey = keyof typeof CLIENT_LOGOS;
+
+function isClientKey(value: string): value is ClientKey {
+  return Object.prototype.hasOwnProperty.call(CLIENT_LOGOS, value);
+}
+
+// --------------------------------------------
 // Types
 // --------------------------------------------
 
@@ -23,18 +55,72 @@ export interface LogoProps {
   text?: boolean;
   alt: string;
   tag?: "span" | "h1";
+
+  /**
+   * Optional: render a client logo instead of the TrustDesign logo.
+   * - Pass a known client key (see CLIENT_LOGOS map above).
+   * - If the key is not found, we fall back to the TrustDesign logo.
+   */
+  client?: string;
 }
 
 // --------------------------------------------
 // Component
 // --------------------------------------------
 
-function Logo({ url, size, wordmark, text, tag: Tag = "span" }: LogoProps) {
+function Logo({
+  url,
+  size,
+  wordmark,
+  text,
+  alt,
+  tag: Tag = "span",
+  client,
+}: LogoProps) {
   const classes = clsx(styles.logo, {
     [styles["logo--text"]]: text,
     [styles["logo--wordmark"]]: wordmark,
     [styles[`logo--${size}`]]: size,
+    ...(client ? { [styles["logo--client"]]: true } : {}),
   });
+
+  const clientKey = (client || "").trim().toLowerCase();
+  const clientSrc =
+    clientKey && isClientKey(clientKey) ? CLIENT_LOGOS[clientKey] : undefined;
+
+  // --------------------------------------------
+  // Client Logo Rendering
+  // --------------------------------------------
+
+  if (client && clientSrc) {
+    const img = (
+      <img
+        src={clientSrc}
+        alt={alt}
+        className={styles.logo__image}
+        loading="lazy"
+        decoding="async"
+      />
+    );
+
+    if (url) {
+      return (
+        <a data-component="Logo" href={url} className={classes}>
+          {img}
+        </a>
+      );
+    }
+
+    return (
+      <div data-component="Logo" className={classes}>
+        {img}
+      </div>
+    );
+  }
+
+  // --------------------------------------------
+  // TrustDesign Logo Rendering (existing behavior)
+  // --------------------------------------------
 
   if (url) {
     return (
@@ -50,7 +136,6 @@ function Logo({ url, size, wordmark, text, tag: Tag = "span" }: LogoProps) {
           )}
 
           {/* -- Wordmark -- */}
-
           {wordmark && (
             <>
               <span>t</span>
@@ -66,9 +151,8 @@ function Logo({ url, size, wordmark, text, tag: Tag = "span" }: LogoProps) {
     <div data-component="Logo" className={classes}>
       <Tag>
         {/* -- Wordmark -- */}
-
         {wordmark && (
-          <svg xmlns="http://www.w3.org/2000/svg">
+          <svg xmlns="http://www.w3.org/2000/svg" role="img" aria-label={alt}>
             <g transform="translate(-87.312499,-132.29167)">
               <path
                 className={clsx(styles.t1)}
@@ -84,7 +168,7 @@ function Logo({ url, size, wordmark, text, tag: Tag = "span" }: LogoProps) {
 
         {/* -- Default -- */}
         {!wordmark && text && (
-          <svg xmlns="http://www.w3.org/2000/svg">
+          <svg xmlns="http://www.w3.org/2000/svg" role="img" aria-label={alt}>
             <g transform="translate(12.435342,-127.26458)">
               <path
                 className={clsx(styles.t1)}

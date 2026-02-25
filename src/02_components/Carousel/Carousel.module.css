@@ -1,0 +1,69 @@
+/* -------------------------------------------- */
+/* Carousel */
+/* -> Styles */
+/* -------------------------------------------- */
+
+.carousel {
+  width: 100%;
+}
+
+.carousel__viewport {
+  width: 100%;
+}
+
+.carousel__slide {
+  height: 100%;
+}
+
+/* Default fallback slide content (safe if renderSlide not provided) */
+.carousel__card {
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+  padding: 16px;
+  height: 100%;
+}
+
+.carousel__title {
+  margin: 0 0 8px;
+  font-weight: 600;
+}
+
+.carousel__body {
+  margin: 0;
+  opacity: 0.82;
+}
+
+/* Controls: centered at bottom */
+
+.carousel__controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.carousel__control {
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.06);
+
+  cursor: pointer;
+}
+
+.carousel__control:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.carousel__control:focus-visible {
+  outline: 2px solid rgba(223, 0, 168, 0.9);
+  outline-offset: 2px;
+}
