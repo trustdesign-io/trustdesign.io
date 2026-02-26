@@ -314,7 +314,7 @@ const Profile: React.FC = () => {
         <Layout container>
           <Layout grid="75">
             <Layout.Column>
-              <Layout grid="25_25_25_25">
+              <Layout grid="25_25_25_25" stack="md">
                 <Layout.Column>
                   <div style={{ height: "150px" }}>
                     <Layout verticalAlign="middle" horizontalAlign="middle">

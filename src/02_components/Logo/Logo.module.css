@@ -13,6 +13,11 @@
   font-family: var(--font-family-body);
   text-decoration: none;
   letter-spacing: -2px;
+  max-width: 100%;
+
+  img {
+    max-width: 100%;
+  }
 
   span,
   h1 {
