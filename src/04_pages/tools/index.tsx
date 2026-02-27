@@ -32,10 +32,10 @@ const Tools: React.FC = () => {
             <Layout grid="60_40" stack="md" gap="xl">
               <Layout.Column>
                 <Text appearance="h6">
-                  We don’t just study trust - we build with it.
+                  Don’t just study trust - build it in.
                 </Text>
                 <Text appearance="body-2">
-                  Our tools are made to help designers, developers, and
+                  These tools are made to help designers, developers, and
                   researchers explore how trust shows up in the smallest details
                   of digital experience. The current{" "}
                   <em>Trust Design Toolkit</em> is a free Chrome extension that

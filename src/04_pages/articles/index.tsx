@@ -29,7 +29,7 @@ const Articles: React.FC = () => {
         <Layout container>
           <Layout bottomGutter="xl">
             <Text tag="h1" appearance="h4">
-              Recent articles
+              Articles
             </Text>
           </Layout>
           <Layout grid="80_20" stack="md">
