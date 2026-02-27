@@ -271,7 +271,27 @@ const Home: React.FC = () => {
           </Layout>
         </Layout>
       </PageSection>
+      <PageSection screen="half" backgroundColor="rgb(4 10 16 / 90%)">
+        <Layout container>
+          <div className="activity-feed">
+            <Text tag="h2" appearance="h5">
+              Activity
+            </Text>
 
+            <Text appearance="body-2">
+              Contributions across the{" "}
+              <Link href="https://github.com/trustdesign-io" target="blank">
+                trustdesign-io
+              </Link>{" "}
+              github org - human and agent.
+            </Text>
+
+            <Layout topGutter="md" bottomGutter="sm">
+              <ActivityHeatmap weeks={isDesktopLarge ? 36 : 10} />
+            </Layout>
+          </div>
+        </Layout>
+      </PageSection>
       <PageSection screen="half">
         <Layout container>
           <Layout grid="60_40" gap="xl" stack="md">
@@ -315,29 +335,6 @@ const Home: React.FC = () => {
           </Layout>
         </Layout>
       </PageSection>
-
-      <PageSection screen="half" backgroundColor="rgb(4 10 16 / 90%)">
-        <Layout container>
-          <div className="activity-feed">
-            <Text tag="h2" appearance="h5">
-              Activity
-            </Text>
-
-            <Text appearance="body-2">
-              Contributions across the{" "}
-              <Link href="https://github.com/trustdesign-io" target="blank">
-                trustdesign-io
-              </Link>{" "}
-              github org - human and agent.
-            </Text>
-
-            <Layout topGutter="md" bottomGutter="sm">
-              <ActivityHeatmap weeks={isDesktopLarge ? 36 : 10} />
-            </Layout>
-          </div>
-        </Layout>
-      </PageSection>
-
       <Footer />
     </Layout>
   );
