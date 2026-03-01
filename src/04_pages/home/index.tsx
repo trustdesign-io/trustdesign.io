@@ -312,17 +312,16 @@ const Home: React.FC = () => {
                 <Text tag="h2" appearance="h5">
                   About TrustDesign
                 </Text>
-
                 <Text appearance="body-1">
-                  This project explores the human computer relationship, and how
-                  trust can be understood, measured, and designed into emerging
+                  This project explores the human–computer relationship, and how
+                  trust can be understood, measured, and designed for emerging
                   technologies.
                 </Text>
 
                 <Text appearance="body-1">
-                  We build tools that make the mechanics of trust visible -
-                  helping designers, businesses, and researchers see where
-                  technology supports human intention.
+                  The work here is collaborative. I work alongside Agentic AI to
+                  explore what responsible human–machine partnership can look
+                  like in practice.
                 </Text>
               </Layout>
             </Layout.Column>
