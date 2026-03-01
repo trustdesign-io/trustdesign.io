@@ -11,6 +11,8 @@ import { useMediaQuery } from "../../05_utilities/useMediaQuery.ts";
 
 /* -- Content -- */
 
+// import HomepageHero from "../../00_assets/images/homepage-hero.png";
+
 // import DannyChambers from "../../00_assets/images/DannyClaydenChambers-1.jpg";
 // import ChristianMacedo from "../../00_assets/images/testimonials/ChristianMacedo.jpeg";
 
@@ -193,6 +195,16 @@ const Home: React.FC = () => {
   return (
     <Layout wrapper className="homepage">
       <Header />
+
+      {/* <PageSection
+        screen="full"
+        backgroundImage={HomepageHero}
+        backgroundImagePosition="cover"
+      >
+        <Layout container>
+          <Layout.Column>Test</Layout.Column>
+        </Layout>
+      </PageSection> */}
 
       <PageSection screen="half">
         <Layout container>

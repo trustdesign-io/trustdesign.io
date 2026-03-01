@@ -80,7 +80,7 @@ function Text({
   const preventOrphanWords = (text: React.ReactNode) => {
     if (typeof text === "string") {
       const words = text.trim().split(" ");
-      if (words.length > 1) {
+      if (words.length > 2) {
         return `${words.slice(0, -2).join(" ")} ${words
           .slice(-2)
           .join("\u00A0")}`;

@@ -8,7 +8,7 @@
 .page-section {
   background-repeat: no-repeat;
   position: relative;
-  padding: var(--size-8) 0;
+  padding: var(--size-10) 0;
 
   @media (--min-breakpoint-md) {
     padding: var(--size-20) 0;
@@ -51,6 +51,16 @@
 .page-section--half {
   width: 100%;
   min-height: 50vh;
+}
+
+.page-section--twothirds {
+  width: 100%;
+  min-height: 66vh;
+}
+
+.page-section--threequarters {
+  width: 100%;
+  min-height: 75vh;
 }
 
 .page-section--full {

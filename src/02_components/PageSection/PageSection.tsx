@@ -5,10 +5,6 @@
 //
 // --------------------------------------------
 
-// --------------------------------------------
-// Imports
-// --------------------------------------------
-
 import React from "react";
 import clsx from "clsx";
 import styles from "./PageSection.module.css";
@@ -28,10 +24,26 @@ export interface PageSectionProps {
     | "center"
     | "cover";
   children: React.ReactNode;
-  screen?: "half" | "full" | "content";
+  screen?: "half" | "threequarters" | "twothirds" | "full" | "content";
   padding?: "sm" | "md" | "lg";
   tag?: "div" | "section";
 }
+
+// --------------------------------------------
+// Helpers
+// --------------------------------------------
+
+const positionMap: Record<
+  NonNullable<PageSectionProps["backgroundImagePosition"]>,
+  string
+> = {
+  topLeft: "top left",
+  topRight: "top right",
+  bottomRight: "bottom right",
+  bottomLeft: "bottom left",
+  center: "center",
+  cover: "center", // cover handled via backgroundSize
+};
 
 // --------------------------------------------
 // Component
@@ -48,9 +60,21 @@ function PageSection({
 }: PageSectionProps) {
   const Tag = tag;
 
-  const style = {
-    ...(backgroundColor && { backgroundColor }),
-    ...(backgroundImage && { backgroundImage: `url(${backgroundImage})` }),
+  const style: React.CSSProperties = {
+    ...(backgroundColor ? { backgroundColor } : {}),
+
+    ...(backgroundImage
+      ? {
+          backgroundImage: `url(${backgroundImage})`,
+          backgroundRepeat: "no-repeat",
+          backgroundPosition:
+            backgroundImagePosition && backgroundImagePosition !== "cover"
+              ? positionMap[backgroundImagePosition]
+              : "center",
+          backgroundSize:
+            backgroundImagePosition === "cover" ? "cover" : "auto",
+        }
+      : {}),
   };
 
   return (
@@ -60,8 +84,6 @@ function PageSection({
         styles["page-section"],
         screen && styles[`page-section--${screen}`],
         padding && styles[`page-section--padding-${padding}`],
-        backgroundImagePosition &&
-          styles[`page-section-backgroundPosition--${backgroundImagePosition}`],
       )}
       style={style}
     >
@@ -69,9 +91,5 @@ function PageSection({
     </Tag>
   );
 }
-
-// --------------------------------------------
-// Exports
-// --------------------------------------------
 
 export default PageSection;
