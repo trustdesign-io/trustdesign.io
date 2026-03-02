@@ -219,7 +219,7 @@ const Home: React.FC = () => {
               {overriddenArticle && (
                 <>
                   <Layout bottomGutter="md">
-                    <Layout bottomGutter="sm">
+                    <Layout bottomGutter="md">
                       <Text tag="h3" appearance="h2" layout={false}>
                         {overriddenArticle.title}
                       </Text>
@@ -252,7 +252,7 @@ const Home: React.FC = () => {
               {!overriddenArticle && latestArticle && (
                 <>
                   <Layout bottomGutter="md">
-                    <Layout bottomGutter="sm">
+                    <Layout bottomGutter="md">
                       <Text tag="h2" appearance="h2" layout={false}>
                         {latestArticle.title}
                       </Text>
@@ -331,21 +331,23 @@ const Home: React.FC = () => {
             </Layout.Column>
 
             <Layout.Column>
-              <Text tag="h2" appearance="h5">
-                About me
-              </Text>
+              <Layout bottomGutter="lg">
+                <Text tag="h2" appearance="h5">
+                  About me
+                </Text>
 
-              <Text appearance="body-1">
-                I'm Danny Chambers - a Design Technologist working at the
-                intersection of user experience design and interface
-                development.
-              </Text>
+                <Text appearance="body-1">
+                  I'm Danny Chambers - a Design Technologist working at the
+                  intersection of user experience design and interface
+                  development.
+                </Text>
 
-              <Text appearance="body-1">
-                <Link url="/dannyclaydenchambers" target="_blank">
-                  More about my experience
-                </Link>
-              </Text>
+                <Text appearance="body-1">
+                  <Link url="/dannyclaydenchambers" target="_blank">
+                    More about my experience
+                  </Link>
+                </Text>
+              </Layout>
             </Layout.Column>
           </Layout>
         </Layout>
