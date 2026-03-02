@@ -250,7 +250,7 @@ const Home: React.FC = () => {
               {!overriddenArticle && latestArticle && (
                 <>
                   <Layout bottomGutter="md">
-                    <Text tag="h2" appearance="h2">
+                    <Text tag="h2" appearance="h2" layout={false}>
                       {latestArticle.title}
                     </Text>
                     <Text appearance="body-3">
