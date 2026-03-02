@@ -219,9 +219,11 @@ const Home: React.FC = () => {
               {overriddenArticle && (
                 <>
                   <Layout bottomGutter="md">
-                    <Text tag="h3" appearance="h2">
-                      {overriddenArticle.title}
-                    </Text>
+                    <Layout bottomGutter="sm">
+                      <Text tag="h3" appearance="h2" layout={false}>
+                        {overriddenArticle.title}
+                      </Text>
+                    </Layout>
                     <Text appearance="body-3">
                       Published in {latestArticle.monthYear} by{" "}
                       <Link url="/dannyclaydenchambers" subtle>
@@ -250,9 +252,11 @@ const Home: React.FC = () => {
               {!overriddenArticle && latestArticle && (
                 <>
                   <Layout bottomGutter="md">
-                    <Text tag="h2" appearance="h2" layout={false}>
-                      {latestArticle.title}
-                    </Text>
+                    <Layout bottomGutter="sm">
+                      <Text tag="h2" appearance="h2" layout={false}>
+                        {latestArticle.title}
+                      </Text>
+                    </Layout>
                     <Text appearance="body-3">
                       Published in {latestArticle.monthYear} by{" "}
                       <Link url="/dannyclaydenchambers" subtle>
