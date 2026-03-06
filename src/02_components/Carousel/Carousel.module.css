@@ -18,8 +18,8 @@
 /* Default fallback slide content (safe if renderSlide not provided) */
 .carousel__card {
   border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgb(255 255 255 / 12%);
+  background: rgb(255 255 255 / 4%);
   padding: 16px;
   height: 100%;
 }
@@ -48,22 +48,19 @@
   width: 44px;
   height: 44px;
   border-radius: 999px;
-
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  background: rgba(255, 255, 255, 0.06);
-
+  border: 1px solid rgb(255 255 255 / 18%);
+  background: rgb(255 255 255 / 6%);
   cursor: pointer;
 }
 
 .carousel__control:hover {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgb(255 255 255 / 10%);
 }
 
 .carousel__control:focus-visible {
-  outline: 2px solid rgba(223, 0, 168, 0.9);
+  outline: 2px solid rgb(223 0 168 / 90%);
   outline-offset: 2px;
 }

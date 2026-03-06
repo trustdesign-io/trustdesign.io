@@ -146,7 +146,7 @@ const Template = (args: TextProps) => (
   </>
 );
 
-const Template2 = (args: TextProps) => (
+const Template2 = () => (
   <Text tag="h2">
     <Text tag="span" appearance="h6" font="heading">
       What is a

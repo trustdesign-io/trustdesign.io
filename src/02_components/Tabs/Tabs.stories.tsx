@@ -32,31 +32,6 @@ const meta: Meta = {
 
 export default meta;
 
-// ----- Template for Tabs Story ----- //
-
-const Template = (args: any) => (
-  <Tabs {...args}>
-    <Tabs.Panel label="Home">
-      <div>
-        <h1>Home Page</h1>
-        <p>This is the content for the home page.</p>
-      </div>
-    </Tabs.Panel>
-    <Tabs.Panel label="About">
-      <div>
-        <h1>About Us</h1>
-        <p>This is the content for the about page.</p>
-      </div>
-    </Tabs.Panel>
-    <Tabs.Panel label="Contact">
-      <div>
-        <h1>Contact Us</h1>
-        <p>This is the content for the contact page.</p>
-      </div>
-    </Tabs.Panel>
-  </Tabs>
-);
-
 // ----- Individual Stories ----- //
 
 type Story = StoryObj;

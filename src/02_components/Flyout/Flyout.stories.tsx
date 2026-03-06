@@ -12,8 +12,6 @@
 import { Meta, StoryObj } from "@storybook/react";
 import Flyout, { FlyoutProps } from "./Flyout";
 import { Text } from "../02_components/Text";
-import { SchemeProvider } from "../02_components/SchemeProvider";
-
 // --------------------------------------------
 // Stories
 // --------------------------------------------

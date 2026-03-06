@@ -45,29 +45,37 @@
 /* -------------------------------------------------- */
 
 .level0 {
-  background-color: rgba(223, 0, 168, 0.1);
+  background-color: rgb(223 0 168 / 10%);
 }
+
 .level1 {
-  background-color: rgba(223, 0, 168, 0.16);
+  background-color: rgb(223 0 168 / 16%);
 }
+
 .level2 {
-  background-color: rgba(223, 0, 168, 0.24);
+  background-color: rgb(223 0 168 / 24%);
 }
+
 .level3 {
-  background-color: rgba(223, 0, 168, 0.36);
+  background-color: rgb(223 0 168 / 36%);
 }
+
 .level4 {
-  background-color: rgba(223, 0, 168, 0.5);
+  background-color: rgb(223 0 168 / 50%);
 }
+
 .level5 {
-  background-color: rgba(223, 0, 168, 0.68);
+  background-color: rgb(223 0 168 / 68%);
 }
+
 .level6 {
-  background-color: rgba(223, 0, 168, 0.85);
+  background-color: rgb(223 0 168 / 85%);
 }
+
 .level7 {
-  background-color: rgba(223, 0, 168, 0.95);
+  background-color: rgb(223 0 168 / 95%);
 }
+
 .level8 {
   background-color: #df00a8;
 }

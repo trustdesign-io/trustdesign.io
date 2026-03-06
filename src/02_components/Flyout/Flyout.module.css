@@ -33,17 +33,19 @@
   border-left: 1px solid var(--color-abyss);
   padding: 180px var(--size-9) var(--size-12) var(--size-9);
   position: fixed;
+  right: -100%;
+  top: 0;
   height: 100vh;
   width: 100vw;
   max-width: 280px;
   transition: all var(--transition-1);
   z-index: 2;
   background:
-    radial-gradient(at 19.8% 78.3%, #0a1520 0px, transparent 50%),
-    radial-gradient(at 81.8% 41.5%, #0a1520 0px, transparent 50%),
-    radial-gradient(at 73% 69.2%, #456882 0px, transparent 50%),
-    radial-gradient(at 51.5% 51.5%, #df00a8 0px, transparent 50%),
-    radial-gradient(at 34.6% 33.3%, #456882 0px, transparent 50%) #000000;
+    radial-gradient(at 19.8% 78.3%, #0a1520 0, transparent 50%),
+    radial-gradient(at 81.8% 41.5%, #0a1520 0, transparent 50%),
+    radial-gradient(at 73% 69.2%, #456882 0, transparent 50%),
+    radial-gradient(at 51.5% 51.5%, #df00a8 0, transparent 50%),
+    radial-gradient(at 34.6% 33.3%, #456882 0, transparent 50%) #000;
   mix-blend-mode: normal;
 
   .avatar {
@@ -64,11 +66,6 @@
   width: 1px;
   position: absolute;
   left: -9999px;
-}
-
-.flyout-content {
-  right: -100%;
-  top: 0;
 }
 
 .flyout--active .flyout-content {
@@ -106,7 +103,7 @@
     height: auto;
     width: auto;
     max-width: none;
-    padding: 0 0 0 0;
+    padding: 0;
     background: none;
     display: flex;
   }

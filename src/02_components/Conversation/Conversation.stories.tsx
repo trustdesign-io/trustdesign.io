@@ -28,7 +28,7 @@ export default {
 // Template
 // --------------------------------------------
 
-const Template: StoryFn = args => (
+const Template: StoryFn = () => (
   <Conversation
     sequence={[
       { delay: 1000, duration: 3000 }, // Message 1 appears after 1s, stays for 3s

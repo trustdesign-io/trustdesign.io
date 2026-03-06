@@ -64,7 +64,7 @@ function Text({
     appearance ??
     (tag === "p"
       ? "body-1"
-      : (["h1", "h2", "h3", "h4", "h5", "h6"] as const).includes(tag as any)
+      : (["h1", "h2", "h3", "h4", "h5", "h6"] as string[]).includes(tag)
         ? (tag as "h1" | "h2" | "h3" | "h4" | "h5" | "h6")
         : undefined);
 

@@ -8,7 +8,6 @@ import "./05_utilities/utilities.css";
   /* -- Page imports -- */
 }
 import Home from "./04_pages/home/index";
-// import Services from "./04_pages/services/index";
 import CaseStudies from "./04_pages/case-studies/index";
 import Articles from "./04_pages/articles/index";
 import Services from "./04_pages/services/index";

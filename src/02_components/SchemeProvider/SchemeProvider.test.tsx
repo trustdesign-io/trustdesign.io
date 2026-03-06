@@ -9,8 +9,6 @@
 // Imports
 // --------------------------------------------
 
-import { render, screen } from "@testing-library/react";
-import SchemeProvider from "./SchemeProvider";
 
 // --------------------------------------------
 // Tests

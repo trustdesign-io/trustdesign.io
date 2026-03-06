@@ -16,5 +16,6 @@ module.exports = {
     },
     "selector-class-pattern": null,
     "custom-property-pattern": "[a-z0-9-]+",
+    "value-keyword-case": ["lower", { ignoreProperties: ["font-family", "font"] }],
   },
 };

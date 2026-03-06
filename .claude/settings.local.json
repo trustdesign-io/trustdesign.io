@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run lint:css 2>&1)",
+      "Bash(cp /Users/dannychambers/Projects/trustdesign/trustdesign.io/.stylelintrc.js /Users/dannychambers/Projects/trustdesign/trustdesign.io/.stylelintrc.cjs && rm /Users/dannychambers/Projects/trustdesign/trustdesign.io/.stylelintrc.js)",
+      "Bash(python3 -c \"\nwith open\\('/Users/dannychambers/Projects/trustdesign/trustdesign.io/src/04_pages/articles/article-2/index.tsx', 'r', encoding='utf-8'\\) as f:\n    content = f.read\\(\\)\nfixed = content.replace\\('et\\\\u00a0al.', 'et al.'\\)\nwith open\\('/Users/dannychambers/Projects/trustdesign/trustdesign.io/src/04_pages/articles/article-2/index.tsx', 'w', encoding='utf-8'\\) as f:\n    f.write\\(fixed\\)\nprint\\('done'\\)\n\")",
+      "Bash(npm run lint:js 2>&1)",
+      "Bash(npx stylelint 'src/**/*.css' --fix 2>&1 | tail -20)",
+      "Bash(npx stylelint 'src/**/*.css' 2>&1 | grep -E '^\\\\s+[0-9]|^src/' | head -60)"
+    ]
+  }
+}

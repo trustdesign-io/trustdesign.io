@@ -59,7 +59,7 @@ const Conversation: React.FC<ConversationProps> & {
   return (
     <div data-component="Conversation" className={styles["conversation"]}>
       {React.Children.map(children, (child, index) =>
-        React.cloneElement(child as React.ReactElement<any>, {
+        React.cloneElement(child as React.ReactElement<{ isVisible?: boolean }>, {
           isVisible: visibleIndices.has(index), // Pass down visibility state as prop
         }),
       )}

@@ -205,7 +205,7 @@ const Article_2: React.FC = () => {
                       .
                     </li>
                     <li>
-                      Mathur, A. et al. (2019).{" "}
+                      Mathur, A. et al. (2019).{" "}
                       <em>
                         Dark Patterns at Scale: Findings from a Crawl of 11K
                         Shopping Websites.

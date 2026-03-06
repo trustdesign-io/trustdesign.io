@@ -25,22 +25,6 @@
   border: 3px solid var(--color-frost);
 }
 
-.avatar.avatar--link .avatar_image img {
-  border: 3px solid var(--color-frost);
-  transition: all var(--transition-1);
-
-  &:hover {
-    border: 3px solid var(--color-neptune);
-  }
-}
-
-.avatar_button {
-  position: absolute;
-  top: var(--size-7);
-  left: 50%;
-  transform: translateX(-50%);
-}
-
 /*-- Modifiers -- */
 
 .avatar--xs .avatar_image,
@@ -71,4 +55,20 @@
 .avatar--xl .avatar_image img {
   width: var(--size-20);
   height: var(--size-20);
+}
+
+.avatar.avatar--link .avatar_image img {
+  border: 3px solid var(--color-frost);
+  transition: all var(--transition-1);
+
+  &:hover {
+    border: 3px solid var(--color-neptune);
+  }
+}
+
+.avatar_button {
+  position: absolute;
+  top: var(--size-7);
+  left: 50%;
+  transform: translateX(-50%);
 }

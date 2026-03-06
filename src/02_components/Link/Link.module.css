@@ -5,9 +5,7 @@
 /*                                              */
 /* -------------------------------------------- */
 
-.link,
-.link:active,
-.link:visited {
+.link {
   align-items: center;
   color: var(--color-text-dark);
   display: inline-flex;
@@ -52,6 +50,12 @@
   }
 }
 
+.link:focus-visible {
+  outline: 2px solid var(--color-neptune);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
 :global(.scheme--dark) .link {
   color: var(--color-text-light);
   text-decoration-color: var(--color-text-light);
@@ -80,12 +84,6 @@
       text-decoration-color: var(--color-neptune);
     }
   }
-}
-
-.link:focus-visible {
-  outline: 2px solid var(--color-neptune);
-  outline-offset: 2px;
-  border-radius: 4px;
 }
 
 .link--stretch {

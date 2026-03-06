@@ -57,7 +57,7 @@
     border-radius: 50%;
     position: relative;
 
-    &:after {
+    &::after {
       content: "";
       display: block;
       width: 60px;

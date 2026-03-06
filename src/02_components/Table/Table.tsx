@@ -12,7 +12,7 @@ import styles from "./Table.module.css";
 
 export interface TableProps {
   headers: string[];
-  data: Array<Record<string, any>>; // Adjust to accept any type
+  data: Array<Record<string, unknown>>;
   hideHeaders?: boolean;
   appearance?: "body-1" | "body-2" | "body-3";
 }
